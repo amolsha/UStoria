@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <h2>Evaluate User Stories</h2>
+  </div>
+  <div class="card-body">
+    <form method="post" action="{{ url_for('evaluation.evaluate') }}">
+      <div class="mb-3">
+        <label for="stories" class="form-label">Enter User Stories (one per line)</label>
+        <textarea class="form-control" id="stories" name="stories" rows="5">{{ request.form.stories or '' }}</textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Evaluation Mode</label>
+        <select class="form-select" name="mode">
+          <option value="minimal" {% if request.form.get('mode') == 'minimal' %}selected{% endif %}>Minimal</option>
+          <option value="rich" {% if request.form.get('mode') == 'rich' %}selected{% endif %}>Rich</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Evaluate</button>
+    </form>
+  </div>
+</div>
+
+{% if results %}
+<hr>
+<h3>Results</h3>
+{% for r in results %}
+<div class="card mt-3">
+  <div class="card-header">
+    <strong>Story:</strong> {{ r.story }}
+  </div>
+  <div class="card-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Criterion</th>
+          <th>Pass?</th>
+          <th>Reason</th>
+          <th>Suggested Repair</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for crit, details in r.criteria.items() %}
+        <tr>
+          <td>{{ crit }}</td>
+          <td>{% if details.pass %}✅{% else %}❌{% endif %}</td>
+          <td>{{ details.reason }}</td>
+          <td>{{ r.repairs[crit] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endfor %}
+{% endif %}
+{% endblock %}

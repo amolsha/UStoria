@@ -1,0 +1,234 @@
+/* ===============================
+   UStoria - Professional Styling
+   File: static/css/style.css
+   =============================== */
+
+/* ---- Reset & Base ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f9fafc;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---- Layout ---- */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header, footer {
+    background: #1e293b;
+    color: #f8fafc;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}
+
+/* ---- Navigation ---- */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #f8fafc;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* ---- Forms ---- */
+form {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    margin: 1.5rem 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* ---- Buttons ---- */
+button, .btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, transform 0.1s;
+}
+
+button:hover, .btn:hover {
+    background: #1e40af;
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* ---- Cards / Results ---- */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #1e293b;
+}
+
+.result-pass {
+    background-color: #ecfdf5;
+    border-left: 5px solid #10b981;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border-radius: 6px;
+    color: #065f46;
+    font-weight: 500;
+}
+
+.result-fail {
+    background-color: #fef2f2;
+    border-left: 5px solid #ef4444;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border-radius: 6px;
+    color: #991b1b;
+    font-weight: 500;
+}
+
+/* ---- Tables ---- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table th {
+    background: #f1f5f9;
+    font-weight: 600;
+}
+
+table tr:hover {
+    background: #f9fafb;
+}
+
+table td.description-cell {
+    max-width: 200px;       /* adjust */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ---- Dashboard ---- */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.dashboard-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+}
+
+.dashboard-card p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2563eb;
+}
+
+/* ---- Footer ---- */
+footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
