@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h2>Project: {{ project['name'] }}</h2>
+  <p>{{ project['description'] or 'No description provided.' }}</p>
+
+  <!-- Add Story Form -->
+  <div class="card">
+    <h3>Add New Story</h3>
+    <form method="post" action="{{ url_for('projects.add_story', project_id=project['id']) }}">
+      <label for="story">Story</label>
+      <textarea name="story" id="story" required></textarea>
+      <button type="submit" class="btn">Add Story</button>
+    </form>
+    <p>
+      Or <a href="{{ url_for('projects.bulk_upload_stories', project_id=project['id']) }}">bulk upload stories</a>
+    </p>
+  </div>
+
+  <!-- Stories Table -->
+  <div class="card">
+    <h3>Stories</h3>
+    {% if stories %}
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Story</th>
+          <th>Created At</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in stories %}
+        <tr>
+          <td>{{ s['id'] }}</td>
+          <td style="max-width: 400px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+              title="{{ s['text'] }}">
+              {{ s['text'] }}
+          </td>
+          <td>{{ s['created_at'] }}</td>
+          <td>
+            <a href="{{ url_for('projects.edit_story', project_id=project['id'], story_id=s['id']) }}" class="btn btn-small">Edit</a>
+            <form method="post" action="{{ url_for('projects.delete_story', project_id=project['id'], story_id=s['id']) }}" style="display:inline;">
+              <button type="submit" class="btn btn-small btn-danger">Delete</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+      <p>No stories yet. Add one above or bulk upload.</p>
+    {% endif %}
+  </div>
+
+  <div class="card">
+  <h3>Project Batches</h3>
+  <a href="{{ url_for('projects.create_batch_with_stories', project_id=project['id']) }}" class="btn">Create New Batch</a>
+
+  {% if batches %}
+    <table>
+      <thead>
+        <tr>
+          <th>Batch Name</th>
+          <th>Number of Stories</th>
+          <th>Created At</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for b in batches %}
+        <tr>
+          <td>{{ b['name'] }}</td>
+          <td>{{ b['story_count'] }}</td>
+          <td>{{ b['created_at'] }}</td>
+          <td class="actions">
+            <a href="{{ url_for('projects.view_batch', batch_id=b['id']) }}" class="btn btn-small">View</a>
+            <a href="{{ url_for('projects.edit_batch', batch_id=b['id']) }}" class="btn btn-small">Edit</a>
+            <form method="post" action="{{ url_for('projects.delete_batch', batch_id=b['id']) }}">
+              <button type="submit" class="btn btn-small btn-danger">Delete</button>
+            </form>
+            <a href="{{ url_for('projects.evaluate_batch', batch_id=b['id']) }}" class="btn btn-small">Evaluate</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No batches yet. Create one above.</p>
+  {% endif %}
+</div>
+
+
+  <!-- Placeholder for Runs/Evaluations -->
+  <div class="card">
+    <h3>Evaluations</h3>
+    <p>This section will show evaluation runs for this project.</p>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h2>Create New Batch for Project {{ project_id }}</h2>
+  <form method="post" action="{{ url_for('projects.create_batch_with_stories', project_id=project_id) }}">
+    <label for="batch_name">Batch Name</label>
+    <input type="text" name="batch_name" id="batch_name" required>
+
+    <h3>Select Stories to include:</h3>
+    {% if stories %}
+      <div class="story-list">
+        {% for s in stories %}
+          <div class="story-item">
+            <input type="checkbox" name="story_ids" value="{{ s['id'] }}" id="story{{ s['id'] }}">
+            <label for="story{{ s['id'] }}">{{ s['text'] }}</label>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>No stories available for this project.</p>
+    {% endif %}
+
+    <button type="submit" class="btn">Create Batch</button>
+  </form>
+</div>
+{% endblock %}

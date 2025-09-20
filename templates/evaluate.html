@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h2>Batch Evaluation</h2>
+
+  <form method="post">
+    <!-- Project Selection -->
+    <label for="project_id">Select Project</label>
+    <select name="project_id" id="project_id" onchange="window.location='?project_id='+this.value">
+      <option value="">-- Choose Project --</option>
+      {% for p in projects %}
+        <option value="{{ p['id'] }}" {% if selected_project == p['id'] %}selected{% endif %}>
+          {{ p['name'] }}
+        </option>
+      {% endfor %}
+    </select>
+
+    <!-- Batch Selection -->
+    {% if batches %}
+      <label for="batch_id">Select Batch</label>
+      <select name="batch_id" id="batch_id">
+        {% for b in batches %}
+          <option value="{{ b['id'] }}" {% if selected_batch == b['id'] %}selected{% endif %}>
+            {{ b['name'] }} ({{ b['story_count'] }} stories)
+          </option>
+        {% endfor %}
+      </select>
+    {% endif %}
+
+    <!-- LLM Selection -->
+    <label for="llm">Choose LLM</label>
+    <select name="llm" id="llm" required>
+      <option value="gpt-4o">GPT-4o</option>
+      <option value="gpt-4-turbo">GPT-4 Turbo</option>
+      <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+      <option value="claude-3-opus">Claude 3 Opus</option>
+    </select>
+
+    <!-- Prompt Type -->
+    <label for="prompt_type">Prompt Type</label>
+    <select name="prompt_type" id="prompt_type">
+      <option value="minimal">Minimal</option>
+      <option value="rich">Rich</option>
+    </select>
+
+    <!-- Temperature -->
+    <label for="temperature">Temperature</label>
+    <input type="number" step="0.1" name="temperature" id="temperature" value="0.7" min="0" max="2">
+
+    <!-- Submit -->
+    <button type="submit" class="btn">Start Evaluation</button>
+  </form>
+
+  <hr>
+
+  <div id="progress-section" style="display:none;">
+    <h3>Running Evaluation...</h3>
+    <progress id="progress-bar" value="0" max="100"></progress>
+    <p id="timer">Elapsed: 0s</p>
+  </div>
+</div>
+
+<script>
+  // Placeholder JS for timer + progress bar
+  const form = document.querySelector("form");
+  form.addEventListener("submit", () => {
+    document.getElementById("progress-section").style.display = "block";
+    let start = Date.now();
+    let timerEl = document.getElementById("timer");
+    setInterval(() => {
+      let elapsed = Math.round((Date.now() - start) / 1000);
+      timerEl.innerText = "Elapsed: " + elapsed + "s";
+    }, 1000);
+  });
+</script>
+{% endblock %}

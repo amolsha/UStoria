@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h2>Run Summary (Run {{ run_id }})</h2>
+
+<!-- Bar Chart -->
+<div class="chart-container" style="width: 80%; max-width: 800px; height: 300px; margin: auto;">
+  <canvas id="criteriaChart"></canvas>
+</div>
+
+<!-- Make the pie smaller -->
+<div class="chart-container" style="width: 300px; height: 300px; margin: 30px auto;">
+  <canvas id="passFailPie"></canvas>
+</div>
+
+
+  <a href="{{ url_for('evaluation.view_run', run_id=run_id) }}" class="btn">
+    View Detailed Results
+  </a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  // Bar chart: Pass/Fail counts per criterion
+  const ctx = document.getElementById('criteriaChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: {{ criteria|tojson }},
+      datasets: [
+        {
+          label: 'Passed',
+          data: {{ passed|tojson }},
+          backgroundColor: 'rgba(75, 192, 192, 0.7)'
+        },
+        {
+          label: 'Failed',
+          data: {{ failed|tojson }},
+          backgroundColor: 'rgba(255, 99, 132, 0.7)'
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        title: {
+          display: true,
+          text: 'Pass/Fail per Criterion'
+        }
+      },
+      scales: {
+        x: { stacked: true },
+        y: { stacked: true, beginAtZero: true }
+      }
+    }
+  });
+
+  // Pie chart: Overall pass vs fail
+  const totalPass = {{ passed|sum }};
+  const totalFail = {{ failed|sum }};
+  const ctxPie = document.getElementById('passFailPie').getContext('2d');
+  new Chart(ctxPie, {
+    type: 'pie',
+    data: {
+      labels: ['Passed', 'Failed'],
+      datasets: [{
+        data: [totalPass, totalFail],
+        backgroundColor: ['rgba(75, 192, 192, 0.7)', 'rgba(255, 99, 132, 0.7)']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: 'Overall Pass vs Fail'
+        }
+      }
+    }
+  });
+</script>
+{% endblock %}

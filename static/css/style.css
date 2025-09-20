@@ -107,7 +107,7 @@ select:focus {
 }
 
 /* ---- Buttons ---- */
-button, .btn {
+button {
     display: inline-block;
     background: #2563eb;
     color: #ffffff;
@@ -120,7 +120,7 @@ button, .btn {
     transition: background 0.2s ease-in-out, transform 0.1s;
 }
 
-button:hover, .btn:hover {
+button:hover {
     background: #1e40af;
     transform: translateY(-1px);
 }
@@ -129,6 +129,47 @@ button:disabled {
     background: #9ca3af;
     cursor: not-allowed;
 }
+
+/* Ensure all buttons/links look consistent */
+.btn, .btn-small {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-small {
+  padding: 4px 10px;
+  font-size: 13px;
+}
+
+/* Danger button style */
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+/* Default button style */
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
 
 /* ---- Cards / Results ---- */
 .card {
@@ -198,6 +239,18 @@ table td.description-cell {
     text-overflow: ellipsis;
 }
 
+td.actions {
+  display: flex;
+  gap: 6px;            /* space between buttons */
+  align-items: center; /* vertical alignment */
+}
+
+td.actions form {
+  display: inline;     /* prevent form from taking full width */
+  margin: 0;
+}
+
+
 /* ---- Dashboard ---- */
 .dashboard {
     display: grid;
@@ -232,3 +285,164 @@ footer {
     font-size: 0.9rem;
     color: #94a3b8;
 }
+
+/* Hero Section */
+.hero-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #4A90E2, #50E3C2);
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 span {
+    color: #FFD700;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.hero-section .btn-large {
+    background-color: #FFD700;
+    color: #333;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-large:hover {
+    background-color: #e6c200;
+    color: #111;
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 20px;
+    background-color: #f7f9fc;
+}
+
+.features-section .feature-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-section .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.features-section .feature-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.features-section .feature-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.features-section .feature-card .btn-small {
+    background-color: #4A90E2;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.features-section .feature-card .btn-small:hover {
+    background-color: #357ABD;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 8px 0;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+  background: #f7f7f7;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 10px 14px;
+  display: none;
+}
+
+.card-body.show {
+  display: block;
+}
+
+.card-header button {
+  white-space: normal;   /* allows multi-line text */
+  text-align: left;      /* align text nicely */
+  word-break: break-word; /* break long words */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .features-section .feature-card {
+        width: 45%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .features-section .feature-card {
+        width: 100%;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+}
+

@@ -49,35 +49,6 @@ CREATE TABLE IF NOT EXISTS prompts (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- ▶️ Runs (one execution of evaluation on a project)
-CREATE TABLE IF NOT EXISTS runs (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    project_id INTEGER NOT NULL,
-    prompt_id INTEGER,
-    provider_id INTEGER,
-    config JSON, -- temperature, max_tokens, etc.
-    status TEXT DEFAULT 'completed', -- pending | running | completed | failed
-    progress REAL DEFAULT 1.0, -- useful if async in future
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (project_id) REFERENCES projects(id),
-    FOREIGN KEY (prompt_id) REFERENCES prompts(id),
-    FOREIGN KEY (provider_id) REFERENCES providers(id)
-);
-
--- ✅ Evaluations (criteria results for one story in one run)
-CREATE TABLE IF NOT EXISTS evaluations (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    run_id INTEGER NOT NULL,
-    story_id INTEGER NOT NULL,
-    criterion TEXT NOT NULL,
-    passed BOOLEAN,
-    reason TEXT,
-    repair TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (run_id) REFERENCES runs(id),
-    FOREIGN KEY (story_id) REFERENCES stories(id)
-);
-
 -- 👩‍⚖️ Human Evaluations (optional benchmarking)
 CREATE TABLE IF NOT EXISTS human_evaluations (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -89,3 +60,47 @@ CREATE TABLE IF NOT EXISTS human_evaluations (
     FOREIGN KEY (evaluation_id) REFERENCES evaluations(id)
 );
 
+CREATE TABLE IF NOT EXISTS batches (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    project_id INTEGER NOT NULL,
+    name TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (project_id) REFERENCES projects(id)
+);
+
+CREATE TABLE IF NOT EXISTS batch_stories (
+    batch_id INTEGER NOT NULL,
+    story_id INTEGER NOT NULL,
+    PRIMARY KEY (batch_id, story_id),
+    FOREIGN KEY (batch_id) REFERENCES batches(id),
+    FOREIGN KEY (story_id) REFERENCES stories(id)
+);
+
+-- Runs table (each evaluation attempt is a "run")
+CREATE TABLE IF NOT EXISTS runs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    project_id INTEGER NOT NULL,
+    batch_id INTEGER NOT NULL,
+    llm_name TEXT NOT NULL,
+    prompt_type TEXT NOT NULL,       -- e.g., "context-rich", "context-minimal"
+    temperature REAL,                -- optional
+    started_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    finished_at TIMESTAMP,           -- set after run completes
+    duration_seconds REAL,           -- total time taken
+    FOREIGN KEY (project_id) REFERENCES projects (id) ON DELETE CASCADE,
+    FOREIGN KEY (batch_id) REFERENCES batches (id) ON DELETE CASCADE
+);
+
+-- Evaluations table (per story results of each run)
+CREATE TABLE IF NOT EXISTS evaluations (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    run_id INTEGER NOT NULL,
+    story_id INTEGER NOT NULL,
+    criterion TEXT NOT NULL,         -- e.g. "Clarity", "Testability"
+    passed BOOLEAN NOT NULL,
+    reason TEXT,
+    repair TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (run_id) REFERENCES runs (id) ON DELETE CASCADE,
+    FOREIGN KEY (story_id) REFERENCES stories (id) ON DELETE CASCADE
+);

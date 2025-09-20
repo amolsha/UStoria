@@ -62,6 +62,27 @@ def init_db():
             FOREIGN KEY (story_id) REFERENCES stories(id)
         )
         """)
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS batches (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            project_id INTEGER NOT NULL,
+            name TEXT NOT NULL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (project_id) REFERENCES projects(id)
+        )
+        """)
+
+        cur.execute(
+            """
+                CREATE TABLE IF NOT EXISTS batch_stories (
+                batch_id INTEGER NOT NULL,
+                story_id INTEGER NOT NULL,
+                PRIMARY KEY (batch_id, story_id),
+                FOREIGN KEY (batch_id) REFERENCES batches(id),
+                FOREIGN KEY (story_id) REFERENCES stories(id)
+            )
+            """
+        )
 
     conn.commit()
     conn.close()
@@ -90,42 +111,47 @@ def insert_story(project_id: int, text: str) -> int:
     conn.close()
     return story_id
 
-
-def insert_run(project_id: int, config: dict = None, status: str = "completed") -> int:
-    conn = get_connection()
-    cur = conn.cursor()
-    cur.execute("INSERT INTO runs (project_id, config, status) VALUES (?, ?, ?)",
-                (project_id, str(config) if config else None, status))
-    conn.commit()
-    run_id = cur.lastrowid
-    conn.close()
-    return run_id
-
-
-def insert_evaluation(run_id: int, story_id: int, criterion: str,
-                      passed: bool, reason: str, repair: str):
-    conn = get_connection()
-    cur = conn.cursor()
-    cur.execute("""
-        INSERT INTO evaluations (run_id, story_id, criterion, passed, reason, repair)
-        VALUES (?, ?, ?, ?, ?, ?)
-    """, (run_id, story_id, criterion, int(passed), reason, repair))
-    conn.commit()
-    conn.close()
-
-
 # --------------------
 # Query functions
 # --------------------
 
-def get_project_stories(project_id: int):
+def get_stories_for_project(project_id: int):
     conn = get_connection()
     cur = conn.cursor()
-    cur.execute("SELECT * FROM stories WHERE project_id = ? ORDER BY created_at", (project_id,))
+    cur.execute("SELECT * FROM stories WHERE project_id = ? ORDER BY created_at DESC", (project_id,))
     rows = cur.fetchall()
     conn.close()
     return rows
 
+def get_story(story_id: int):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM stories WHERE id = ?", (story_id,))
+    row = cur.fetchone()
+    conn.close()
+    return row
+
+def insert_stories_bulk(project_id: int, stories: list[str]):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.executemany("INSERT INTO stories (project_id, text) VALUES (?, ?)",
+                    [(project_id, s.strip()) for s in stories if s.strip()])
+    conn.commit()
+    conn.close()
+
+def update_story(story_id: int, new_text: str):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("UPDATE stories SET text = ? WHERE id = ?", (new_text, story_id))
+    conn.commit()
+    conn.close()
+
+def delete_story(story_id: int):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("DELETE FROM stories WHERE id = ?", (story_id,))
+    conn.commit()
+    conn.close()
 
 def get_story_with_evaluations(story_id: int, run_id: int):
     conn = get_connection()
@@ -136,25 +162,6 @@ def get_story_with_evaluations(story_id: int, run_id: int):
     evaluations = cur.fetchall()
     conn.close()
     return story, evaluations
-
-
-def get_run_summary(run_id: int):
-    conn = get_connection()
-    cur = conn.cursor()
-    cur.execute("""
-        SELECT s.id as story_id, s.text,
-               COUNT(e.id) as total_criteria,
-               SUM(CASE WHEN e.passed = 1 THEN 1 ELSE 0 END) as passed_criteria
-        FROM stories s
-        LEFT JOIN evaluations e ON s.id = e.story_id AND e.run_id = ?
-        WHERE s.project_id = (SELECT project_id FROM runs WHERE id = ?)
-        GROUP BY s.id
-        ORDER BY s.created_at
-    """, (run_id, run_id))
-    rows = cur.fetchall()
-    conn.close()
-    return rows
-
 
 def get_all_projects():
     conn = get_connection()
@@ -201,3 +208,194 @@ def update_project(project_id: int, name: str, description: str):
     """, (name, description, project_id))
     conn.commit()
     conn.close()
+
+def create_batch(project_id: int, name: str) -> int:
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("INSERT INTO batches (project_id, name) VALUES (?, ?)", (project_id, name))
+    conn.commit()
+    batch_id = cur.lastrowid
+    conn.close()
+    return batch_id
+
+
+def assign_story_to_batch(batch_id: int, story_id: int):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("INSERT OR IGNORE INTO batch_stories (batch_id, story_id) VALUES (?, ?)", (batch_id, story_id))
+    conn.commit()
+    conn.close()
+
+
+def get_batches_of_project(project_id: int):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT b.id, b.name, b.created_at, COUNT(bs.story_id) as story_count
+        FROM batches b
+        LEFT JOIN batch_stories bs ON b.id = bs.batch_id
+        WHERE b.project_id = ?
+        GROUP BY b.id
+        ORDER BY b.created_at DESC
+    """, (project_id,))
+    rows = cur.fetchall()
+    conn.close()
+    return rows
+
+def get_batch(batch_id: int):
+    """
+    Fetch a batch by its ID along with basic info like name, project_id, created_at.
+    """
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT id, project_id, name, created_at
+        FROM batches
+        WHERE id = ?
+    """, (batch_id,))
+    batch = cur.fetchone()
+    conn.close()
+    return batch
+
+
+def get_stories_in_batch(batch_id: int):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+            SELECT s.* FROM stories s
+            JOIN batch_stories bs ON s.id = bs.story_id
+            WHERE bs.batch_id = ?
+            ORDER BY s.id ASC
+        """, (batch_id,))
+    stories = cur.fetchall()
+    conn.close()
+    return stories
+
+def assign_stories_to_batch(batch_id: int, story_ids: list):
+    conn = get_connection()
+    cur = conn.cursor()
+    for story_id in story_ids:
+        cur.execute(
+            "INSERT OR IGNORE INTO batch_stories (batch_id, story_id) VALUES (?, ?)",
+            (batch_id, story_id)
+        )
+    conn.commit()
+    conn.close()
+
+def update_batch(batch_id: int, name: str):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        UPDATE batches
+        SET name = ?
+        WHERE id = ?
+    """, (name, batch_id))
+    conn.commit()
+    conn.close()
+
+def delete_batch(batch_id: int):
+    conn = get_connection()
+    cur = conn.cursor()
+    # Delete batch-story assignments first
+    cur.execute("DELETE FROM batch_stories WHERE batch_id = ?", (batch_id,))
+    # Delete the batch itself
+    cur.execute("DELETE FROM batches WHERE id = ?", (batch_id,))
+    conn.commit()
+    conn.close()
+
+# -------------------------------
+# Run + Evaluation functions
+# -------------------------------
+
+def insert_run(project_id: int, batch_id: int, llm_name: str, prompt_type: str, temperature: float = None) -> int:
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        INSERT INTO runs (project_id, batch_id, llm_name, prompt_type, temperature)
+        VALUES (?, ?, ?, ?, ?)
+    """, (project_id, batch_id, llm_name, prompt_type, temperature))
+    conn.commit()
+    run_id = cur.lastrowid
+    conn.close()
+    return run_id
+
+
+def finish_run(run_id: int, duration_seconds: float):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        UPDATE runs
+        SET finished_at = CURRENT_TIMESTAMP,
+            duration_seconds = ?
+        WHERE id = ?
+    """, (duration_seconds, run_id))
+    conn.commit()
+    conn.close()
+
+
+def get_runs_for_batch(batch_id: int):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM runs WHERE batch_id = ? ORDER BY started_at DESC", (batch_id,))
+    rows = cur.fetchall()
+    conn.close()
+    return rows
+
+
+def insert_evaluation(run_id: int, story_id: int, criterion: str, passed: bool, reason: str, repair: str):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        INSERT INTO evaluations (run_id, story_id, criterion, passed, reason, repair)
+        VALUES (?, ?, ?, ?, ?, ?)
+    """, (run_id, story_id, criterion, passed, reason, repair))
+    conn.commit()
+    conn.close()
+
+
+def get_evaluations_for_run(run_id):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT e.story_id,
+               s.text AS story_text,
+               e.criterion,
+               e.passed,
+               e.reason,
+               e.repair
+        FROM evaluations e
+        JOIN stories s ON e.story_id = s.id
+        WHERE e.run_id = ?
+        ORDER BY e.story_id, e.criterion
+    """, (run_id,))
+    rows = cur.fetchall()
+    conn.close()
+
+    return [
+        {
+            "story_id": row["story_id"],
+            "story_text": row["story_text"],
+            "criterion": row["criterion"],
+            "passed": bool(row["passed"]),
+            "reason": row["reason"],
+            "repair": row["repair"],
+        }
+        for row in rows
+    ]
+
+def get_run_summary(run_id):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT 
+            criterion,
+            SUM(CASE WHEN passed=1 THEN 1 ELSE 0 END) as passed_count,
+            SUM(CASE WHEN passed=0 THEN 1 ELSE 0 END) as failed_count,
+            COUNT(*) as total
+        FROM evaluations
+        WHERE run_id = ?
+        GROUP BY criterion
+    """, (run_id,))
+    rows = cur.fetchall()
+    conn.close()
+    return rows

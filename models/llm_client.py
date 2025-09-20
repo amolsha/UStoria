@@ -3,11 +3,13 @@ import os
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-def complete(prompt: str) -> str:
+def complete(model, prompt, temperature=0.7):
+    """
+    Send a completion request to the LLM and return the text.
+    """
     response = client.chat.completions.create(
-        model="gpt-4o-mini",  # or whichever you want
-        messages=[{"role": "system", "content": "You are a helpful assistant."},
-                  {"role": "user", "content": prompt}],
-        temperature=0
+        model=model,
+        messages=[{"role": "user", "content": prompt}],
+        temperature=temperature,
     )
     return response.choices[0].message.content.strip()

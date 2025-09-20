@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h2>Evaluation Results (Run {{ run_id }})</h2>
+
+  {% if evaluations %}
+    {% set stories = {} %}
+    {% for ev in evaluations %}
+      {% set _ = stories.setdefault(ev['story_id'], {'text': ev['story_text'], 'evaluations': []}) %}
+      {% set _ = stories[ev['story_id']]['evaluations'].append(ev) %}
+    {% endfor %}
+
+    <a href="{{ url_for('evaluation.run_summary', run_id=run_id) }}" class="btn">
+      📊 View Summary
+    </a>
+
+    <div class="accordion">
+      {% for story_id, story in stories.items() %}
+        <div class="card">
+          <div class="card-header">
+            <button class="btn btn-link" type="button" onclick="toggleCard('{{ story_id }}')">
+              Story {{ story_id }}: {{ story['text'] }}
+            </button>
+          </div>
+          <div class="card-body" id="card-{{ story_id }}" style="display:none;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Criterion</th>
+                  <th>Passed</th>
+                  <th>Reason</th>
+                  <th>Repair</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for ev in story['evaluations'] %}
+                <tr>
+                  <td>{{ ev['criterion'] }}</td>
+                  <td>{{ '✅' if ev['passed'] else '❌' }}</td>
+                  <td>{{ ev['reason'] }}</td>
+                  <td>{{ ev['repair'] }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>No evaluations found for this run.</p>
+  {% endif %}
+</div>
+
+<script>
+function toggleCard(storyId) {
+  const body = document.getElementById("card-" + storyId);
+  body.style.display = body.style.display === "none" ? "block" : "none";
+}
+</script>
+
+
+{% endblock %}
+

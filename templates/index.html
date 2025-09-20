@@ -1,15 +1,43 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section>
-    <h2>Welcome to UStoria</h2>
-    <p>
-        UStoria helps you evaluate and improve the quality of user stories
-        using state-of-the-art Large Language Models (LLMs).
+<section class="hero-section" style="padding: 60px 20px; text-align: center; background: linear-gradient(135deg, #4A90E2, #50E3C2); color: white;">
+    <h1 style="font-size: 3em; font-weight: bold; margin-bottom: 20px;">Welcome to <span style="color: #FFD700;">UStoria</span></h1>
+    <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto 30px;">
+        Evaluate and enhance the quality of your user stories efficiently using state-of-the-art Large Language Models (LLMs).
     </p>
-    <p>
-        Use the navigation bar above to get started with evaluation, explore dashboards,
-        or learn more about the project.
+    <a href="{{ url_for('evaluation.evaluate') }}" class="btn btn-large" style="background-color: #FFD700; color: #333; font-weight: bold; padding: 12px 30px; border-radius: 6px; text-decoration: none;">Start Evaluation</a>
+</section>
+
+<section class="features-section" style="padding: 60px 20px; background-color: #f7f9fc;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px;">
+        <div class="feature-card" style="background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 30px; width: 300px; text-align: center;">
+            <h3>📊 Dashboard</h3>
+            <p>View aggregated evaluation results, visualize quality metrics, and track improvements over time.</p>
+            <a href="{{ url_for('dashboard.show_dashboard') }}" class="btn btn-small">Go to Dashboard</a>
+        </div>
+
+        <div class="feature-card" style="background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 30px; width: 300px; text-align: center;">
+            <h3>📝 Evaluate Stories</h3>
+            <p>Paste or upload user stories and instantly get pass/fail results, reasoning, and suggested repairs for each criterion.</p>
+            <a href="{{ url_for('evaluation.evaluate') }}" class="btn btn-small">Evaluate Stories</a>
+        </div>
+
+        <div class="feature-card" style="background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 30px; width: 300px; text-align: center;">
+            <h3>📂 Manage Projects</h3>
+            <p>Organize your user stories by projects, track multiple runs, and manage datasets easily.</p>
+            <a href="{{ url_for('projects.list_projects') }}" class="btn btn-small">View Projects</a>
+        </div>
+    </div>
+</section>
+
+<section class="about-section" style="padding: 60px 20px; text-align: center;">
+    <h2 style="margin-bottom: 20px;">Why UStoria?</h2>
+    <p style="max-width: 800px; margin: 0 auto; font-size: 1.1em; color: #555;">
+        Poor quality user stories are a major cause of project delays, misunderstandings, and rework in software development.
+        UStoria leverages the intelligence of LLMs to ensure your stories are clear, atomic, estimable, and unambiguous.
+        Make your requirements actionable and reduce development friction.
     </p>
 </section>
 {% endblock %}
+

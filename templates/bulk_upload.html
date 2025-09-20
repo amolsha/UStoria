@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h2>Bulk Upload Stories</h2>
+
+  <div class="card">
+    <h3>Paste multiple stories (one per line)</h3>
+    <form method="post">
+      <textarea name="stories_bulk" rows="10"></textarea>
+      <button type="submit" class="btn">Upload</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h3>Upload from file (.txt)</h3>
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".txt">
+      <button type="submit" class="btn">Upload</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

@@ -58,3 +58,12 @@ Return ONLY valid JSON following this shape:
 }}
 No extra text. Use short sentences in reasons and repairs.
 """
+
+
+def get_prompt(prompt_type: str) -> str:
+    if prompt_type.lower() == "minimal":
+        return INDIVIDUAL_PROMPT_MINIMAL
+    elif prompt_type.lower() == "rich":
+        return INDIVIDUAL_PROMPT_RICH
+    else:
+        raise ValueError(f"Unknown prompt type: {prompt_type}")
