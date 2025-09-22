@@ -1,6 +1,11 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash
+from flask import Blueprint, render_template, request, redirect, url_for, flash, current_app, send_file
 from models import storage, evaluator
 
+import pandas as pd
+from werkzeug.utils import secure_filename
+import io
+
+from models.gold_import import parse_gold_labels_dataframe
 from . import projects_bp
 
 @projects_bp.route("/projects", methods=["GET", "POST"])
@@ -189,5 +194,100 @@ def delete_batch(batch_id):
     project_id = batch['project_id'] if batch else None
     return redirect(url_for("projects.view_project", project_id=project_id or 0))
 
+
+ALLOWED_EXT = {"xls", "xlsx", "csv"}
+
+def _allowed_file(filename):
+    return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXT
+
+
+@projects_bp.route("/projects/<int:project_id>/gold_labels", methods=["GET", "POST"])
+def gold_labels(project_id):
+    project = storage.get_project(project_id)
+    if not project:
+        flash("Project not found", "error")
+        return redirect(url_for("projects.list_projects"))
+
+    # fetch stories for project
+    stories = storage.get_stories_for_project(project_id)
+
+    # get existing gold labels grouped by story
+    existing = {}
+    for s in stories:
+        rows = storage.get_gold_labels_for_story(s["id"])
+        existing[s["id"]] = {r["criterion"]: r for r in rows}
+
+    if request.method == "POST":
+        # We expect form fields like: label_{story_id}_{criterion}_passed, label_{story_id}_{criterion}_reason, label_{story_id}_{criterion}_repair
+        inserted = 0
+        for s in stories:
+            sid = s["id"]
+            # define the QUS criteria list you have (consistent with earlier)
+            criteria_list = [
+                "Well-formed", "Atomic", "Minimal",
+                "Conceptually sound", "Problem-oriented", "Unambiguous",
+                "Full sentence", "Estimable"
+            ]
+            for crit in criteria_list:
+                key_pass = f"label_{sid}_{crit}_passed"
+                key_reason = f"label_{sid}_{crit}_reason"
+                key_repair = f"label_{sid}_{crit}_repair"
+                # forms may encode passed as 'on' or 'true' or '1'
+                raw_pass = request.form.get(key_pass)
+                # treat checkbox or radio: if present and equals '1' or 'on' or 'true' or 'yes' -> True
+                passed = bool(raw_pass and str(raw_pass).lower() in ("1", "true", "on", "yes", "y"))
+                reason = request.form.get(key_reason, "").strip() or None
+                repair = request.form.get(key_repair, "").strip() or None
+
+                # upsert
+                storage.upsert_gold_label(sid, crit, passed, reason, repair)
+                inserted += 1
+
+        flash(f"Gold labels saved ({inserted} entries).", "success")
+        return redirect(url_for("projects.gold_labels", project_id=project_id))
+
+    return render_template("gold_label_entry.html", project=project, stories=stories, existing=existing)
+
+
+@projects_bp.route("/projects/<int:project_id>/gold_labels/upload", methods=["GET", "POST"])
+def gold_labels_upload(project_id):
+    project = storage.get_project(project_id)
+    if not project:
+        flash("Project not found", "error")
+        return redirect(url_for("projects.list_projects"))
+
+    if request.method == "POST":
+        f = request.files.get("file")
+        if not f or f.filename == "":
+            flash("Please choose a file", "error")
+            return redirect(request.url)
+        if not _allowed_file(f.filename):
+            flash("Unsupported file type. Use xlsx/xls/csv", "error")
+            return redirect(request.url)
+
+        # read with pandas
+        try:
+            filename = secure_filename(f.filename)
+            # read directly from the file stream
+            if filename.lower().endswith(".csv"):
+                df = pd.read_csv(f)
+            else:
+                df = pd.read_excel(f)  # works with xlsx/xls
+        except Exception as e:
+            flash(f"Failed to read file: {e}", "error")
+            return redirect(request.url)
+
+        # parse into rows (normalized dict)
+        parsed_rows = parse_gold_labels_dataframe(df, project_id)
+
+        if not parsed_rows:
+            flash("No valid rows found in file.", "error")
+            return redirect(request.url)
+
+        count = storage.insert_gold_labels_bulk(parsed_rows)
+        flash(f"{count} gold label rows imported successfully.", "success")
+        return redirect(url_for("projects.gold_labels", project_id=project_id))
+
+    return render_template("gold_labels_upload.html", project=project)
 
 

@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h2>Gold Labeling — Project: {{ project['name'] }}</h2>
+
+  <p>
+    You can provide gold annotations for each story & criterion below.
+    After saving, these will be used as the human-labeled ground truth.
+  </p>
+
+  <form method="post">
+    <div class="accordion" id="storiesAccordion">
+      {% for s in stories %}
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading{{ s['id'] }}">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse{{ s['id'] }}"
+                  aria-expanded="false"
+                  aria-controls="collapse{{ s['id'] }}">
+            <strong>Story {{ s['id'] }}:</strong>
+            <span class="story-preview ms-2">
+              {{ s['text'][:120] }}{% if s['text']|length > 120 %}...{% endif %}
+            </span>
+          </button>
+        </h2>
+        <div id="collapse{{ s['id'] }}"
+             class="accordion-collapse collapse"
+             aria-labelledby="heading{{ s['id'] }}"
+             data-bs-parent="#storiesAccordion">
+          <div class="accordion-body">
+            <p><em>Full story:</em> {{ s['text'] }}</p>
+
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Criterion</th>
+                  <th>Pass</th>
+                  <th>Reason</th>
+                  <th>Repair</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% set existing_labels = existing.get(s['id'], {}) %}
+              {% for crit in [
+                    "Well-formed", "Atomic", "Minimal",
+                    "Conceptually sound", "Problem-oriented", "Unambiguous",
+                    "Full sentence", "Estimable"
+                  ] %}
+                {% set ex = existing_labels.get(crit) %}
+                <tr>
+                  <td>{{ crit }}</td>
+                  <td>
+                    <input type="checkbox" name="label_{{ s['id'] }}_{{ crit }}_passed"
+                           {% if ex and ex['passed'] %}checked{% endif %}>
+                  </td>
+                  <td>
+                    <input type="text" name="label_{{ s['id'] }}_{{ crit }}_reason"
+                           value="{{ ex['reason'] if ex else '' }}" style="width: 100%;">
+                  </td>
+                  <td>
+                    <input type="text" name="label_{{ s['id'] }}_{{ crit }}_repair"
+                           value="{{ ex['repair'] if ex else '' }}" style="width: 100%;">
+                  </td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="mt-3">
+      <button type="submit" class="btn btn-primary">Save Gold Labels</button>
+      <a href="{{ url_for('projects.gold_labels_upload', project_id=project['id']) }}"
+         class="btn btn-secondary">Upload from Excel</a>
+    </div>
+  </form>
+</div>
+{% endblock %}

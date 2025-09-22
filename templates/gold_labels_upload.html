@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h2>Upload Gold Labels — Project: {{ project['name'] }}</h2>
+
+  <p>Accepted formats:</p>
+  <ul>
+    <li><strong>Long format:</strong> columns <code>story_id</code>, <code>criterion</code>, <code>passed</code>, <code>reason</code>, <code>repair</code></li>
+    <li><strong>Wide format:</strong> one row per story, with <code>story_id</code> (or story_text) and columns like <code>well_formed_pass</code>, <code>well_formed_reason</code>, <code>well_formed_repair</code> (names case-insensitive)</li>
+  </ul>
+
+  <form method="post" enctype="multipart/form-data">
+    <div class="card">
+      <label for="file">Choose file (.xlsx/.xls/.csv)</label>
+      <input type="file" name="file" id="file" accept=".xlsx,.xls,.csv" required>
+    </div>
+
+    <div style="margin-top:12px;">
+      <button type="submit" class="btn btn-primary">Upload</button>
+      <a href="{{ url_for('projects.gold_labels', project_id=project['id']) }}" class="btn btn-secondary">Back to Manual Entry</a>
+    </div>
+  </form>
+</div>
+{% endblock %}

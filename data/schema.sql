@@ -104,3 +104,16 @@ CREATE TABLE IF NOT EXISTS evaluations (
     FOREIGN KEY (run_id) REFERENCES runs (id) ON DELETE CASCADE,
     FOREIGN KEY (story_id) REFERENCES stories (id) ON DELETE CASCADE
 );
+
+-- Gold_Labels table
+CREATE TABLE IF NOT EXISTS gold_labels (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    story_id INTEGER NOT NULL,
+    criterion TEXT NOT NULL,
+    passed BOOLEAN NOT NULL,
+    reason TEXT,
+    repair TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (story_id) REFERENCES stories(id) ON DELETE CASCADE
+);
+

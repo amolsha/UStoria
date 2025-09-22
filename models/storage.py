@@ -399,3 +399,103 @@ def get_run_summary(run_id):
     rows = cur.fetchall()
     conn.close()
     return rows
+
+# -------------------------------------------------
+# Gold label helpers (models/storage.py)
+# -------------------------------------------------
+def insert_gold_label(story_id: int, criterion: str, passed: bool, reason: str = None, repair: str = None) -> int:
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        INSERT INTO gold_labels (story_id, criterion, passed, reason, repair)
+        VALUES (?, ?, ?, ?, ?)
+    """, (story_id, criterion, int(bool(passed)), reason, repair))
+    conn.commit()
+    gid = cur.lastrowid
+    conn.close()
+    return gid
+
+
+def upsert_gold_label(story_id: int, criterion: str, passed: bool, reason: str = None, repair: str = None):
+    """
+    Simple upsert: delete existing label for story+criterion and insert new one.
+    (Keeps behavior simple and deterministic.)
+    """
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("DELETE FROM gold_labels WHERE story_id = ? AND criterion = ?", (story_id, criterion))
+    cur.execute("""
+        INSERT INTO gold_labels (story_id, criterion, passed, reason, repair)
+        VALUES (?, ?, ?, ?, ?)
+    """, (story_id, criterion, int(bool(passed)), reason, repair))
+    conn.commit()
+    conn.close()
+
+
+def get_gold_labels_for_story(story_id: int):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT id, story_id, criterion, passed, reason, repair, created_at
+        FROM gold_labels
+        WHERE story_id = ?
+        ORDER BY criterion
+    """, (story_id,))
+    rows = cur.fetchall()
+    conn.close()
+    return rows
+
+
+def get_gold_labels_for_batch(batch_id: int):
+    """
+    Return gold labels for all stories in a batch.
+    """
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT gl.*, s.text as story_text
+        FROM gold_labels gl
+        JOIN stories s ON gl.story_id = s.id
+        JOIN batch_stories bs ON bs.story_id = s.id
+        WHERE bs.batch_id = ?
+        ORDER BY s.id, gl.criterion
+    """, (batch_id,))
+    rows = cur.fetchall()
+    conn.close()
+    return rows
+
+
+def delete_gold_labels_for_story(story_id: int):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("DELETE FROM gold_labels WHERE story_id = ?", (story_id,))
+    conn.commit()
+    conn.close()
+
+
+def insert_gold_labels_bulk(rows: list):
+    """
+    rows: list of dicts with keys:
+       - story_id (int)
+       - criterion (str)
+       - passed (bool/int/str)
+       - reason (str, optional)
+       - repair (str, optional)
+    Returns number inserted.
+    """
+    conn = get_connection()
+    cur = conn.cursor()
+    inserted = 0
+    for r in rows:
+        try:
+            cur.execute("""
+                INSERT INTO gold_labels (story_id, criterion, passed, reason, repair)
+                VALUES (?, ?, ?, ?, ?)
+            """, (r["story_id"], r["criterion"], int(bool(r["passed"])), r.get("reason"), r.get("repair")))
+            inserted += 1
+        except Exception:
+            # skip problematic rows (log if you want)
+            continue
+    conn.commit()
+    conn.close()
+    return inserted
