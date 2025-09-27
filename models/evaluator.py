@@ -67,11 +67,11 @@ def evaluate_story(story_text, llm_name, prompt, temperature=0.7):
 
     # Query the LLM
     response = llm_client.complete(
-        model=llm_name,
+        llm_name=llm_name,
         prompt=eval_prompt,
         temperature=temperature,
     )
-    print("Response::::::")
+    print("Reslponse::::::")
     print(response)
     # Parse response
     results=""

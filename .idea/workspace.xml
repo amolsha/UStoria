@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="First Commit. Date: 19092025. Time: 04:37PM.">
-      <change afterPath="$PROJECT_DIR$/models/gold_import.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gold_label_entry.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gold_labels_upload.html" afterDir="false" />
+    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Added Projects,Evaluation,Runs,Runs Summary. Date: 20092025. Time: 10:01PM.">
       <change beforePath="$PROJECT_DIR$/.idea/UStoria.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UStoria.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blueprints/projects/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/projects/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/evaluations.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/evaluations.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/view_project.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/view_project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/evaluator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/llm_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/llm_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/evaluate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/evaluate.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,14 +22,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;amolsharma-mit&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/amolsharma-mit/UStoria.git&quot;,
+    &quot;accountId&quot;: &quot;5d969493-e86c-4276-ae52-83f4e8ec6068&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -48,6 +56,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Python.app.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
@@ -60,7 +69,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-884f5ed5d46b-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.22855.92" />
+        <option value="bundled-python-sdk-fc1d50d2d915-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.24978.54" />
       </set>
     </attachedChunks>
   </component>
