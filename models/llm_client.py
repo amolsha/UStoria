@@ -1,73 +1,57 @@
 import os
-import json
 from openai import OpenAI
 
-# Anthropic (Claude)
-import anthropic
+# ---- OpenRouter setup ----
+# Important: set OPEN_ROUTER_KEY in your environment
+client = OpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key=os.getenv("OPEN_ROUTER_KEY"),
+)
 
-# Google (Gemini)
-import google.generativeai as genai
 
-# ---- OpenAI setup ----
-openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# model_mapper.py
 
-# ---- Anthropic setup ----
-anthropic_client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
-
-# ---- Gemini setup ----
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-
-def complete(llm_name, prompt, temperature=0.7):
+def format_llm_name(model_name: str) -> str:
     """
-    Dispatch completion request to the right LLM provider.
-    Returns plain text response.
+    Map a raw model name to the OpenRouter namespaced format.
+
+    Examples:
+      "gpt-4o"              -> "openai/gpt-4o"
+      "gpt-4-turbo"         -> "openai/gpt-4-turbo"
+      "claude-3-opus"       -> "anthropic/claude-3-opus"
+      "claude-3-haiku"      -> "anthropic/claude-3-haiku"
+      "gemini-2.5-pro"      -> "google/gemini-2.5-pro"
+      "deepseek-chat"       -> "deepseek/deepseek-chat"
+      "grok-beta"           -> "xai/grok-beta"
     """
-    if llm_name in ["gpt-4o", "gpt-4-turbo", "gpt-3.5-turbo"]:
-        return _complete_openai(llm_name, prompt, temperature)
 
-    elif llm_name.startswith("claude"):
-        return _complete_claude(llm_name, prompt, temperature)
+    model_name = model_name.lower().strip()
 
-    elif llm_name.startswith("gemini"):
-        return _complete_gemini(llm_name, prompt, temperature)
+    if model_name.startswith("gpt-"):
+        return f"openai/{model_name}"
+
+    elif model_name.startswith("claude-"):
+        return f"anthropic/{model_name}"
+
+    elif model_name.startswith("gemini"):
+        return f"google/{model_name}"
+
+    elif model_name.startswith("deepseek"):
+        return f"deepseek/{model_name}"
+
+    elif model_name.startswith("grok"):
+        return f"xai/{model_name}"
 
     else:
-        raise ValueError(f"Unsupported LLM: {llm_name}")
+        raise ValueError(f"Unknown model vendor for: {model_name}")
 
 
-# ---------- Provider-specific implementations ----------
-
-def _complete_openai(model, prompt, temperature=0.7):
-    response = openai_client.chat.completions.create(
-        model=model,
+def complete(llm_name, prompt, temperature=0.7, max_tokens=1000):
+    llm_name = format_llm_name(llm_name)
+    response = client.chat.completions.create(
+        model=llm_name,
         messages=[{"role": "user", "content": prompt}],
         temperature=temperature,
+        max_tokens=max_tokens,
     )
     return response.choices[0].message.content.strip()
-
-
-def _complete_claude(model, prompt, temperature=0.7):
-    """
-    Anthropic Claude API
-    Example model names: "claude-3-opus-20240229", "claude-3-sonnet-20240229"
-    """
-    response = anthropic_client.messages.create(
-        model=model,
-        max_tokens=800,
-        temperature=temperature,
-        messages=[{"role": "user", "content": prompt}],
-    )
-    return response.content[0].text.strip()
-
-
-def _complete_gemini(model, prompt, temperature=0.7):
-    """
-    Google Gemini API
-    Example model names: "gemini-pro", "gemini-1.5-flash"
-    """
-    model_obj = genai.GenerativeModel(model)
-    response = model_obj.generate_content(
-        prompt,
-        generation_config={"temperature": temperature}
-    )
-    return response.text.strip()
