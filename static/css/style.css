@@ -446,3 +446,12 @@ footer {
     }
 }
 
+.story-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.story-item input[type="checkbox"] {
+  margin-right: 8px;
+}

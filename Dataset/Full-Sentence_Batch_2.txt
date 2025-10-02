@@ -1,0 +1,60 @@
+As a user, I want to log in with my email and password, so that I can access my account.
+As a customer, I want to cancel my order within 48 hours, so that I can avoid unwanted purchases.
+As a user, I want to customize my dashboard with a maximum of 5 widgets, so that I can personalize my view.
+As a student, I want to access course materials with a maximum of 5 downloads, so that I can study.
+Engage with peers.
+As a student, I want to view my grades so that I can track my progress.
+As a customer, I want to view my order history with details of date, product, and total cost, so that I can track my purchases.
+As a social media user, I want to follow another user so that I can see their updates.
+As a shopper, I want to apply coupon codes with a maximum of 5 uses, so that I can get discounts.
+As a bank customer, I want to transfer money so that I can pay bills.
+As a reader, I want to write a comment so that I can share my opinion.
+Enhance shopping experience.
+As a student, I want to view my grades with a detailed breakdown of scores, so that I can track my progress.
+As a user, I want to enable two-factor authentication with a QR code, so that I can enhance security.
+Get discounts.
+Add text.
+Access account information.
+Book hotel.
+As a traveler, I want to search for flights so that I can plan a trip.
+Schedule appointment.
+As a user, I want to reset my password so that I can regain access to my account.
+As a student, I want to view my attendance record with a maximum of 10 absences, so that I can track my attendance.
+As a student, I want to submit my assignment with a maximum file size of 10MB, so that I can get feedback.
+Like post.
+As a shopper, I want to apply a discount code so that I can save money.
+Purchase products.
+As a shopper, I want to use guest checkout with a maximum of 5 attempts, so that I can make a quick purchase.
+Enable two-factor authentication.
+Check balance.
+Track order status.
+Apply for job.
+Follow user.
+As a musician, I want to record a sound so that I can capture an audio clip.
+As a photographer, I want to crop an image so that I can focus on the subject.
+As a bank customer, I want to check my account balance so that I can monitor my finances.
+As a patient, I want to schedule an appointment online so that I can avoid waiting on the phone.
+As a manager, I want to manage team schedules with a maximum of 10 employees, so that I can manage team availability.
+Create playlist.
+As a manager, I want to generate invoices with a maximum of 10 line items, so that I can manage billing.
+As a writer, I want to save a draft of my work so that I don't lose my progress.
+Reset password.
+As a reader, I want to bookmark a page so that I can return to it later.
+As a student, I want to participate in discussions with a maximum of 1000 characters, so that I can engage with peers.
+View grades.
+As a gamer, I want to pause a game so that I can take a break.
+As a customer, I want to view product recommendations based on my purchase history, so that I can discover new products.
+As a music listener, I want to create a playlist so that I can organize my music.
+Compare products.
+Record sound.
+View product details.
+Place order.
+Generate reports.
+Save products for later.
+Publish blog.
+Share photo.
+As a patient, I want to request a prescription refill so that I can continue my medication.
+Submit assignment.
+Trim video.
+As a shopper, I want to view my loyalty points balance, so that I can redeem rewards.
+Search flights.

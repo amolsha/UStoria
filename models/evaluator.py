@@ -99,6 +99,53 @@ def evaluate_story(story_text, llm_name, prompt, temperature=0.7):
     return normalized
 
 
+def evaluate_story_by_criterion(story_text, llm_name, prompt, criterion, temperature=0.7):
+    """
+    Evaluate a user story using an LLM against a single criterion.
+    Returns dict: {criterion: {"passed": bool, "reason": str, "repair": str}}
+    """
+    if criterion not in CRITERIA:
+        raise ValueError(f"Invalid criterion '{criterion}'. Must be one of: {', '.join(CRITERIA)}")
+
+    prompt_template = PROMPTS.get(prompt, INDIVIDUAL_PROMPT_MINIMAL)
+    eval_prompt = prompt_template.format(
+        story=story_text,
+        criteria_list=criterion,  # Only the single criterion
+    )
+
+    # Query the LLM
+    response = llm_client.complete(
+        llm_name=llm_name,
+        prompt=eval_prompt,
+        temperature=temperature,
+    )
+    print("Response (by criterion)::::::")
+    print(response)
+
+    # Parse response
+    results = ""
+    try:
+        results = parse_llm_json(response)
+    except Exception as e:
+        print(e)
+        # Could add fallback parsing if needed
+
+    # Expecting something like {"criteria": {"Well-formed": {"pass": true, "reason": "..."}}, "repairs": {...}}
+    normalized = {}
+    criteria_results = results.get("criteria", {})
+    repairs = results.get("repairs", {})
+
+    entry = criteria_results.get(criterion, {})
+    normalized[criterion] = {
+        "passed": entry.get("pass", False),
+        "reason": entry.get("reason", ""),
+        "repair": repairs.get(criterion, "")
+    }
+
+    return normalized
+
+
+
 def fallback_parse(text):
     """
     Simple heuristic parser if JSON parsing fails.

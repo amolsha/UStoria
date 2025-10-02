@@ -83,6 +83,7 @@ CREATE TABLE IF NOT EXISTS runs (
     batch_id INTEGER NOT NULL,
     llm_name TEXT NOT NULL,
     prompt_type TEXT NOT NULL,       -- e.g., "context-rich", "context-minimal"
+    mode TEXT NOT NULL DEFAULT 'story',
     temperature REAL,                -- optional
     started_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     finished_at TIMESTAMP,           -- set after run completes

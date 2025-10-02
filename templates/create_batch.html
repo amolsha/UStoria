@@ -8,10 +8,16 @@
 
     <h3>Select Stories to include:</h3>
     {% if stories %}
+      <!-- Check All -->
+      <div style="margin-bottom: 10px;">
+        <input type="checkbox" id="checkAll">
+        <label for="checkAll"><strong>Check All</strong></label>
+      </div>
+
       <div class="story-list">
         {% for s in stories %}
           <div class="story-item">
-            <input type="checkbox" name="story_ids" value="{{ s['id'] }}" id="story{{ s['id'] }}">
+            <input type="checkbox" class="story-checkbox" name="story_ids" value="{{ s['id'] }}" id="story{{ s['id'] }}">
             <label for="story{{ s['id'] }}">{{ s['text'] }}</label>
           </div>
         {% endfor %}
@@ -23,4 +29,11 @@
     <button type="submit" class="btn">Create Batch</button>
   </form>
 </div>
+
+<script>
+  document.getElementById("checkAll").addEventListener("change", function() {
+    const checkboxes = document.querySelectorAll(".story-checkbox");
+    checkboxes.forEach(cb => cb.checked = this.checked);
+  });
+</script>
 {% endblock %}

@@ -118,7 +118,7 @@ def insert_story(project_id: int, text: str) -> int:
 def get_stories_for_project(project_id: int):
     conn = get_connection()
     cur = conn.cursor()
-    cur.execute("SELECT * FROM stories WHERE project_id = ? ORDER BY created_at DESC", (project_id,))
+    cur.execute("SELECT * FROM stories WHERE project_id = ? ORDER BY id asc", (project_id,))
     rows = cur.fetchall()
     conn.close()
     return rows
@@ -171,7 +171,7 @@ def get_all_projects():
                (SELECT COUNT(*) FROM stories s WHERE s.project_id = p.id) as story_count,
                (SELECT COUNT(*) FROM runs r WHERE r.project_id = p.id) as run_count
         FROM projects p
-        ORDER BY p.created_at DESC
+        ORDER BY p.id ASC
     """)
     rows = cur.fetchall()
     conn.close()
@@ -193,7 +193,7 @@ def delete_project(project_id: int):
 def get_project(project_id: int):
     conn = get_connection()
     cur = conn.cursor()
-    cur.execute("SELECT * FROM projects WHERE id = ?", (project_id,))
+    cur.execute("SELECT * FROM projects WHERE id = ? order by id", (project_id,))
     row = cur.fetchone()
     conn.close()
     return row
@@ -236,7 +236,7 @@ def get_batches_of_project(project_id: int):
         LEFT JOIN batch_stories bs ON b.id = bs.batch_id
         WHERE b.project_id = ?
         GROUP BY b.id
-        ORDER BY b.created_at DESC
+        ORDER BY b.id ASC
     """, (project_id,))
     rows = cur.fetchall()
     conn.close()
@@ -252,6 +252,7 @@ def get_batch(batch_id: int):
         SELECT id, project_id, name, created_at
         FROM batches
         WHERE id = ?
+        order by id
     """, (batch_id,))
     batch = cur.fetchone()
     conn.close()
@@ -307,13 +308,13 @@ def delete_batch(batch_id: int):
 # Run + Evaluation functions
 # -------------------------------
 
-def insert_run(project_id: int, batch_id: int, llm_name: str, prompt_type: str, temperature: float = None) -> int:
+def insert_run(project_id: int, batch_id: int, llm_name: str, prompt_type: str, temperature: float = None, mode: str="story") -> int:
     conn = get_connection()
     cur = conn.cursor()
     cur.execute("""
-        INSERT INTO runs (project_id, batch_id, llm_name, prompt_type, temperature)
-        VALUES (?, ?, ?, ?, ?)
-    """, (project_id, batch_id, llm_name, prompt_type, temperature))
+        INSERT INTO runs (project_id, batch_id, llm_name, prompt_type, temperature,mode)
+        VALUES (?, ?, ?, ?, ?, ?)
+    """, (project_id, batch_id, llm_name, prompt_type, temperature, mode))
     conn.commit()
     run_id = cur.lastrowid
     conn.close()
@@ -499,3 +500,17 @@ def insert_gold_labels_bulk(rows: list):
     conn.commit()
     conn.close()
     return inserted
+
+
+def get_unbatched_stories(project_id):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT * FROM stories
+        WHERE project_id = ?
+        AND id NOT IN (SELECT story_id FROM batch_stories)
+        ORDER BY id ASC
+    """, (project_id,))
+    rows = cur.fetchall()
+    conn.close()
+    return rows

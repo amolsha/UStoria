@@ -1,0 +1,60 @@
+As a customer, I want to track my shipping.
+As a restaurant customer, I want to order food, so that I can eat.
+As a shopper, I want to apply a discount, so that I can save money.
+As a user, I want to log out.
+As a photographer, I want to share a photo, so that I can show it to others.
+As a user, I want to update my profile.
+As a student, I want to view my grades, and also participate in discussions, and access course materials.
+As a shopper, I want to add items to my cart.
+As a student, I want to access course materials.
+As a restaurant customer, I want to effortlessly place orders for food delivery or pickup.
+As a gamer, I want to easily pause and resume gameplay at any time.
+As a bank customer, I want to transfer money, so that I can pay bills.
+As a restaurant owner, I want to efficiently add new menu items to attract customers.
+As a user, I want to log in, and also access my account settings, and view my order history, and also update my profile.
+As a writer, I want to save a draft, so that I don't lose my work.
+As a traveler, I want to search flights, so that I can plan a trip.
+As a video editor, I want to trim a video, so that it's shorter.
+As a restaurant owner, I want to add a menu item, so that customers have choices.
+As a shopper, I want to apply available discount codes to reduce my total purchase amount.
+As a manager, I want to approve expenses.
+As a manager, I want to manage team permissions.
+As a manager, I want to approve leave requests, and also manage team permissions, and generate invoices, and also assign tasks.
+As a reader, I want to save interesting articles or pages for later reference.
+As a shopper, I want to use multiple payment methods.
+As a shopper, I want to apply multiple coupons.
+As a shopper, I want to apply a coupon, and view product recommendations, and use multiple payment methods.
+As a student, I want to submit an assignment, and participate in online exams, and view my attendance record, and also access course materials.
+As a student, I want to submit an assignment, and also participate in online exams, and view my attendance record, and also access course materials.
+As a manager, I want to approve leave requests.
+As a writer, I want to effectively publish blog posts to reach a wider audience.
+As a reader, I want to bookmark a page, so that I can find it later.
+As a photographer, I want to easily share my best photos with friends and family.
+As a customer, I want to view my orders, and track my shipping, and get notified about order status updates.
+As a job seeker, I want to apply for a job, so that I can get hired.
+As a customer, I want to track my loyalty points.
+As a photographer, I want to accurately crop images to focus on the main subject.
+As a student, I want to submit a quiz.
+As a patient, I want to schedule an appointment, so that I can see a doctor.
+As a patient, I want to conveniently schedule appointments online with preferred doctors and times.
+As a social media user, I want to like a post, so that I can show appreciation.
+As a job seeker, I want to efficiently upload my resume and cover letter to apply for suitable jobs.
+As a student, I want to view grades, so that I can track progress.
+As a gamer, I want to pause a game, so that I can take a break.
+As a manager, I want to assign tasks, and also manage team schedules, and generate reports.
+As a social media user, I want to quickly express my appreciation for content by liking posts.
+As a music listener, I want to create a playlist, so that I can organize music.
+As a user, I want to reset my password, so that I can regain access.
+As a shopper, I want to add items to my cart, and also apply multiple coupons, and use multiple payment methods.
+As a social media user, I want to follow people, so that I can see their updates.
+As a customer, I want to view product recommendations.
+As a job seeker, I want to effectively apply for relevant job openings.
+As a customer, I want to view my orders, and also track my loyalty points, and get notified about new products, and also view product recommendations.
+As a manager, I want to manage team schedules.
+As a student, I want to easily view and understand my grades for each course.
+As a student, I want to participate in discussions.
+As a customer, I want to view my orders.
+As a writer, I want to publish a blog, so that I can share content.
+As a student, I want to effortlessly submit my assignments online before the deadline to avoid late penalties.
+As a user, I want to log in, and also access my account settings, and view my order history.
+As a customer, I want to update my address, and also track my shipping, and view my order history.

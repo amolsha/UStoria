@@ -134,7 +134,7 @@ def manage_batches(project_id):
 
 @projects_bp.route("/projects/<int:project_id>/batches/create", methods=["GET", "POST"])
 def create_batch_with_stories(project_id):
-    stories = storage.get_stories_for_project(project_id)  # get all stories for this project
+    stories = storage.get_unbatched_stories(project_id)  # get all stories for this project
     if request.method == "POST":
         batch_name = request.form.get("batch_name")
         selected_story_ids = request.form.getlist("story_ids")  # checkboxes return list

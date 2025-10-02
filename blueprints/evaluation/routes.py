@@ -86,3 +86,71 @@ def run_summary(run_id):
         failed=failed,
         totals=totals,
     )
+
+CRITERIA = [
+    "Well-formed", "Atomic", "Minimal",
+    "Conceptually sound", "Problem-oriented", "Unambiguous",
+    "Full sentence", "Estimable"
+]
+
+@evaluation_bp.route("/evaluate_by_criterion", methods=["GET", "POST"])
+def evaluate_by_criterion():
+    projects = storage.get_all_projects()
+    selected_project = request.args.get("project_id", type=int)
+    selected_batch = request.args.get("batch_id", type=int)
+
+    batches = storage.get_batches_of_project(selected_project) if selected_project else []
+
+    if request.method == "POST":
+        project_id = int(request.form["project_id"])
+        batch_id = int(request.form["batch_id"])
+        criterion = request.form["criterion"]
+        llm_name = request.form["llm"]
+        temperature = float(request.form.get("temperature", 0.7))
+        prompt_type = request.form["prompt_type"]   # still needed
+
+        start_time = time.time()
+        run_id = storage.insert_run(
+            project_id, batch_id, llm_name,
+            prompt_type, temperature,
+            mode="criterion"
+        )
+
+        stories = storage.get_stories_in_batch(batch_id)
+
+        for story in stories:
+            results = evaluator.evaluate_story_by_criterion(
+                story["text"],
+                llm_name=llm_name,
+                criterion=criterion,
+                prompt=prompts.get_prompt(prompt_type),
+                temperature=temperature
+            )
+
+            for criterion, outcome in results.items():
+                storage.insert_evaluation(
+                    run_id=run_id,
+                    story_id=story["id"],
+                    criterion=criterion,
+                    passed=outcome.get("passed", False),
+                    reason=outcome.get("reason", ""),
+                    repair=outcome.get("repair", "")
+                )
+
+
+        # Finish run
+        duration = round(time.time() - start_time, 2)
+        storage.finish_run(run_id, duration)
+
+        flash(f"Evaluation complete for criterion: {criterion} in {duration} seconds!", "success")
+        return redirect(url_for("evaluation.view_run", run_id=run_id))
+
+    return render_template(
+        "evaluate_by_criterion.html",
+        projects=projects,
+        batches=batches,
+        selected_project=selected_project,
+        selected_batch=selected_batch,
+        criteria=CRITERIA
+    )
+
