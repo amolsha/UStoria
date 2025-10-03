@@ -40,7 +40,10 @@ def format_llm_name(model_name: str) -> str:
         return f"deepseek/{model_name}"
 
     elif model_name.startswith("grok"):
-        return f"xai/{model_name}"
+        return f"x-ai/{model_name}"
+
+    elif model_name.startswith("llama"):
+        return f"meta-llama/{model_name}"
 
     else:
         raise ValueError(f"Unknown model vendor for: {model_name}")

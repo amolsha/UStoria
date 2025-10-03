@@ -8,6 +8,13 @@ Evaluate the following user story against these individual-level QUS criteria:
 User story:
 "{story}"
 
+INSTRUCTIONS:
+- If multiple criteria are provided, evaluate the story against all of them.
+- If ONLY ONE criterion is provided, then evaluate ONLY that criterion. 
+  Do not mention or add other criteria in the output.
+- For each criterion, return PASS/FAIL and a one-sentence justification (why it fails or why it passes).
+- If the story fails a criterion, propose a concise repair (a single improved user story) that addresses that criterion.
+
 Return ONLY a JSON object with the following structure:
 {{
   "story": "<original story>",
@@ -20,7 +27,7 @@ Return ONLY a JSON object with the following structure:
      ...
   }}
 }}
-Do not add any extra commentary.
+Do not add any extra commentary.Use short sentences in reasons and repairs.
 """
 
 # Rich prompt: with examples
@@ -41,8 +48,12 @@ Guidelines:
 User story:
 "{story}"
 
-For each criterion, return PASS/FAIL and a one-sentence justification (why it fails or why it passes).
-If a criterion fails, propose a concise repair (a single improved user story) that addresses that criterion.
+INSTRUCTIONS:
+- If multiple criteria are provided, evaluate the story against all of them.
+- If ONLY ONE criterion is provided, then evaluate ONLY that criterion. 
+  Do not mention or add other criteria in the output.
+- For each criterion, return PASS/FAIL and a one-sentence justification (why it fails or why it passes).
+- If the story fails a criterion, propose a concise repair (a single improved user story) that addresses that criterion.
 
 Return ONLY valid JSON following this shape:
 {{

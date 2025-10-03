@@ -1,0 +1,726 @@
+Response (by criterion)::::::
+{
+  "story": "Order status updates should be provided to users.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard user story format including a user role, desired action, and benefit."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a customer, I want to receive order status updates so that I can track my purchase progress."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Discount code application should be allowed for purchases.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the standard structure of 'As a [user], I want [feature] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a customer, I want to apply a discount code to my purchase so that I can reduce the total cost."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "User account creation functionality is required.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard 'As a [user], I want [goal] so that [benefit]' format."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a new user, I want to create an account so that I can access the application."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a manager, I want to approve employee leave requests.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the 'so that' clause to explain the benefit or reason."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a manager, I want to approve employee leave requests so that employees can take approved time off."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a music listener, I want to create playlists, so that I can organize my music.",
+  "criteria": {
+    "Well-formed": {
+      "pass": true,
+      "reason": "The user story follows the standard format of role, goal, and benefit."
+    }
+  },
+  "repairs": {}
+}
+Response (by criterion)::::::
+{
+  "story": "As a customer, I want to cancel my order.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story follows the basic 'As a... I want...' format but lacks the 'so that...' clause to specify the benefit or reason."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a customer, I want to cancel my order so that I can avoid unwanted charges."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Order history display should be available to users.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard 'As a [user], I want [feature] so that [benefit]' format."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a user, I want to view my order history so that I can track past purchases."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Account balance display is required.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard user story format of 'As a [user], I want [feature] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a user, I want to view my account balance so that I can monitor my finances."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Assignment submission assistance should be offered.",
+  "criteria": {
+    "Well-formed": { "pass": false, "reason": "The user story lacks the standard 'As a [user], I want [feature] so that [benefit]' format." }
+  },
+  "repairs": {
+    "Well-formed": "As a student, I want assistance with assignment submission so that I can complete submissions efficiently."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Login issues should be fixed for users.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard user story format of 'As a [user], I want [goal] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a user, I want to resolve login issues so that I can access my account securely."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Playlist shuffling feature is needed.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard user story structure of 'As a [user], I want [goal] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a music listener, I want to shuffle my playlist so that I can enjoy songs in random order."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a writer, I want to publish my articles online, so that I can reach a wider audience.",
+  "criteria": {
+    "Well-formed": {
+      "pass": true,
+      "reason": "The story follows the standard format of 'As a [role], I want [goal] so that [benefit]'."
+    }
+  },
+  "repairs": {}
+}
+Response (by criterion)::::::
+{
+  "story": "Prescription refill request option must be provided.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard user story format of 'As a [user], I want [feature] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a patient, I want an option to request a prescription refill so that I can easily renew my medication."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a music listener, I want to discover new music, so that I can expand my taste.",
+  "criteria": {
+    "Well-formed": {
+      "pass": true,
+      "reason": "The story follows the standard user story format including role, goal, and benefit."
+    }
+  },
+  "repairs": {}
+}
+Response (by criterion)::::::
+{
+  "story": "Immediate leave request approval should be allowed.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard user story format of 'As a [user], I want [goal] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a manager, I want to approve leave requests immediately so that employees receive quick confirmations."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Video editing tools must be included.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard user story format of 'As a [user], I want [feature] so that [benefit]' and reads like a non-specific requirement."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a video creator, I want video editing tools included so that I can edit my videos efficiently."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a manager, I want to view team performance metrics.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the 'so that' clause, which provides the benefit or reason for the feature."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a manager, I want to view team performance metrics so that I can make informed decisions about team improvements."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Assignment submission help should be available.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard user story format of 'As a [user], I want [feature] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a student, I want help available for assignment submission so that I can submit assignments correctly."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a restaurant customer, I want to order food online, so that I can have it delivered.",
+  "criteria": {
+    "Well-formed": {
+      "pass": true,
+      "reason": "The story follows the standard user story format with a clear role, goal, and benefit."
+    }
+  },
+  "repairs": {}
+}
+Response (by criterion)::::::
+{
+  "story": "Sound recording capability is required.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story does not follow the standard user story format of 'As a [role], I want [goal] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a user, I want sound recording capability so that I can capture audio."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Resume upload functionality is required.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard format of 'As a <user>, I want <feature> so that <benefit>'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a job applicant, I want to upload my resume so that I can apply for positions."
+  }
+}
+Response (by criterion)::::::
+{"story":"Coupon code issues should be resolved.","criteria":{"Well-formed":{"pass":false,"reason":"The story does not follow the standard user story format of 'As a [user], I want [goal] so that [benefit]' and is vague without specifying an actor or purpose."}},"repairs":{"Well-formed":"As a customer, I want to resolve coupon code issues so that I can successfully apply discounts during checkout."}}
+Response (by criterion)::::::
+{
+  "story": "Coupon application should be allowed for purchases.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard 'As a [user], I want [feature] so that [benefit]' format, making it imperative rather than user-centric."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a customer, I want to apply coupons to my purchases so that I can receive discounts."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Online courses must be accessible.",
+  "criteria": {
+    "Well-formed": { "pass": false, "reason": "The story lacks the standard user story format including a user role, a specific goal, and a benefit." }
+  },
+  "repairs": {
+    "Well-formed": "As a learner, I want online courses to be accessible so that I can participate regardless of my abilities."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a customer, I want to view my order history.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story follows the basic 'As a... I want...' format but lacks the 'so that...' clause to explain the benefit or reason."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a customer, I want to view my order history so that I can track my past purchases."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a shopper, I want to read product reviews.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the 'so that' clause to explain the benefit or reason."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a shopper, I want to read product reviews so that I can make informed purchasing decisions."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a user, I want to log in with my email and password.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story follows the basic 'As a... I want...' format but lacks the 'so that...' clause to explain the benefit."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a user, I want to log in with my email and password so that I can access my account."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a shopper, I want to compare product prices, so that I can find the best value.",
+  "criteria": {
+    "Well-formed": {
+      "pass": true,
+      "reason": "The user story follows the standard 'As a [user], I want [goal] so that [benefit]' format."
+    }
+  },
+  "repairs": {}
+}
+Response (by criterion)::::::
+{
+  "story": "Game pausing feature is needed.",
+  "criteria": {
+    "Well-formed": { "pass": false, "reason": "The story lacks the standard user story format of 'As a [user], I want [feature] so that [benefit]'." }
+  },
+  "repairs": {
+    "Well-formed": "As a player, I want to pause the game so that I can take a break without losing my progress."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a customer, I want to track my order status.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story follows the 'As a... I want...' structure but lacks the 'so that...' clause to specify the benefit."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a customer, I want to track my order status so that I can know when it will arrive."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Discount codes should be applicable to orders.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard 'As a [user], I want [feature] so that [benefit]' format, making it incomplete as a user story."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a customer, I want to apply discount codes to my orders so that I can reduce the total cost."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Music playlist creation feature is necessary.",
+  "criteria": {
+    "Well-formed": { "pass": false, "reason": "The user story lacks the standard 'As a [user], I want [goal] so that [benefit]' structure." }
+  },
+  "repairs": {
+    "Well-formed": "As a music enthusiast, I want to create playlists so that I can organize and share my favorite songs."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Food ordering service must be provided.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story is not in the standard user story format of 'As a [role], I want [goal] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a customer, I want to order food so that I can receive delivery."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a writer, I want to save my drafts, so that I don't lose my work.",
+  "criteria": {
+    "Well-formed": {
+      "pass": true,
+      "reason": "The story follows the standard format of 'As a [role], I want [goal] so that [benefit]'."
+    }
+  },
+  "repairs": {}
+}
+Response (by criterion)::::::
+{
+  "story": "A feature to view previous orders is necessary.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard user story format of 'As a [user], I want [feature] so that [benefit]' and reads as a generic requirement."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a customer, I want to view my previous orders so that I can track my purchase history."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "User following functionality is required.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story does not follow the standard user story format of 'As a [user], I want [goal] so that [benefit]' and lacks clarity on who, what, and why."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a user, I want to follow other users so that I can receive their updates in my feed."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a student, I want to access my attendance record.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the 'so that' clause explaining the benefit or reason."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a student, I want to access my attendance record so that I can track my class participation."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "A login issue resolution mechanism is required.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the standard structure specifying a user role, desired functionality, and benefit."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a user, I want a login issue resolution mechanism so that I can access my account when problems arise."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a musician, I want to record my music, so that I can share it with others.",
+  "criteria": {
+    "Well-formed": {
+      "pass": true,
+      "reason": "The story follows the standard format of 'As a [role], I want [goal] so that [benefit]' clearly and concisely."
+    }
+  },
+  "repairs": {}
+}
+Response (by criterion)::::::
+{
+  "story": "Job application functionality is essential.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard format of 'As a [user], I want [feature] so that [benefit]' and is merely a declarative statement."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a job seeker, I want to apply for jobs online so that I can submit applications efficiently."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Assignment submission assistance should be provided.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story does not follow the standard user story format of 'As a [user], I want [feature] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a student, I want assistance with assignment submission so that I can complete submissions accurately and on time."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a manager, I want to manage team schedules.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the 'so that' clause, which explains the benefit or reason for the feature."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a manager, I want to manage team schedules so that I can ensure efficient resource allocation and avoid conflicts."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Unsubmitted assignments should be reminded to users.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story does not follow the standard user story format of 'As a [role], I want [feature] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a student, I want reminders for unsubmitted assignments so that I can complete them on time."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Denied leave requests should be notified to users.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard 'As a [user], I want [feature] so that [benefit]' structure."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As an employee, I want to be notified when my leave request is denied so that I can take appropriate action."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a user, I want to log out.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story follows the 'As a... I want...' format but lacks the 'so that...' clause to explain the benefit."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a user, I want to log out so that I can end my session securely."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a student, I want to view my grades.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the 'so that' clause, which specifies the benefit or reason for the feature."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a student, I want to view my grades so that I can track my academic progress."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a student, I want to submit a quiz.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the 'so that' clause, making it incomplete for the standard format."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a student, I want to submit a quiz so that I can complete my assignment and receive a grade."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a gamer, I want to play multiplayer games, so that I can compete with others.",
+  "criteria": {
+    "Well-formed": {
+      "pass": true,
+      "reason": "The user story adheres to the standard format of 'As a [role], I want [feature] so that [benefit]'."
+    }
+  },
+  "repairs": {}
+}
+Response (by criterion)::::::
+{
+  "story": "As a manager, I want to approve expenses.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the 'so that' clause, which explains the benefit or reason for the feature."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a manager, I want to approve expenses so that I can ensure they align with budget guidelines."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a patient, I want to access my medical records online, so that I can stay informed.",
+  "criteria": {
+    "Well-formed": {
+      "pass": true,
+      "reason": "The story follows the standard format of 'As a [role], I want [goal] so that [benefit]'."
+    }
+  },
+  "repairs": {}
+}
+Response (by criterion)::::::
+{
+  "story": "System should provide efficient search capabilities.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the standard structure of 'As a <role>, I want <feature> so that <benefit>'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a user, I want efficient search capabilities so that I can quickly find relevant information."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Quick assignment submission should be enabled.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard user story format including a user role, goal, and benefit."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a student, I want to enable quick assignment submission so that I can submit work efficiently."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Money transfer capability is essential.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard user story format of 'As a [user], I want [feature] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a user, I want to transfer money so that I can send funds to others."
+  }
+}
+Response (by criterion)::::::
+{"story":"As a user, I want to customize my dashboard.","criteria":{"Well-formed":{"pass":false,"reason":"The user story follows the basic 'As a... I want...' format but lacks the 'so that...' clause to specify the benefit or reason."}},"repairs":{"Well-formed":"As a user, I want to customize my dashboard so that I can organize information to suit my preferences."}}
+Response (by criterion)::::::
+{
+  "story": "As a customer, I want to view my loyalty points.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the 'so that' clause to explain the benefit or reason."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a customer, I want to view my loyalty points so that I can track my rewards."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Leave request status updates should be provided to users.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the standard user story format of 'As a [user], I want [feature] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a user, I want to receive status updates on my leave requests so that I can stay informed about their progress."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "Leave request approval or denial should be enabled for users.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the standard format of 'As a [user], I want [feature] so that [benefit]'."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a manager, I want to approve or deny leave requests so that I can manage team schedules effectively."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a video editor, I want to export my videos in different formats, so that I can share them on different platforms.",
+  "criteria": {
+    "Well-formed": {
+      "pass": true,
+      "reason": "The story follows the standard 'As a [user], I want [feature] so that [benefit]' format clearly and completely."
+    }
+  },
+  "repairs": {}
+}
+Response (by criterion)::::::
+{
+  "story": "As a shopper, I want to apply a coupon code.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The story lacks the 'so that' clause to explain the benefit or reason."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a shopper, I want to apply a coupon code so that I can receive a discount on my purchase."
+  }
+}
+Response (by criterion)::::::
+{
+  "story": "As a shopper, I want to apply multiple coupons.",
+  "criteria": {
+    "Well-formed": {
+      "pass": false,
+      "reason": "The user story lacks the 'so that' clause explaining the benefit or reason for the feature."
+    }
+  },
+  "repairs": {
+    "Well-formed": "As a shopper, I want to apply multiple coupons so that I can maximize savings on my purchase."
+  }
+}

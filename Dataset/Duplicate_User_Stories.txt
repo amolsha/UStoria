@@ -1,0 +1,348 @@
+As a bank customer, I want to check my account balance, so I can monitor my finances.	2
+As a bank customer, I want to transfer money, so I can pay bills.	2
+As a customer, I want to cancel my order within 48 hours, so that I can avoid unwanted purchases.	2
+As a customer, I want to cancel my order, so that I can avoid unwanted purchases.	2
+As a customer, I want to cancel my order.	3
+As a customer, I want to get notified about new products, so that I can stay updated.	2
+As a customer, I want to get notified about order status updates, so that I can stay updated.	2
+As a customer, I want to place an order and track its shipping, so that I can get my products quickly.	2
+As a customer, I want to return a product.	2
+As a customer, I want to track my order status, so that I can stay updated.	2
+As a customer, I want to track my order status.	2
+As a customer, I want to track my shipping.	3
+As a customer, I want to update my address and phone number, so that I can receive my orders and get notifications.	2
+As a customer, I want to update my address with a maximum of 5 attempts, so that I can receive my orders.	2
+As a customer, I want to update my address, so that I can receive my orders.	2
+As a customer, I want to use loyalty points, so that I can redeem rewards.	2
+As a customer, I want to view my loyalty points balance, so that I can track my rewards.	2
+As a customer, I want to view my loyalty points.	2
+As a customer, I want to view my order history using a dashboard.	2
+As a customer, I want to view my order history with details of date, product, and total cost, so that I can track my purchases.	2
+As a customer, I want to view my order history, so that I can track my purchases.	2
+As a customer, I want to view my order history.	2
+As a gamer, I want to start a new game, so that I can play.	2
+As a job seeker, I want to upload my resume, so I can apply for jobs.	2
+As a manager, I want to approve employee leave requests and manage team workload, so that I can ensure project completion.	2
+As a manager, I want to approve employee leave requests, so that I can manage team availability.	2
+As a manager, I want to approve employee leave requests.	2
+As a manager, I want to approve expenses.	3
+As a manager, I want to assign project roles, so that I can define team responsibilities.	2
+As a manager, I want to assign tasks and manage project timelines, so that I can manage project workflow and ensure timely completion.	2
+As a manager, I want to assign tasks to team members with a deadline of 5 days, so that I can manage project workflow.	2
+As a manager, I want to assign tasks to team members.	2
+As a manager, I want to assign tasks, so that I can manage project workflow.	2
+As a manager, I want to conduct performance reviews, so that I can evaluate team members.	2
+As a manager, I want to generate reports with a maximum of 20 pages, so that I can analyze team performance.	2
+As a manager, I want to generate reports, so that I can analyze team performance.	2
+As a manager, I want to have a team calendar, so that I can manage team schedules.	2
+As a manager, I want to make my team more efficient, so that we can complete projects quickly.	2
+As a manager, I want to manage project timelines, so that I can ensure timely completion.	2
+As a manager, I want to manage team permissions using an access control system.	2
+As a manager, I want to manage team permissions.	3
+As a manager, I want to manage team schedules with a maximum of 10 employees, so that I can manage team availability.	2
+As a manager, I want to manage team schedules.	3
+As a manager, I want to view team performance metrics.	2
+As a music listener, I want to create playlists, so that I can organize my music.	2
+As a music listener, I want to shuffle songs, so that I can listen randomly.	2
+As a patient, I want to request a prescription refill, so I can continue my medication.	2
+As a shopper, I want to add items to my cart with a maximum quantity of 10, so that I can purchase them.	2
+As a shopper, I want to add items to my cart, so that I can purchase them.	2
+As a shopper, I want to apply a coupon code with a validity period of 1 week, so that I can get a discount.	2
+As a shopper, I want to apply a coupon code, so that I can get a discount.	2
+As a shopper, I want to apply a coupon code.	2
+As a shopper, I want to apply coupon codes with a maximum of 5 uses, so that I can get discounts.	2
+As a shopper, I want to apply multiple coupons.	3
+As a shopper, I want to find great deals, so that I can save money.	2
+As a shopper, I want to get product recommendations, so that I can discover new items.	2
+As a shopper, I want to have a wishlist, so that I can save products for later.	2
+As a shopper, I want to leave product reviews, so that I can share my experience.	2
+As a shopper, I want to read product reviews.	2
+As a shopper, I want to use guest checkout with a maximum of 5 attempts, so that I can make a quick purchase.	2
+As a shopper, I want to use guest checkout, so that I can make a quick purchase.	2
+As a shopper, I want to use multiple payment methods.	3
+As a shopper, I want to use price filters, so that I can find products within my budget.	2
+As a shopper, I want to view my shopping cart using a cart summary.	2
+As a shopper, I want to view my shopping cart.	3
+As a shopper, I want to view product details.	2
+As a student, I want to access course materials using a learning management system.	2
+As a student, I want to access course materials with a maximum of 5 downloads, so that I can study.	2
+As a student, I want to access course materials.	3
+As a student, I want to access my attendance record.	2
+As a student, I want to attend a virtual class, so that I can learn remotely.	2
+As a student, I want to do well in my course, so that I can succeed.	2
+As a student, I want to download course materials, so that I can study offline.	2
+As a student, I want to have access to course materials, so that I can study.	2
+As a student, I want to participate in discussions with a maximum of 1000 characters, so that I can engage with peers.	2
+As a student, I want to participate in discussions, so that I can engage with peers.	2
+As a student, I want to participate in online discussions.	2
+As a student, I want to submit a quiz.	3
+As a student, I want to submit an assignment.	2
+As a student, I want to submit my assignment with a maximum file size of 10MB, so that I can get feedback.	2
+As a student, I want to submit my assignment, so that I can get feedback.	2
+As a student, I want to submit my assignment.	2
+As a student, I want to take quizzes, so that I can assess my knowledge.	2
+As a student, I want to view my grades with a detailed breakdown of scores, so that I can track my progress.	3
+As a student, I want to view my grades, so I can track my progress.	2
+As a student, I want to view my grades, so that I can track my progress.	3
+As a student, I want to view my grades.	4
+As a traveler, I want to book a hotel, so I have a place to stay.	2
+As a user, I want to access customer support, so that I can get help.	2
+As a user, I want to customize my dashboard with a maximum of 5 widgets, so that I can personalize my view.	2
+As a user, I want to customize my dashboard, so that I can personalize my view.	2
+As a user, I want to customize my dashboard.	3
+As a user, I want to edit my profile, so that I can update my information.	2
+As a user, I want to enable two-factor authentication with a QR code, so that I can enhance security.	3
+As a user, I want to enable two-factor authentication, so that I can enhance security.	2
+As a user, I want to enable two-factor authentication.	2
+As a user, I want to log in with my email and password.	2
+As a user, I want to log in, so that I can access my account.	2
+As a user, I want to log out.	3
+As a user, I want to reset my password with a minimum of 12 characters, so that I can regain access.	2
+As a user, I want to reset my password, so I can regain access to my account.	2
+As a user, I want to reset my password, so that I can regain access.	3
+As a user, I want to reset my password.	3
+As a user, I want to update my profile information using a profile editor.	2
+As a user, I want to update my profile information.	2
+As a video editor, I want to add text, so that I can provide information.	2
+Reset password.	2
+Submit assignment.	2
+View grades.	2
+
+********************************************************************************************************
+180	As a bank customer, I want to check my account balance, so I can monitor my finances.
+252	As a bank customer, I want to check my account balance, so I can monitor my finances.
+229	As a bank customer, I want to transfer money, so I can pay bills.
+289	As a bank customer, I want to transfer money, so I can pay bills.
+175	As a customer, I want to cancel my order within 48 hours, so that I can avoid unwanted purchases.
+542	As a customer, I want to cancel my order within 48 hours, so that I can avoid unwanted purchases.
+315	As a customer, I want to cancel my order, so that I can avoid unwanted purchases.
+949	As a customer, I want to cancel my order, so that I can avoid unwanted purchases.
+6	As a customer, I want to cancel my order.
+647	As a customer, I want to cancel my order.
+781	As a customer, I want to cancel my order.
+160	As a customer, I want to get notified about new products, so that I can stay updated.
+170	As a customer, I want to get notified about new products, so that I can stay updated.
+227	As a customer, I want to get notified about order status updates, so that I can stay updated.
+487	As a customer, I want to get notified about order status updates, so that I can stay updated.
+884	As a customer, I want to place an order and track its shipping, so that I can get my products quickly.
+919	As a customer, I want to place an order and track its shipping, so that I can get my products quickly.
+76	As a customer, I want to return a product.
+684	As a customer, I want to return a product.
+275	As a customer, I want to track my order status, so that I can stay updated.
+903	As a customer, I want to track my order status, so that I can stay updated.
+30	As a customer, I want to track my order status.
+602	As a customer, I want to track my order status.
+103	As a customer, I want to track my shipping.
+624	As a customer, I want to track my shipping.
+721	As a customer, I want to track my shipping.
+857	As a customer, I want to update my address and phone number, so that I can receive my orders and get notifications.
+929	As a customer, I want to update my address and phone number, so that I can receive my orders and get notifications.
+154	As a customer, I want to update my address with a maximum of 5 attempts, so that I can receive my orders.
+501	As a customer, I want to update my address with a maximum of 5 attempts, so that I can receive my orders.
+281	As a customer, I want to update my address, so that I can receive my orders.
+911	As a customer, I want to update my address, so that I can receive my orders.
+292	As a customer, I want to use loyalty points, so that I can redeem rewards.
+883	As a customer, I want to use loyalty points, so that I can redeem rewards.
+273	As a customer, I want to view my loyalty points balance, so that I can track my rewards.
+841	As a customer, I want to view my loyalty points balance, so that I can track my rewards.
+55	As a customer, I want to view my loyalty points.
+631	As a customer, I want to view my loyalty points.
+443	As a customer, I want to view my order history using a dashboard.
+473	As a customer, I want to view my order history using a dashboard.
+205	As a customer, I want to view my order history with details of date, product, and total cost, so that I can track my purchases.
+547	As a customer, I want to view my order history with details of date, product, and total cost, so that I can track my purchases.
+251	As a customer, I want to view my order history, so that I can track my purchases.
+908	As a customer, I want to view my order history, so that I can track my purchases.
+25	As a customer, I want to view my order history.
+625	As a customer, I want to view my order history.
+390	As a gamer, I want to start a new game, so that I can play.
+809	As a gamer, I want to start a new game, so that I can play.
+216	As a job seeker, I want to upload my resume, so I can apply for jobs.
+329	As a job seeker, I want to upload my resume, so I can apply for jobs.
+854	As a manager, I want to approve employee leave requests and manage team workload, so that I can ensure project completion.
+860	As a manager, I want to approve employee leave requests and manage team workload, so that I can ensure project completion.
+330	As a manager, I want to approve employee leave requests, so that I can manage team availability.
+916	As a manager, I want to approve employee leave requests, so that I can manage team availability.
+4	As a manager, I want to approve employee leave requests.
+642	As a manager, I want to approve employee leave requests.
+49	As a manager, I want to approve expenses.
+659	As a manager, I want to approve expenses.
+740	As a manager, I want to approve expenses.
+277	As a manager, I want to assign project roles, so that I can define team responsibilities.
+955	As a manager, I want to assign project roles, so that I can define team responsibilities.
+868	As a manager, I want to assign tasks and manage project timelines, so that I can manage project workflow and ensure timely completion.
+958	As a manager, I want to assign tasks and manage project timelines, so that I can manage project workflow and ensure timely completion.
+182	As a manager, I want to assign tasks to team members with a deadline of 5 days, so that I can manage project workflow.
+516	As a manager, I want to assign tasks to team members with a deadline of 5 days, so that I can manage project workflow.
+67	As a manager, I want to assign tasks to team members.
+635	As a manager, I want to assign tasks to team members.
+297	As a manager, I want to assign tasks, so that I can manage project workflow.
+947	As a manager, I want to assign tasks, so that I can manage project workflow.
+351	As a manager, I want to conduct performance reviews, so that I can evaluate team members.
+874	As a manager, I want to conduct performance reviews, so that I can evaluate team members.
+217	As a manager, I want to generate reports with a maximum of 20 pages, so that I can analyze team performance.
+490	As a manager, I want to generate reports with a maximum of 20 pages, so that I can analyze team performance.
+262	As a manager, I want to generate reports, so that I can analyze team performance.
+898	As a manager, I want to generate reports, so that I can analyze team performance.
+188	As a manager, I want to have a team calendar, so that I can manage team schedules.
+190	As a manager, I want to have a team calendar, so that I can manage team schedules.
+138	As a manager, I want to make my team more efficient, so that we can complete projects quickly.
+200	As a manager, I want to make my team more efficient, so that we can complete projects quickly.
+321	As a manager, I want to manage project timelines, so that I can ensure timely completion.
+889	As a manager, I want to manage project timelines, so that I can ensure timely completion.
+397	As a manager, I want to manage team permissions using an access control system.
+416	As a manager, I want to manage team permissions using an access control system.
+77	As a manager, I want to manage team permissions.
+643	As a manager, I want to manage team permissions.
+741	As a manager, I want to manage team permissions.
+240	As a manager, I want to manage team schedules with a maximum of 10 employees, so that I can manage team availability.
+577	As a manager, I want to manage team schedules with a maximum of 10 employees, so that I can manage team availability.
+42	As a manager, I want to manage team schedules.
+700	As a manager, I want to manage team schedules.
+773	As a manager, I want to manage team schedules.
+17	As a manager, I want to view team performance metrics.
+693	As a manager, I want to view team performance metrics.
+5	As a music listener, I want to create playlists, so that I can organize my music.
+464	As a music listener, I want to create playlists, so that I can organize my music.
+477	As a music listener, I want to shuffle songs, so that I can listen randomly.
+812	As a music listener, I want to shuffle songs, so that I can listen randomly.
+151	As a patient, I want to request a prescription refill, so I can continue my medication.
+293	As a patient, I want to request a prescription refill, so I can continue my medication.
+206	As a shopper, I want to add items to my cart with a maximum quantity of 10, so that I can purchase them.
+485	As a shopper, I want to add items to my cart with a maximum quantity of 10, so that I can purchase them.
+272	As a shopper, I want to add items to my cart, so that I can purchase them.
+899	As a shopper, I want to add items to my cart, so that I can purchase them.
+210	As a shopper, I want to apply a coupon code with a validity period of 1 week, so that I can get a discount.
+494	As a shopper, I want to apply a coupon code with a validity period of 1 week, so that I can get a discount.
+291	As a shopper, I want to apply a coupon code, so that I can get a discount.
+901	As a shopper, I want to apply a coupon code, so that I can get a discount.
+59	As a shopper, I want to apply a coupon code.
+720	As a shopper, I want to apply a coupon code.
+137	As a shopper, I want to apply coupon codes with a maximum of 5 uses, so that I can get discounts.
+549	As a shopper, I want to apply coupon codes with a maximum of 5 uses, so that I can get discounts.
+60	As a shopper, I want to apply multiple coupons.
+692	As a shopper, I want to apply multiple coupons.
+745	As a shopper, I want to apply multiple coupons.
+147	As a shopper, I want to find great deals, so that I can save money.
+168	As a shopper, I want to find great deals, so that I can save money.
+241	As a shopper, I want to get product recommendations, so that I can discover new items.
+917	As a shopper, I want to get product recommendations, so that I can discover new items.
+214	As a shopper, I want to have a wishlist, so that I can save products for later.
+221	As a shopper, I want to have a wishlist, so that I can save products for later.
+284	As a shopper, I want to leave product reviews, so that I can share my experience.
+940	As a shopper, I want to leave product reviews, so that I can share my experience.
+26	As a shopper, I want to read product reviews.
+632	As a shopper, I want to read product reviews.
+219	As a shopper, I want to use guest checkout with a maximum of 5 attempts, so that I can make a quick purchase.
+567	As a shopper, I want to use guest checkout with a maximum of 5 attempts, so that I can make a quick purchase.
+285	As a shopper, I want to use guest checkout, so that I can make a quick purchase.
+871	As a shopper, I want to use guest checkout, so that I can make a quick purchase.
+101	As a shopper, I want to use multiple payment methods.
+617	As a shopper, I want to use multiple payment methods.
+744	As a shopper, I want to use multiple payment methods.
+346	As a shopper, I want to use price filters, so that I can find products within my budget.
+851	As a shopper, I want to use price filters, so that I can find products within my budget.
+431	As a shopper, I want to view my shopping cart using a cart summary.
+442	As a shopper, I want to view my shopping cart using a cart summary.
+120	As a shopper, I want to view my shopping cart.
+657	As a shopper, I want to view my shopping cart.
+811	As a shopper, I want to view my shopping cart.
+65	As a shopper, I want to view product details.
+679	As a shopper, I want to view product details.
+454	As a student, I want to access course materials using a learning management system.
+459	As a student, I want to access course materials using a learning management system.
+184	As a student, I want to access course materials with a maximum of 5 downloads, so that I can study.
+544	As a student, I want to access course materials with a maximum of 5 downloads, so that I can study.
+82	As a student, I want to access course materials.
+612	As a student, I want to access course materials.
+729	As a student, I want to access course materials.
+37	As a student, I want to access my attendance record.
+717	As a student, I want to access my attendance record.
+259	As a student, I want to attend a virtual class, so that I can learn remotely.
+844	As a student, I want to attend a virtual class, so that I can learn remotely.
+191	As a student, I want to do well in my course, so that I can succeed.
+220	As a student, I want to do well in my course, so that I can succeed.
+348	As a student, I want to download course materials, so that I can study offline.
+890	As a student, I want to download course materials, so that I can study offline.
+133	As a student, I want to have access to course materials, so that I can study.
+141	As a student, I want to have access to course materials, so that I can study.
+158	As a student, I want to participate in discussions with a maximum of 1000 characters, so that I can engage with peers.
+583	As a student, I want to participate in discussions with a maximum of 1000 characters, so that I can engage with peers.
+318	As a student, I want to participate in discussions, so that I can engage with peers.
+952	As a student, I want to participate in discussions, so that I can engage with peers.
+111	As a student, I want to participate in online discussions.
+686	As a student, I want to participate in online discussions.
+47	As a student, I want to submit a quiz.
+695	As a student, I want to submit a quiz.
+757	As a student, I want to submit a quiz.
+828	As a student, I want to submit an assignment.
+918	As a student, I want to submit an assignment.
+187	As a student, I want to submit my assignment with a maximum file size of 10MB, so that I can get feedback.
+563	As a student, I want to submit my assignment with a maximum file size of 10MB, so that I can get feedback.
+282	As a student, I want to submit my assignment, so that I can get feedback.
+957	As a student, I want to submit my assignment, so that I can get feedback.
+69	As a student, I want to submit my assignment.
+610	As a student, I want to submit my assignment.
+258	As a student, I want to take quizzes, so that I can assess my knowledge.
+936	As a student, I want to take quizzes, so that I can assess my knowledge.
+143	As a student, I want to view my grades with a detailed breakdown of scores, so that I can track my progress.
+233	As a student, I want to view my grades with a detailed breakdown of scores, so that I can track my progress.
+553	As a student, I want to view my grades with a detailed breakdown of scores, so that I can track my progress.
+194	As a student, I want to view my grades, so I can track my progress.
+294	As a student, I want to view my grades, so I can track my progress.
+349	As a student, I want to view my grades, so that I can track my progress.
+371	As a student, I want to view my grades, so that I can track my progress.
+937	As a student, I want to view my grades, so that I can track my progress.
+46	As a student, I want to view my grades.
+713	As a student, I want to view my grades.
+800	As a student, I want to view my grades.
+842	As a student, I want to view my grades.
+149	As a traveler, I want to book a hotel, so I have a place to stay.
+268	As a traveler, I want to book a hotel, so I have a place to stay.
+243	As a user, I want to access customer support, so that I can get help.
+861	As a user, I want to access customer support, so that I can get help.
+186	As a user, I want to customize my dashboard with a maximum of 5 widgets, so that I can personalize my view.
+543	As a user, I want to customize my dashboard with a maximum of 5 widgets, so that I can personalize my view.
+271	As a user, I want to customize my dashboard, so that I can personalize my view.
+881	As a user, I want to customize my dashboard, so that I can personalize my view.
+54	As a user, I want to customize my dashboard.
+658	As a user, I want to customize my dashboard.
+810	As a user, I want to customize my dashboard.
+341	As a user, I want to edit my profile, so that I can update my information.
+941	As a user, I want to edit my profile, so that I can update my information.
+122	As a user, I want to enable two-factor authentication with a QR code, so that I can enhance security.
+215	As a user, I want to enable two-factor authentication with a QR code, so that I can enhance security.
+554	As a user, I want to enable two-factor authentication with a QR code, so that I can enhance security.
+286	As a user, I want to enable two-factor authentication, so that I can enhance security.
+885	As a user, I want to enable two-factor authentication, so that I can enhance security.
+89	As a user, I want to enable two-factor authentication.
+705	As a user, I want to enable two-factor authentication.
+27	As a user, I want to log in with my email and password.
+715	As a user, I want to log in with my email and password.
+317	As a user, I want to log in, so that I can access my account.
+892	As a user, I want to log in, so that I can access my account.
+45	As a user, I want to log out.
+664	As a user, I want to log out.
+724	As a user, I want to log out.
+164	As a user, I want to reset my password with a minimum of 12 characters, so that I can regain access.
+532	As a user, I want to reset my password with a minimum of 12 characters, so that I can regain access.
+166	As a user, I want to reset my password, so I can regain access to my account.
+269	As a user, I want to reset my password, so I can regain access to my account.
+260	As a user, I want to reset my password, so that I can regain access.
+767	As a user, I want to reset my password, so that I can regain access.
+923	As a user, I want to reset my password, so that I can regain access.
+79	As a user, I want to reset my password.
+628	As a user, I want to reset my password.
+813	As a user, I want to reset my password.
+399	As a user, I want to update my profile information using a profile editor.
+471	As a user, I want to update my profile information using a profile editor.
+118	As a user, I want to update my profile information.
+666	As a user, I want to update my profile information.
+365	As a video editor, I want to add text, so that I can provide information.
+789	As a video editor, I want to add text, so that I can provide information.
+484	Reset password.
+581	Reset password.
+503	Submit assignment.
+597	Submit assignment.
+535	View grades.
+584	View grades.

@@ -1,0 +1,16 @@
+xAI: Grok 4 Fast (free)
+Anthropic: Claude Sonnet 4
+Google: Gemini 2.5 Flash
+DeepSeek: DeepSeek V3.1 (free)
+OpenAI: GPT-5 Mini
+OpenAI: GPT-4.1 Mini
+Meta: Llama 3.3 70B Instruct
+
+
+x-ai/grok-4-fast:free
+anthropic/claude-sonnet-4
+google/gemini-2.5-flash
+deepseek/deepseek-chat-v3.1:free
+openai/gpt-5-mini
+openai/gpt-4.1-mini
+meta-llama/llama-3.3-70b-instruct
