@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Commit. Date: 22092025. Time: 04:52PM. Place: Institute.">
-      <change afterPath="$PROJECT_DIR$/Dataset/Duplicate_User_Stories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/Evaluations/grok-4-fast-free_Batch-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Top_Models.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/import_gold_labels.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/performance_analysis.py" afterDir="false" />
+    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Added support of Open Router. Date: 28092025. Time: 09:09PM.">
       <change beforePath="$PROJECT_DIR$/.idea/UStoria.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UStoria.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/evaluations.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/evaluations.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure10_batch_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure10_batch_trend.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure1_passrate_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure1_passrate_bar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure2_radar.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure2_radar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure3_criterion_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure3_criterion_bar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure4_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure4_heatmap.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure7_wordcloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure7_wordcloud.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure9_boxplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure9_boxplot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/llm_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/llm_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/prompts.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/prompts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/evaluate.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/evaluate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/evaluate_by_criterion.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/evaluate_by_criterion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/import_gold_labels.py" beforeDir="false" afterPath="$PROJECT_DIR$/import_gold_labels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/performance_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "amolsharma-mit"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;amolsharma-mit&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/amolsharma-mit/UStoria.git",
-    "accountId": "eb86d945-71fc-4d09-96c7-23a4a92287ff"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/amolsharma-mit/UStoria.git&quot;,
+    &quot;accountId&quot;: &quot;5d969493-e86c-4276-ae52-83f4e8ec6068&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -66,11 +53,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Python.Open_Router_Credits_Checker.executor": "Run",
     "Python.app.executor": "Run",
     "Python.charts_gen_1.executor": "Run",
+    "Python.charts_gen_2.executor": "Run",
+    "Python.copy_stories_to_text_files.executor": "Run",
     "Python.import_gold_labels.executor": "Run",
     "Python.performance_analysis.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true"
   }
@@ -83,7 +74,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-884f5ed5d46b-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.22855.92" />
+        <option value="bundled-python-sdk-fc1d50d2d915-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.24978.54" />
       </set>
     </attachedChunks>
   </component>
@@ -96,6 +87,23 @@
       <option name="presentableId" value="Default" />
       <updated>1758269542586</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added support of evaluation by Gemini. Date: 27092025. Time: 09:48PM.">
+      <option name="closed" value="true" />
+      <created>1758989942993</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758989942993</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added support of Open Router. Date: 28092025. Time: 09:09PM.">
+      <option name="closed" value="true" />
+      <created>1759073958940</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1759073958940</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,5 +116,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added support of evaluation by Gemini. Date: 27092025. Time: 09:48PM." />
+    <MESSAGE value="Added support of Open Router. Date: 28092025. Time: 09:09PM." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added support of Open Router. Date: 28092025. Time: 09:09PM." />
   </component>
 </project>

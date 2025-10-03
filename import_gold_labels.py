@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 
 DB_PATH = "data\evaluations.db"
-EXCEL_PATH = "Results_Unambiguous_Criterion.xlsx"
+EXCEL_PATH = "Results_ProblemOriented_Criterion.xlsx"
 SHEET_NAME = "USs - Shuffled"
 
 def import_gold_labels(annotator="human1"):
