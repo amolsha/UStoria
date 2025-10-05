@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Added support of Open Router. Date: 28092025. Time: 09:09PM.">
-      <change beforePath="$PROJECT_DIR$/.idea/UStoria.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UStoria.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/evaluations.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/evaluations.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/import_gold_labels.py" beforeDir="false" afterPath="$PROJECT_DIR$/import_gold_labels.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/performance_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/performance_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Evaluated on Full Sentence and Problem Oriented. Date: 03102025. Time: 10:18PM." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759073958940</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Evaluated on Full Sentence and Problem Oriented. Date: 03102025. Time: 10:18PM.">
+      <option name="closed" value="true" />
+      <created>1759510129030</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1759510129030</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added support of evaluation by Gemini. Date: 27092025. Time: 09:48PM." />
     <MESSAGE value="Added support of Open Router. Date: 28092025. Time: 09:09PM." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added support of Open Router. Date: 28092025. Time: 09:09PM." />
+    <MESSAGE value="Evaluated on Full Sentence and Problem Oriented. Date: 03102025. Time: 10:18PM." />
+    <option name="LAST_COMMIT_MESSAGE" value="Evaluated on Full Sentence and Problem Oriented. Date: 03102025. Time: 10:18PM." />
   </component>
 </project>

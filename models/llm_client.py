@@ -9,8 +9,6 @@ client = OpenAI(
 )
 
 
-# model_mapper.py
-
 def format_llm_name(model_name: str) -> str:
     """
     Map a raw model name to the OpenRouter namespaced format.
