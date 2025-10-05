@@ -56,3 +56,38 @@ def complete(llm_name, prompt, temperature=0.7, max_tokens=1000):
         max_tokens=max_tokens,
     )
     return response.choices[0].message.content.strip()
+
+
+import asyncio
+import httpx
+
+# API_KEY = os.getenv("OPENAI_API_KEY")
+API_KEY = os.getenv("REQUESTY_API_KEY")
+async def async_complete(llm_name, prompt, temperature=0.7):
+    """
+    Async LLM completion using OpenRouter API.
+    """
+    llm_name = format_llm_name(llm_name)
+
+    headers = {
+        "Authorization": f"Bearer {API_KEY}",
+        "Content-Type": "application/json",
+    }
+    payload = {
+        "model": llm_name,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": temperature,
+    }
+
+    async with httpx.AsyncClient(timeout=60) as client:
+        resp = await client.post(
+            # "https://api.openai.com/v1/chat/completions",
+            "https://router.requesty.ai/v1/chat/completions",
+            headers=headers,
+            json=payload
+        )
+        resp.raise_for_status()
+        print(resp.json())
+        data = resp.json()
+        return data["choices"][0]["message"]["content"].strip()
+

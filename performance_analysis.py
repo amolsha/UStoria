@@ -21,9 +21,11 @@ def compute_metrics(db_path, run_id):
 
     # Join evaluations with human_evaluations for this run
     query = """
-    SELECT e.criterion, e.passed as model_passed, h.passed as gold_passed
+    SELECT e.criterion, e.passed AS model_passed, h.passed AS gold_passed
     FROM evaluations e
-    JOIN human_evaluations h ON e.id = h.evaluation_id
+    JOIN gold_labels h 
+      ON e.story_id = h.story_id 
+     AND e.criterion = h.criterion
     WHERE e.run_id = ?
     """
     rows = cur.execute(query, (run_id,)).fetchall()
@@ -79,7 +81,7 @@ def compute_metrics(db_path, run_id):
 
 if __name__ == "__main__":
     db_path = "data\evaluations.db"
-    run_id = 11
+    run_id = 1
 
     results = compute_metrics(db_path, run_id)
     if results:

@@ -2,33 +2,37 @@
 
 # Minimal prompt: only descriptions of criteria
 INDIVIDUAL_PROMPT_MINIMAL = """
-Evaluate the following user story against these individual-level QUS criteria:
+Evaluate the following user stories against these individual-level QUS criteria:
 {criteria_list}
 
-User story:
-"{story}"
+User stories:
+"{stories_list}"
 
 INSTRUCTIONS:
-- If multiple criteria are provided, evaluate the story against all of them.
-- If ONLY ONE criterion is provided, then evaluate ONLY that criterion. 
-  Do not mention or add other criteria in the output.
+- Evaluate each story against the provided criterion (if there is one criterion) or all provided criteria.
 - For each criterion, return PASS/FAIL and a one-sentence justification (why it fails or why it passes).
-- If the story fails a criterion, propose a concise repair (a single improved user story) that addresses that criterion.
-
-Return ONLY a JSON object with the following structure:
+- If a story fails a criterion, propose a concise repair (a single improved user story) that addresses that criterion.
+- Return ONLY a JSON array, where each element corresponds to one story.
+- Each element should have this structure:
 {{
-  "story": "<original story>",
-  "criteria": {{
-     "<CriterionName>": {{ "pass": true|false, "reason": "<short explanation>" }},
-     ...
-  }},
-  "repairs": {{
-     "<CriterionName>": "<suggested improved user story text>",
-     ...
-  }}
+    {{
+      "story_id": "<unique story ID>",
+      "story": "<original story text>",
+      "criteria": {{
+         "<CriterionName>": {{ "pass": true|false, "reason": "<short explanation>" }},
+         ...
+      }},
+      "repairs": {{
+         "<CriterionName>": "<suggested improved user story text>",
+         ...
+      }}
+    }}
+    ...
 }}
-Do not add any extra commentary.Use short sentences in reasons and repairs.
+Do not omit the "story_id" field. This will be used to map results in Python.
+Do not add extra commentary. Use short sentences in reasons and repairs.
 """
+
 
 # Rich prompt: with examples
 INDIVIDUAL_PROMPT_RICH = """
@@ -45,11 +49,11 @@ Guidelines:
 - Full sentence: grammatically correct. Example bad: "As user, password reset".
 - Estimable: specific enough for estimation. Example bad: "As a user, I want to update my profile".
 
-User story:
+User story/ User Stories:
 "{story}"
 
 INSTRUCTIONS:
-- If multiple criteria are provided, evaluate the story against all of them.
+- If multiple criteria are provided, evaluate each story against all of them.
 - If ONLY ONE criterion is provided, then evaluate ONLY that criterion. 
   Do not mention or add other criteria in the output.
 - For each criterion, return PASS/FAIL and a one-sentence justification (why it fails or why it passes).
