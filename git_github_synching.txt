@@ -1,0 +1,44 @@
+git checkout main
+git fetch origin
+git reset --hard origin/main
+git clean -fd
+
+
+### 🧹 The clean fix: “Force reset” your local branch to match GitHub
+
+This will **throw away** local commits/changes on your institute system and make it an exact copy of the remote (GitHub) repo.
+
+Here’s how 👇
+
+#### Step 1: Make sure you’re on the correct branch
+(e.g., `main` or `master` or whatever you use)
+git checkout main
+*(replace `main` with your actual branch name if different)*
+
+#### Step 2: Fetch the latest from GitHub
+git fetch origin
+
+#### Step 3: Force your local branch to match the remote
+git reset --hard origin/main
+This means:
+> “Reset my local `main` branch to be **exactly** the same as GitHub’s `main` branch.”
+
+
+### 🧾 Optional Step: Clean up untracked files
+If you had extra local files not tracked by Git, you can remove them too:
+git clean -fd
+
+---
+
+### ✅ After that:
+
+Your **institute system** repo will be **identical** to your GitHub (and laptop) copy.
+You can verify with:
+
+git status
+
+It should say:
+
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean
+

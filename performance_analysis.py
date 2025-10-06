@@ -81,7 +81,7 @@ def compute_metrics(db_path, run_id):
 
 if __name__ == "__main__":
     db_path = "data\evaluations.db"
-    run_id = 1
+    run_id = 37
 
     results = compute_metrics(db_path, run_id)
     if results:
