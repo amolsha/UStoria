@@ -2,6 +2,8 @@ import sqlite3
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score, confusion_matrix
 import pandas as pd
 
+from models.storage import get_data_for_performance_analysis
+
 
 def confusion_for_criterion(y_true, y_pred, criterion_name):
     print(y_true)
@@ -15,21 +17,9 @@ def confusion_for_criterion(y_true, y_pred, criterion_name):
     print(f"TP: {TP}, FP: {FP}, FN: {FN}, TN: {TN}")
     return cm
 
-def compute_metrics(db_path, run_id):
-    conn = sqlite3.connect(db_path)
-    cur = conn.cursor()
-
-    # Join evaluations with human_evaluations for this run
-    query = """
-    SELECT e.criterion, e.passed AS model_passed, h.passed AS gold_passed
-    FROM evaluations e
-    JOIN gold_labels h 
-      ON e.story_id = h.story_id 
-     AND e.criterion = h.criterion
-    WHERE e.run_id = ?
-    """
-    rows = cur.execute(query, (run_id,)).fetchall()
-    conn.close()
+def compute_metrics(run_id):
+    print("Run: ",run_id)
+    rows = get_data_for_performance_analysis(run_id)
 
     if not rows:
         print("No matching data found for this run.")
@@ -80,7 +70,7 @@ def compute_metrics(db_path, run_id):
     return metrics
 
 if __name__ == "__main__":
-    db_path = "data\evaluations.db"
+    db_path = "../data/evaluations.db"
     run_id = 37
 
     results = compute_metrics(db_path, run_id)

@@ -5,6 +5,9 @@ import time
 
 from blueprints.evaluation import evaluation_bp
 from models import storage, evaluator, llm_client, prompts
+from models.performance_analysis import compute_metrics
+from models.storage import get_runs
+
 
 @evaluation_bp.route("/evaluate", methods=["GET", "POST"])
 def evaluate():
@@ -228,3 +231,24 @@ def evaluate_by_criterion():
         selected_batch=selected_batch,
         criteria=CRITERIA
     )
+
+
+@evaluation_bp.route("/performance", methods=["GET", "POST"])
+def performance():
+    # ✅ Use the helper instead of manual query
+    runs = get_runs()  # returns list of (id, name)
+
+    # Convert to a simple iterable structure for HTML rendering
+    runs = [{"id": r[0], "name": r[1]} for r in runs]
+
+    selected_runs = request.form.getlist("run_ids")
+    all_metrics = {}
+
+    if selected_runs:
+        for run_id in selected_runs:
+            metrics = compute_metrics(run_id)
+            if metrics:
+                all_metrics[run_id] = metrics
+
+    return render_template("performance.html", runs=runs, all_metrics=all_metrics)
+

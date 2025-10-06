@@ -514,3 +514,28 @@ def get_unbatched_stories(project_id):
     rows = cur.fetchall()
     conn.close()
     return rows
+
+def get_runs():
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("SELECT id, llm_name name FROM runs ORDER BY id DESC")
+    rows = cur.fetchall()
+    conn.close()
+    return rows
+
+def get_data_for_performance_analysis(run_id):
+    conn = get_connection()
+    cur = conn.cursor()
+
+    # Join evaluations with human_evaluations for this run
+    query = """
+    SELECT e.criterion, e.passed AS model_passed, h.passed AS gold_passed
+    FROM evaluations e
+    JOIN gold_labels h 
+      ON e.story_id = h.story_id 
+     AND e.criterion = h.criterion
+    WHERE e.run_id = ?
+    """
+    rows = cur.execute(query, (run_id,)).fetchall()
+    conn.close()
+    return rows
