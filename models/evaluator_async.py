@@ -98,7 +98,7 @@ async def evaluate_stories_batch(
 
     results = parse_llm_json(response)
     print(":: RESULT ::")
-    print(results)
+    # print(results)
 
     normalized = {}
     for s in stories:
@@ -135,7 +135,7 @@ async def evaluate_stories_batch(
                 "reason": entry.get("reason", ""),
                 "repair": repairs.get(crit, ""),
             }
-
+    print(normalized)
     return normalized
 
 

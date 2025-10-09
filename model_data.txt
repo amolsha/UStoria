@@ -1,0 +1,9 @@
+36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51
+60,61,62,63,64,65,66,67,70,71,72,73,75,76,77,78
+
+mistral/open-mistral-7b
+alibaba/qwen-turbo
+xai/grok-4-fast
+google/gemini-2.5-flash-lite-preview-06-17
+
+http://127.0.0.1:5000/evaluation/runs/77

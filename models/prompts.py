@@ -29,7 +29,8 @@ INSTRUCTIONS:
     }}
     ...
 }}
-Do not omit the "story_id" field. This will be used to map results in Python.
+Do not omit the "story_id" field. The JSON output must be properly formatted (The keys are quoted, The value does not have colon (:)) 
+The JSON be used to map results in Python.
 Do not add extra commentary. Use short sentences in reasons and repairs.
 """
 
