@@ -94,7 +94,7 @@ async def async_complete(llm_name, prompt, temperature=0.7):
             json=payload
         )
         resp.raise_for_status()
-        # print(resp.json())
+        print(resp.json())
         data = resp.json()
         return data["choices"][0]["message"]["content"].strip()
 

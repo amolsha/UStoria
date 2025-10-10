@@ -11,7 +11,7 @@ User stories:
 INSTRUCTIONS:
 - Evaluate each story against the provided criterion (if there is one criterion) or all provided criteria.
 - For each criterion, return PASS/FAIL and a one-sentence justification (why it fails or why it passes).
-- If a story fails a criterion, propose a concise repair (a single improved user story) that addresses that criterion.
+- If a story fails a criterion, propose a concise repair (a SINGLE (not a list) improved user story) that addresses that criterion.
 - Return ONLY a JSON array, where each element corresponds to one story.
 - Each element should have this structure:
 {{
