@@ -4,13 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Evaluations done with gpt-5-mini. Prepared for other models. : Institute.">
-      <change afterPath="$PROJECT_DIR$/JSON_Print.py" afterDir="false" />
+    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Evaluations done with gemini,mistral. Place : Institute.">
+      <change afterPath="$PROJECT_DIR$/llm_performance_11102025.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llm_performance_11102025_0157.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/performance_llm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON_Print.py" beforeDir="false" afterPath="$PROJECT_DIR$/JSON_Print.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blueprints/evaluation/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/evaluation/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/evaluations.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/evaluations.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/model_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/figures/figure10_batch_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure10_batch_trend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/figures/figure1_passrate_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure1_passrate_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/figures/figure2_radar.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure2_radar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/figures/figure3_criterion_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure3_criterion_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/figures/figure4_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure4_heatmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/figures/figure7_wordcloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure7_wordcloud.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/figures/figure9_boxplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure9_boxplot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/llm_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/llm_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/performance_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/performance_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/prompts.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/prompts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/evaluate_by_criterion.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/evaluate_by_criterion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/performance.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/performance_run.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -49,28 +65,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.JSON_Print.executor": "Run",
-    "Python.Open_Router_Credits_Checker.executor": "Run",
-    "Python.Requesty_Test.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.charts_gen_1.executor": "Run",
-    "Python.charts_gen_2.executor": "Run",
-    "Python.copy_stories_to_text_files.executor": "Run",
-    "Python.evaluator_async.executor": "Run",
-    "Python.get_supported_models_openai.executor": "Run",
-    "Python.gold_labels_updation.executor": "Run",
-    "Python.import_gold_labels.executor": "Run",
-    "Python.llm_client.executor": "Run",
-    "Python.performance_analysis.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.JSON_Print.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Open_Router_Credits_Checker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Requesty_Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.charts_gen_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.charts_gen_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.copy_stories_to_text_files.executor&quot;: &quot;Run&quot;,
+    &quot;Python.evaluator_async.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_supported_models_openai.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gold_labels_updation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.import_gold_labels.executor&quot;: &quot;Run&quot;,
+    &quot;Python.llm_client.executor&quot;: &quot;Run&quot;,
+    &quot;Python.performance_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\docs\Projects\UStoria\data" />
@@ -140,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760008267366</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Evaluations done with gemini,mistral. Place : Institute.">
+      <option name="closed" value="true" />
+      <created>1760095043130</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760095043130</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +185,7 @@
     <MESSAGE value="Minor Change. Place: Home." />
     <MESSAGE value="Unambiguous evaluation. : Institute." />
     <MESSAGE value="Evaluations done with gpt-5-mini. Prepared for other models. : Institute." />
-    <option name="LAST_COMMIT_MESSAGE" value="Evaluations done with gpt-5-mini. Prepared for other models. : Institute." />
+    <MESSAGE value="Evaluations done with gemini,mistral. Place : Institute." />
+    <option name="LAST_COMMIT_MESSAGE" value="Evaluations done with gemini,mistral. Place : Institute." />
   </component>
 </project>

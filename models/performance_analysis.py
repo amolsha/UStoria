@@ -2,7 +2,7 @@ import sqlite3
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score, confusion_matrix
 import pandas as pd
 
-from models.storage import get_data_for_performance_analysis
+from models.storage import get_performance_run, get_performance_llm
 
 
 def confusion_for_criterion(y_true, y_pred, criterion_name):
@@ -17,9 +17,14 @@ def confusion_for_criterion(y_true, y_pred, criterion_name):
     print(f"TP: {TP}, FP: {FP}, FN: {FN}, TN: {TN}")
     return cm
 
-def compute_metrics(run_id):
+def compute_metrics(run_id=1, llm_name="gpt-5-mini", basis="RUN"):
     print("Run: ",run_id)
-    rows = get_data_for_performance_analysis(run_id)
+    rows=None
+
+    if basis=="RUN":
+        rows = get_performance_run(run_id)
+    elif basis=="LLM":
+        rows = get_performance_llm(llm_name)
 
     if not rows:
         print("No matching data found for this run.")
@@ -59,7 +64,7 @@ def compute_metrics(run_id):
     )
     acc = accuracy_score(y_true_all, y_pred_all)
 
-    metrics["overall"] = {
+    metrics["Overall"] = {
         "precision": round(precision, 3),
         "recall": round(recall, 3),
         "f1": round(f1, 3),

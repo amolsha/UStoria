@@ -3,10 +3,10 @@
 <div class="container">
   <h2>Performance Analysis</h2>
     <form method="POST" class="mb-4">
-        <label for="run_ids" class="form-label">Select Runs:</label>
-        <select name="run_ids" id="run_ids" multiple class="form-select" style="height: 200px;">
-            {% for row in runs %}
-            <option value="{{ row.id }}">{{ row.id }} — {{ row.name or 'Unnamed Run' }}</option>
+        <label for="llm_names" class="form-label">Select LLMs:</label>
+        <select name="llm_names" id="llm_names" multiple class="form-select" style="height: 200px;">
+            {% for row in llms %}
+            <option value="{{ row.llm_name }}">{{ row.llm_name }}</option>
             {% endfor %}
         </select>
         <button type="submit" class="btn btn-primary mt-3">Compute Metrics</button>
@@ -14,11 +14,11 @@
 
 {% if all_metrics %}
 <div class="accordion mt-4" id="metricsAccordion">
-  {% for run_id, metrics in all_metrics.items() %}
+  {% for llm, metrics in all_metrics.items() %}
   <div class="accordion-item">
     <h2 class="accordion-header" id="heading-{{ run_id }}">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ run_id }}" aria-expanded="false" aria-controls="collapse-{{ run_id }}">
-        <strong>Run ID: {{ run_id }}</strong>
+        <strong>Large Language Model (LLM): {{ llm }}</strong>
       </button>
     </h2>
     <div id="collapse-{{ run_id }}" class="accordion-collapse collapse" aria-labelledby="heading-{{ run_id }}" data-bs-parent="#metricsAccordion">
@@ -53,6 +53,17 @@
   {% endfor %}
 </div>
 {% endif %}
+
+  {% if all_metrics %}
+  <form method="POST" action="{{ url_for('evaluation.export_performance_llm') }}">
+    {% for llm in llms %}
+      {% if llm.llm_name in request.form.getlist('llm_names') %}
+        <input type="hidden" name="llm_names" value="{{ llm.llm_name }}">
+      {% endif %}
+    {% endfor %}
+    <button type="submit" class="btn btn-success mt-3">📊 Export to Excel</button>
+  </form>
+  {% endif %}
 
 </div>
 {% endblock %}

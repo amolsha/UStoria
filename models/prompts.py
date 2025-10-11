@@ -26,9 +26,39 @@ INSTRUCTIONS:
          "<CriterionName>": "<suggested improved user story text>",
          ...
       }}
-    }}
+    }},
     ...
 }}
+
+EXAMPLE OUTPUT (Generate the output on the basis of the following pattern):
+```{{ 
+ {{
+    "story_id": "Story 60",
+    "story": "As a shopper, I want to apply multiple coupons.",
+    "criteria": {{
+      "Well-formed": {{
+        "pass": true,
+        "reason": "The story includes user role and goal, following the standard format."
+      }}
+    }},
+    "repairs": {{}}
+  }},
+  {{
+    "story_id": "Story 61",
+    "story": "Leave request approval or denial should be enabled for users.",
+    "criteria": {{
+      "Well-formed": {{
+        "pass": false,
+        "reason": "The story lacks user role and clear goal format."
+      }}
+    }},
+    "repairs": {{
+      "Well-formed": "As a manager, I want to approve or deny leave requests so that I can manage team availability."
+    }}
+  }},
+ ...
+}}```
+
 Do not omit the "story_id" field. The JSON output must be properly formatted (The keys are quoted, The value does not have colon (:)) 
 The JSON be used to map results in Python.
 Do not add extra commentary. Use short sentences in reasons and repairs.

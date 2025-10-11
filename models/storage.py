@@ -523,7 +523,8 @@ def get_runs():
     conn.close()
     return rows
 
-def get_data_for_performance_analysis(run_id):
+
+def get_performance_run(run_id):
     conn = get_connection()
     cur = conn.cursor()
 
@@ -531,11 +532,46 @@ def get_data_for_performance_analysis(run_id):
     query = """
     SELECT e.criterion, e.passed AS model_passed, h.passed AS gold_passed
     FROM evaluations e
-    JOIN gold_labels h 
-      ON e.story_id = h.story_id 
+    JOIN gold_labels h
+      ON e.story_id = h.story_id
      AND e.criterion = h.criterion
     WHERE e.run_id = ?
     """
+
     rows = cur.execute(query, (run_id,)).fetchall()
+    conn.close()
+    return rows
+
+def get_performance_llm(llm_name):
+    print(llm_name)
+    conn = get_connection()
+    cur = conn.cursor()
+
+    # Join evaluations with human_evaluations for this llm
+    query = """
+    SELECT e.criterion,e.passed AS model_passed,h.passed AS gold_passed
+    FROM runs r
+    JOIN
+    evaluations e
+    ON
+        r.id = e.run_id
+    JOIN
+    gold_labels h
+    ON
+        e.story_id = h.story_id
+        AND
+        e.criterion = h.criterion
+    WHERE
+        r.llm_name = ?;
+    """
+    rows = cur.execute(query, (llm_name,)).fetchall()
+    conn.close()
+    return rows
+
+def get_evaluated_llms():
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("SELECT DISTINCT llm_name name FROM runs ORDER BY llm_name")
+    rows = cur.fetchall()
     conn.close()
     return rows

@@ -38,7 +38,7 @@ def format_llm_name(model_name: str) -> str:
         return f"deepseek/{model_name}"
 
     elif model_name.startswith("grok"):
-        return f"x-ai/{model_name}"
+        return f"xai/{model_name}"
 
     elif model_name.startswith("llama"):
         return f"meta-llama/{model_name}"

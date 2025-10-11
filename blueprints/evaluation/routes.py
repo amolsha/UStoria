@@ -1,12 +1,15 @@
 import asyncio
-
-from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
 import time
+
+from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify,send_file
 
 from blueprints.evaluation import evaluation_bp
 from models import storage, evaluator, llm_client, prompts
 from models.performance_analysis import compute_metrics
-from models.storage import get_runs
+from models.storage import get_runs, get_evaluated_llms
+
+import pandas as pd
+from io import BytesIO
 
 
 @evaluation_bp.route("/evaluate", methods=["GET", "POST"])
@@ -233,8 +236,8 @@ def evaluate_by_criterion():
     )
 
 
-@evaluation_bp.route("/performance", methods=["GET", "POST"])
-def performance():
+@evaluation_bp.route("/performance_run", methods=["GET", "POST"])
+def performance_run():
     # ✅ Use the helper instead of manual query
     runs = get_runs()  # returns list of (id, name)
 
@@ -242,13 +245,107 @@ def performance():
     runs = [{"id": r[0], "name": r[1]} for r in runs]
 
     selected_runs = request.form.getlist("run_ids")
+    print(selected_runs)
     all_metrics = {}
 
     if selected_runs:
         for run_id in selected_runs:
-            metrics = compute_metrics(run_id)
+            metrics = compute_metrics(run_id=run_id,basis="RUN")
             if metrics:
                 all_metrics[run_id] = metrics
 
-    return render_template("performance.html", runs=runs, all_metrics=all_metrics)
+    return render_template("performance_run.html", runs=runs, all_metrics=all_metrics)
 
+@evaluation_bp.route("/performance_llm", methods=["GET", "POST"])
+def performance_llm():
+    # ✅ Use the helper instead of manual query
+    llms = get_evaluated_llms()  # returns list of (id, name)
+
+    # Convert to a simple iterable structure for HTML rendering
+    llms = [{"llm_name": l[0]} for l in llms]
+
+    selected_llms = request.form.getlist("llm_names")
+    all_metrics = {}
+
+    if selected_llms:
+        for llm in selected_llms:
+            print(llm)
+            metrics = compute_metrics(llm_name=llm,basis="LLM")
+            if metrics:
+                all_metrics[llm] = metrics
+
+    return render_template("performance_llm.html", llms=llms, all_metrics=all_metrics)
+
+
+@evaluation_bp.route("/export_performance_llm", methods=["POST"])
+def export_performance_llm():
+    selected_llms = request.form.getlist("llm_names")
+    if not selected_llms:
+        # You can redirect or show a message instead
+        return "No LLMs selected for export", 400
+
+    all_dfs = []
+
+    for llm in selected_llms:
+        metrics = compute_metrics(llm_name=llm, basis="LLM")
+        if metrics:
+            df = pd.DataFrame.from_dict(metrics, orient="index")
+            df.index.name = "Criterion"
+            df.reset_index(inplace=True)
+            df.insert(0, "LLM", llm)  # Add LLM name column
+            all_dfs.append(df)
+
+    if not all_dfs:
+        return "No metrics found for export", 404
+
+    # Write to Excel in-memory
+    output = BytesIO()
+    with pd.ExcelWriter(output, engine="openpyxl") as writer:
+        for llm, df in zip(selected_llms, all_dfs):
+            df.to_excel(writer, index=False, sheet_name=llm[:31])  # Excel sheet names max 31 chars
+
+    output.seek(0)
+
+    return send_file(
+        output,
+        as_attachment=True,
+        download_name="llm_performance.xlsx",
+        mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    )
+
+
+@evaluation_bp.route("/export_performance_run", methods=["POST"])
+def export_performance_run():
+    selected_runs = request.form.getlist("run_ids")
+    if not selected_runs:
+        # You can redirect or show a message instead
+        return "No Runs selected for export", 400
+
+    all_dfs = []
+
+    for run in selected_runs:
+        metrics = compute_metrics(run_id=run, basis="RUN")
+        if metrics:
+            df = pd.DataFrame.from_dict(metrics, orient="index")
+            df.index.name = "Criterion"
+            df.reset_index(inplace=True)
+            df.insert(0, "RUN", run)  # Add LLM name column
+            all_dfs.append(df)
+
+    if not all_dfs:
+        return "No metrics found for export", 404
+
+    # Write to Excel in-memory
+    output = BytesIO()
+    with pd.ExcelWriter(output, engine="openpyxl") as writer:
+        for llm, df in zip(selected_runs, all_dfs):
+            df.to_excel(writer, index=False, sheet_name=llm[:31])  # Excel sheet names max 31 chars
+
+    output.seek(0)
+
+    return send_file(
+        output,
+        as_attachment=True,
+        download_name="run_performance.xlsx",
+        mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    )

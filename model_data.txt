@@ -5,5 +5,6 @@ mistral/open-mistral-7b
 alibaba/qwen-turbo
 xai/grok-4-fast
 google/gemini-2.5-flash-lite-preview-06-17
+google/gemini-2.5-flash
 
 http://127.0.0.1:5000/evaluation/runs/77
