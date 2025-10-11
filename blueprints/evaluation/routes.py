@@ -11,6 +11,10 @@ from models.storage import get_runs, get_evaluated_llms
 import pandas as pd
 from io import BytesIO
 
+import os
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
 
 @evaluation_bp.route("/evaluate", methods=["GET", "POST"])
 def evaluate():
@@ -348,4 +352,88 @@ def export_performance_run():
         as_attachment=True,
         download_name="run_performance.xlsx",
         mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    )
+
+
+@evaluation_bp.route("/performance_llm_charts")
+def performance_llm_charts():
+    excel_path = os.path.join("data", "evaluation_results.xlsx")
+    charts_dir = os.path.join("static", "charts")
+    os.makedirs(charts_dir, exist_ok=True)
+
+    # Read all sheets: {llm_name: DataFrame}
+    sheets = pd.read_excel(excel_path, sheet_name=None)
+
+    # --- Normalize column names ---
+    for model, df in sheets.items():
+        df.columns = [c.strip().lower() for c in df.columns]
+        sheets[model] = df
+
+    # --- 1️⃣ Overall comparison chart ---
+    summary = {}
+    for model, df in sheets.items():
+        # compute mean scores
+        summary[model] = df[['precision', 'recall', 'f1', 'accuracy']].mean()
+
+    summary_df = pd.DataFrame(summary)
+    plt.figure(figsize=(10, 6))
+    summary_df.plot(kind='bar')
+    plt.title("Overall Performance Comparison (Context-Minimal Prompt)")
+    plt.ylabel("Score")
+    plt.ylim(0, 1)
+    plt.xticks(rotation=0)
+    plt.legend(title="Models")
+    plt.tight_layout()
+    overall_chart_path = os.path.join(charts_dir, "overall_comparison.png")
+    plt.savefig(overall_chart_path, bbox_inches='tight')
+    plt.close()
+
+    # --- 2️⃣ Criterion-wise comparison (for F1) ---
+    combined = []
+    for model, df in sheets.items():
+        df["model"] = model
+        combined.append(df)
+    all_data = pd.concat(combined)
+
+    plt.figure(figsize=(12, 6))
+    sns.barplot(data=all_data, x='criterion', y='f1', hue='model')
+    plt.title("Criterion-wise F1 Score Comparison")
+    plt.xticks(rotation=45, ha='right')
+    plt.ylim(0, 1)
+    plt.tight_layout()
+    criterion_chart_path = os.path.join(charts_dir, "criterion_f1_comparison.png")
+    plt.savefig(criterion_chart_path, bbox_inches='tight')
+    plt.close()
+
+    # --- 3️⃣ Radar charts per model ---
+    radar_paths = []
+    for model, df in sheets.items():
+        metrics = ['precision', 'recall', 'f1', 'accuracy']
+        values = df[metrics].mean().values
+        values = np.append(values, values[0])  # close the loop
+        angles = np.linspace(0, 2 * np.pi, len(metrics), endpoint=False)
+        angles = np.append(angles, angles[0])
+
+        fig, ax = plt.subplots(subplot_kw=dict(polar=True))
+        ax.plot(angles, values, linewidth=2)
+        ax.fill(angles, values, alpha=0.25)
+        ax.set_xticks(angles[:-1])
+        ax.set_xticklabels(metrics)
+        ax.set_title(model)
+        plt.tight_layout()
+
+        radar_path = os.path.join(charts_dir, f"{model}_radar.png")
+        plt.savefig(radar_path, bbox_inches='tight')
+        plt.close()
+        radar_paths.append(f"charts/{model}_radar.png")
+
+        print(overall_chart_path)
+        print(criterion_chart_path)
+        print(radar_paths)
+
+    return render_template(
+        "performance_llm_charts.html",
+        overall_chart="charts/overall_comparison.png",
+        criterion_chart="charts/criterion_f1_comparison.png",
+        radar_charts=radar_paths
     )

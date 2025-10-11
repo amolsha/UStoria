@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h2>Performance Analysis by LLMs</h2>
+  <div class="accordion mt-4" id="overallChartAccordion">
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="heading-overall-chart">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-overall-chart" aria-expanded="false" aria-controls="collapse-overall-chart">
+        <strong>Overall Comparison</strong>
+      </button>
+    </h2>
+    <div id="collapse-overall-chart" class="accordion-collapse collapse" aria-labelledby="heading-overall-chart" data-bs-parent="#overallChartAccordion">
+      <div class="accordion-body">
+         {% if overall_chart %}
+            <img src="{{ url_for('static', filename=overall_chart) }}"
+                 class="img-fluid border rounded shadow-sm"
+                 style="max-width: 95%; height: auto;">
+          {% else %}
+            <p class="text-muted">No chart available.</p>
+          {% endif %}
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <div class="accordion mt-4" id="criterionChartAccordion">
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="heading-criterion-chart">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-criterion-chart" aria-expanded="false" aria-controls="collapse-criterion-chart">
+        <strong>Criterion-wise F1 Score comparison</strong>
+      </button>
+    </h2>
+    <div id="collapse-criterion-chart" class="accordion-collapse collapse" aria-labelledby="heading-criterion-chart" data-bs-parent="#criterionChartAccordion">
+      <div class="accordion-body">
+         {% if overall_chart %}
+            <img src="{{ url_for('static', filename=criterion_chart) }}"
+                 class="img-fluid border rounded shadow-sm"
+                 style="max-width: 95%; height: auto;">
+          {% else %}
+            <p class="text-muted">No chart available.</p>
+          {% endif %}
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <h4 class="mt-4">Radar Charts (Model Profiles)</h4>
+  <div class="row mt-3">
+    {% for radar in radar_charts %}
+    <div class="col-md-4 mb-3 text-center">
+      <img src="{{ url_for('static', filename=radar) }}" class="img-fluid rounded shadow">
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+{% endblock %}

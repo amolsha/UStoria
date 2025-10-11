@@ -4,29 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Evaluations done with gemini,mistral. Place : Institute.">
-      <change afterPath="$PROJECT_DIR$/llm_performance_11102025.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llm_performance_11102025_0157.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/performance_llm.html" afterDir="false" />
+    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Evaluations done with gpt-4.1-mini,qwen,grok-fast.Implemented LLM wise performance analysis. Place : Institute.">
+      <change afterPath="$PROJECT_DIR$/templates/performance_llm_charts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON_Print.py" beforeDir="false" afterPath="$PROJECT_DIR$/JSON_Print.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blueprints/evaluation/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/evaluation/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/evaluations.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/evaluations.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/model_data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure10_batch_trend.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure10_batch_trend.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure1_passrate_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure1_passrate_bar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure2_radar.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure2_radar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure3_criterion_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure3_criterion_bar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure4_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure4_heatmap.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure7_wordcloud.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure7_wordcloud.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/figures/figure9_boxplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/models/figures/figure9_boxplot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/llm_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/llm_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/performance_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/performance_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/prompts.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/prompts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/evaluate_by_criterion.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/evaluate_by_criterion.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/performance.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/performance_run.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760095043130</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Evaluations done with gpt-4.1-mini,qwen,grok-fast.Implemented LLM wise performance analysis. Place : Institute.">
+      <option name="closed" value="true" />
+      <created>1760175989041</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760175989041</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +175,7 @@
     <MESSAGE value="Unambiguous evaluation. : Institute." />
     <MESSAGE value="Evaluations done with gpt-5-mini. Prepared for other models. : Institute." />
     <MESSAGE value="Evaluations done with gemini,mistral. Place : Institute." />
-    <option name="LAST_COMMIT_MESSAGE" value="Evaluations done with gemini,mistral. Place : Institute." />
+    <MESSAGE value="Evaluations done with gpt-4.1-mini,qwen,grok-fast.Implemented LLM wise performance analysis. Place : Institute." />
+    <option name="LAST_COMMIT_MESSAGE" value="Evaluations done with gpt-4.1-mini,qwen,grok-fast.Implemented LLM wise performance analysis. Place : Institute." />
   </component>
 </project>
