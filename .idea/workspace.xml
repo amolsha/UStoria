@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Evaluations done with gpt-4.1-mini,qwen,grok-fast.Implemented LLM wise performance analysis. Place : Institute.">
-      <change afterPath="$PROJECT_DIR$/templates/performance_llm_charts.html" afterDir="false" />
+    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Charts Generation. Place : Institute.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blueprints/evaluation/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/evaluation/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/evaluation_results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/evaluation_results.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/evaluations.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/evaluations.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/llm_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/llm_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/prompts.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/prompts.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760175989041</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Charts Generation. Place : Institute.">
+      <option name="closed" value="true" />
+      <created>1760181300654</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1760181300655</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +186,7 @@
     <MESSAGE value="Evaluations done with gpt-5-mini. Prepared for other models. : Institute." />
     <MESSAGE value="Evaluations done with gemini,mistral. Place : Institute." />
     <MESSAGE value="Evaluations done with gpt-4.1-mini,qwen,grok-fast.Implemented LLM wise performance analysis. Place : Institute." />
-    <option name="LAST_COMMIT_MESSAGE" value="Evaluations done with gpt-4.1-mini,qwen,grok-fast.Implemented LLM wise performance analysis. Place : Institute." />
+    <MESSAGE value="Charts Generation. Place : Institute." />
+    <option name="LAST_COMMIT_MESSAGE" value="Charts Generation. Place : Institute." />
   </component>
 </project>

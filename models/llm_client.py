@@ -71,6 +71,11 @@ import httpx
 # Important: set REQUESTY_API_KEY in your environment
 API_KEY = os.getenv("REQUESTY_API_KEY")
 async def async_complete(llm_name, prompt, temperature=0.7):
+    print("<-- PROMPT -->")
+
+    print(prompt)
+
+    print("<-- PROMPT -->")
     """
     Async LLM completion using Requesty API.
     """
