@@ -1,0 +1,9 @@
+SELECT llm_name,prompt_type,count(*) from runs GROUP BY llm_name,prompt_type
+
+SELECT id,llm_name,project_id,batch_id,prompt_type,count(*) from runs where id in (SELECT run_id from evaluations WHERE passed=0 and repair='' and reason='')
+GROUP BY id,llm_name,project_id,batch_id,prompt_type
+SELECT  from evaluations WHERE passed=0 and reason=''
+
+SELECT count(*) from evaluations WHERE passed=1 and reason<>''
+
+SELECT count(*) from evaluations WHERE passed=0 and repair='' and reason='' and run_id in (201,202)
