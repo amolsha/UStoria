@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Charts Generation. Place : Institute.">
+    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Context Rich Prompting. Place : Institute.">
+      <change afterPath="$PROJECT_DIR$/Evaluation_RICH_Prompting.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/evaluation_results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/evaluation_results.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/evaluations.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/evaluations.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/llm_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/llm_client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/prompts.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/prompts.py" afterDir="false" />
@@ -163,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760181300655</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Context Rich Prompting. Place : Institute.">
+      <option name="closed" value="true" />
+      <created>1760778428119</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1760778428119</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +195,7 @@
     <MESSAGE value="Evaluations done with gemini,mistral. Place : Institute." />
     <MESSAGE value="Evaluations done with gpt-4.1-mini,qwen,grok-fast.Implemented LLM wise performance analysis. Place : Institute." />
     <MESSAGE value="Charts Generation. Place : Institute." />
-    <option name="LAST_COMMIT_MESSAGE" value="Charts Generation. Place : Institute." />
+    <MESSAGE value="Context Rich Prompting. Place : Institute." />
+    <option name="LAST_COMMIT_MESSAGE" value="Context Rich Prompting. Place : Institute." />
   </component>
 </project>

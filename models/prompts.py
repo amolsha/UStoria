@@ -2,7 +2,7 @@
 
 # Minimal prompt: only descriptions of criteria
 INDIVIDUAL_PROMPT_MINIMAL = """
-Evaluate the following user stories against these individual-level QUS criteria:
+Evaluate the following user stories against the below-mentioned individual-level QUS criterion/criteria:
 {criteria_list}
 
 User stories:
@@ -114,7 +114,7 @@ Implementing a set of user stories creates a feature-complete application, no st
 We follow the following format for writing user story:
 As a <role>, I want to <means>, so that <ends>.
 
-Help me in evaluating the quality of user stories I have. 
+Help me in evaluating the quality of user stories I have.
 
 I am providing you more details (enclosed with in ```) about the 8 quality criteria ('Individual') along with an example for each. 
 
@@ -175,7 +175,7 @@ For instance,
 US9: Server configuration
 is not expressed as a full sentence (in addition to not complying with syntactic quality). By reformulating the feature as a full sentence user story, it will automatically specify what exactly needs to be configured. For example, US9 can be modified to "As an Administrator, I want to configure the server's sudo-ers."
 
-8. Estimatable/ Estimable
+8. Estimable/ Estimable
 
 As user stories grow in size and complexity, it becomes more difficult to accurately estimate the required effort. Therefore, each user story should not become so large that estimating and planning it with reasonable certainty becomes impossible.
 For example,
@@ -185,7 +185,7 @@ requests a route list so that care professionals can prepare themselves. While t
 • US10B: "As a Manager, I want to upload a route list for care professionals."
 
 
-Evaluate the following user stories against these individual-level QUS criteria:
+Evaluate the following user stories against the below-mentioned individual-level QUS criterion/criteria:
 {criteria_list}
 
 User stories:

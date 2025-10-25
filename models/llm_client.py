@@ -91,7 +91,7 @@ async def async_complete(llm_name, prompt, temperature=0.7):
         "temperature": temperature,
     }
 
-    async with httpx.AsyncClient(timeout=60) as client:
+    async with httpx.AsyncClient(timeout=180) as client:
         resp = await client.post(
             # "https://api.openai.com/v1/chat/completions",
             "https://router.requesty.ai/v1/chat/completions",
@@ -123,7 +123,7 @@ async def async_complete(llm_name, prompt, temperature=0.7):
 #         # "temperature": temperature,
 #     }
 #
-#     async with httpx.AsyncClient(timeout=60) as client:
+#     async with httpx.AsyncClient(timeout=180) as client:
 #         resp = await client.post(
 #             # "https://api.openai.com/v1/responses",
 #             "https://api.openai.com/v1/chat/completions",
