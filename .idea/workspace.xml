@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Context Rich Prompting. Place : Institute.">
+      <change afterPath="$PROJECT_DIR$/deepseek-chat_minimal.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deepseek-chat_rich.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gemini-2.5-flash_minimal.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gemini-2.5-flash_rich.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt-4.1-mini_minimal.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt-4.1-mini_rich.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt-5-mini_minimal.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt-5-mini_rich.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grok-4-fast_minimal.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grok-4-fast_rich.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen-turbo_minimal.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen-turbo_rich.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evaluation_RICH_Prompting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Evaluation_RICH_Prompting.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blueprints/evaluation/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/evaluation/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/performance_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/performance_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/performance_llm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/performance_llm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761389964775</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Context Rich Prompting. Place : Institute.">
+      <option name="closed" value="true" />
+      <created>1761391040621</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1761391040622</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -269,12 +269,14 @@ def performance_llm():
     llms = [{"llm_name": l[0]} for l in llms]
 
     selected_llms = request.form.getlist("llm_names")
+    prompt_type = request.form.get('prompt_type')
+    print("Prompt type in routes.py: ",prompt_type)
     all_metrics = {}
 
     if selected_llms:
         for llm in selected_llms:
             print(llm)
-            metrics = compute_metrics(llm_name=llm,basis="LLM")
+            metrics = compute_metrics(llm_name=llm,basis="LLM",prompt_type=prompt_type)
             if metrics:
                 all_metrics[llm] = metrics
 
@@ -284,6 +286,8 @@ def performance_llm():
 @evaluation_bp.route("/export_performance_llm", methods=["POST"])
 def export_performance_llm():
     selected_llms = request.form.getlist("llm_names")
+    prompt_type = request.form.get('prompt_type')
+
     if not selected_llms:
         # You can redirect or show a message instead
         return "No LLMs selected for export", 400
@@ -291,7 +295,7 @@ def export_performance_llm():
     all_dfs = []
 
     for llm in selected_llms:
-        metrics = compute_metrics(llm_name=llm, basis="LLM")
+        metrics = compute_metrics(llm_name=llm, basis="LLM",prompt_type=prompt_type)
         if metrics:
             df = pd.DataFrame.from_dict(metrics, orient="index")
             df.index.name = "Criterion"

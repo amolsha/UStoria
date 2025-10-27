@@ -1,14 +1,12 @@
-grok-4-fast		18
-	Full Sentence (Batch 1), Estimable (Batch 1) -- NOT DONE.
-
 deepseek-chat		16
-	All done but Estimable data is not proper.
+	Done.
 gemini-2.5-flash	16
-	All done but Estimable data is not proper, though evaluated two times.
-
+	Done.
 gpt-4.1-mini		18
 	Done
 gpt-5-mini		16
 	Done
 qwen-turbo		16
 	Atomic (Batch 1).
+grok-4-fast		18
+	Full Sentence (Batch 1), Estimable (Batch 1) -- NOT DONE.

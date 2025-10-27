@@ -9,6 +9,15 @@
             <option value="{{ row.llm_name }}">{{ row.llm_name }}</option>
             {% endfor %}
         </select>
+
+          <!-- Prompt Type -->
+          <label for="prompt_type">Prompt Type</label>
+          <select name="prompt_type" id="prompt_type">
+            <option value="minimal">Context Minimal</option>
+            <option value="rich">Context Rich</option>
+            <option value="both">Both</option>
+          </select>
+
         <button type="submit" class="btn btn-primary mt-3">Compute Metrics</button>
     </form>
 
@@ -61,6 +70,7 @@
         <input type="hidden" name="llm_names" value="{{ llm.llm_name }}">
       {% endif %}
     {% endfor %}
+    <input type="hidden" name="prompt_type" value="{{ request.form.get('prompt_type') }}">
     <button type="submit" class="btn btn-success mt-3">📊 Export to Excel</button>
   </form>
   {% endif %}

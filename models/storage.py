@@ -524,7 +524,7 @@ def get_runs():
     return rows
 
 
-def get_performance_run(run_id):
+def get_performance_run(run_id,prompt_type="both"):
     conn = get_connection()
     cur = conn.cursor()
 
@@ -542,10 +542,12 @@ def get_performance_run(run_id):
     conn.close()
     return rows
 
-def get_performance_llm(llm_name):
+def get_performance_llm(llm_name,prompt_type="both"):
     print(llm_name)
     conn = get_connection()
     cur = conn.cursor()
+
+    print("Prompt Type in storage.py: ",prompt_type)
 
     # Join evaluations with human_evaluations for this llm
     query = """
@@ -562,9 +564,13 @@ def get_performance_llm(llm_name):
         AND
         e.criterion = h.criterion
     WHERE
-        r.llm_name = ?;
+        r.llm_name = ?
+          AND (
+                ? = 'both' 
+                OR r.prompt_type = ?
+              );
     """
-    rows = cur.execute(query, (llm_name,)).fetchall()
+    rows = cur.execute(query, (llm_name,prompt_type,prompt_type)).fetchall()
     conn.close()
     return rows
 

@@ -17,14 +17,15 @@ def confusion_for_criterion(y_true, y_pred, criterion_name):
     print(f"TP: {TP}, FP: {FP}, FN: {FN}, TN: {TN}")
     return cm
 
-def compute_metrics(run_id=1, llm_name="gpt-5-mini", basis="RUN"):
+def compute_metrics(run_id=1, llm_name="gpt-5-mini", basis="RUN",prompt_type="both"):
     print("Run: ",run_id)
     rows=None
 
     if basis=="RUN":
-        rows = get_performance_run(run_id)
+        rows = get_performance_run(run_id,prompt_type)
     elif basis=="LLM":
-        rows = get_performance_llm(llm_name)
+        rows = get_performance_llm(llm_name,prompt_type)
+        print("Prompt Type: ",prompt_type)
 
     if not rows:
         print("No matching data found for this run.")
