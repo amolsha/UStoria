@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Context Rich Prompting. Place : Institute.">
-      <change afterPath="$PROJECT_DIR$/deepseek-chat_minimal.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deepseek-chat_rich.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gemini-2.5-flash_minimal.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gemini-2.5-flash_rich.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt-4.1-mini_minimal.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt-4.1-mini_rich.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt-5-mini_minimal.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt-5-mini_rich.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grok-4-fast_minimal.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grok-4-fast_rich.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qwen-turbo_minimal.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qwen-turbo_rich.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Individual_Criteria.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reason_Repair_Evaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reason_Repair_Evaluation_CSV_Generation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reason_Repair_Evaluation_Sampling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Evaluation_RICH_Prompting.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Evaluation_RICH_Prompting.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blueprints/evaluation/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/evaluation/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/performance_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/performance_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/performance_llm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/performance_llm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -61,28 +48,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.JSON_Print.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Open_Router_Credits_Checker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Requesty_Test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.charts_gen_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.charts_gen_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.copy_stories_to_text_files.executor&quot;: &quot;Run&quot;,
-    &quot;Python.evaluator_async.executor&quot;: &quot;Run&quot;,
-    &quot;Python.get_supported_models_openai.executor&quot;: &quot;Run&quot;,
-    &quot;Python.gold_labels_updation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.import_gold_labels.executor&quot;: &quot;Run&quot;,
-    &quot;Python.llm_client.executor&quot;: &quot;Run&quot;,
-    &quot;Python.performance_analysis.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.JSON_Print.executor": "Run",
+    "Python.Open_Router_Credits_Checker.executor": "Run",
+    "Python.Reason_Repair_Evaluation.executor": "Run",
+    "Python.Reason_Repair_Evaluation_CSV_Generation.executor": "Run",
+    "Python.Reason_Repair_Evaluation_Sampling.executor": "Run",
+    "Python.Requesty_Test.executor": "Run",
+    "Python.app.executor": "Run",
+    "Python.charts_gen_1.executor": "Run",
+    "Python.charts_gen_2.executor": "Run",
+    "Python.copy_stories_to_text_files.executor": "Run",
+    "Python.evaluator_async.executor": "Run",
+    "Python.get_supported_models_openai.executor": "Run",
+    "Python.gold_labels_updation.executor": "Run",
+    "Python.import_gold_labels.executor": "Run",
+    "Python.llm_client.executor": "Run",
+    "Python.performance_analysis.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\docs\Projects\UStoria\data" />
@@ -200,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761391040622</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Context Rich Prompting. Place : Institute.">
+      <option name="closed" value="true" />
+      <created>1761563930911</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1761563930913</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

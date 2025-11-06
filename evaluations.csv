@@ -1,0 +1,20 @@
+story_id,model,context,criterion,original_label,reason,repair,original_story
+1,deepseek-chat,minimal,Well-formed,No,,,Order status updates should be provided to users.
+2,deepseek-chat,minimal,Well-formed,No,,,Discount code application should be allowed for purchases.
+3,deepseek-chat,minimal,Well-formed,No,,,User account creation functionality is required.
+4,deepseek-chat,minimal,Well-formed,No,,,"As a manager, I want to approve employee leave requests."
+5,deepseek-chat,minimal,Well-formed,No,,,"As a music listener, I want to create playlists, so that I can organize my music."
+121,deepseek-chat,minimal,Estimable,Yes,"The story specifies a clear, measurable constraint (minimum 8 characters).",,"As a user, I want to reset my password with a minimum of 8 characters, so that I can regain access."
+122,deepseek-chat,minimal,Estimable,Yes,The story specifies a concrete implementation detail (QR code) for estimation.,,"As a user, I want to enable two-factor authentication with a QR code, so that I can enhance security."
+123,deepseek-chat,minimal,Estimable,Yes,The functionality is clear and can be estimated by a development team.,,"As a shopper, I want to apply coupon codes, so that I can get discounts."
+124,deepseek-chat,minimal,Estimable,Yes,"The story includes a specific, measurable limit (3 attempts).",,"As a shopper, I want to use guest checkout with a maximum of 3 attempts, so that I can make a quick purchase."
+127,deepseek-chat,minimal,Estimable,Yes,"The story defines a specific, measurable constraint (500 characters).",,"As a student, I want to participate in discussions with a maximum of 500 characters, so that I can engage with peers."
+128,deepseek-chat,minimal,Estimable,No,"""Perfect"" is subjective and provides no measurable or testable criteria.","As a user, I want the app to load in under 2 seconds, so that I can start using it quickly.","As a user, I want a perfect user experience."
+129,deepseek-chat,minimal,Estimable,No,"""Convenient"" is too vague and subjective for estimation.","As a shopper, I want to filter products by price and category, so that I can find what I need.","As a shopper, I want to have a convenient shopping experience, so that I can find products easily."
+130,deepseek-chat,minimal,Estimable,No,"""Quickly"" is subjective and lacks a specific, measurable target.","As a user, I want to log in with one tap using a social account, so that I can access my account faster.","As a user, I want to log in quickly, so that I can access my account."
+131,deepseek-chat,minimal,Estimable,Yes,The functionality is clear and the effort can be estimated.,,"As a gamer, I want to pause a game, so I can take a break."
+132,deepseek-chat,minimal,Estimable,No,"""Better"" is too vague to estimate effort.","As a user, I want to add a profile picture to my account, so it feels more personal.","As a user, I want to make my account better, so that I can have a good experience."
+133,deepseek-chat,minimal,Estimable,No,"The scope of ""course materials"" is undefined.","As a student, I want to download lecture slides from my course page, so I can study offline.","As a student, I want to have access to course materials, so that I can study."
+134,deepseek-chat,minimal,Estimable,No,"This is a vision, not a concrete, estimable task.","As a photographer, I want to apply a black and white filter to my photos, so I can create a dramatic effect.","As a photographer, I want to capture the essence of life."
+135,deepseek-chat,minimal,Estimable,No,"""Improve"" is too vague and open-ended to estimate.","As a customer, I want to save my shipping address for future orders, so I can check out faster.","As a customer, I want to improve my ordering process, so that I can get my products faster."
+136,deepseek-chat,minimal,Estimable,Yes,The functionality and business rule are clear and estimable.,,"As a customer, I want to cancel my order within 24 hours, so that I can avoid unwanted purchases."

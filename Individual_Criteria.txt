@@ -1,0 +1,21 @@
+Syntactic
+1. Well-formed:
+A user story includes at least a role and a means. Individual
+2. Atomic:
+A user story expresses a requirement for exactly one feature. Individual
+3. Minimal:
+A user story contains nothing more than role, means, and ends. Individual
+
+Semantic
+1. Conceptually sound:
+The means expresses a feature and the ends expresses a rationale. Individual
+2. Problem-oriented:
+A user story only specifies the problem, not the solution to it. Individual
+3. Unambiguous:
+A user story avoids terms or abstractions that lead to multiple interpretations. Individual
+
+Pragmatic
+1. Full sentence:
+A user story is a well-formed full sentence. Individual
+2. Estimatable:
+A story does not denote a coarse-grained requirement that is difficult to plan and prioritize. Individual
