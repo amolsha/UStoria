@@ -4,8 +4,8 @@ from openai import OpenAI
 from tqdm import tqdm
 
 # ---------- CONFIGURATION ----------
-DATA_FILE = "evaluations.csv"      # input from your SQLite export
-META_RATER_MODEL = "gpt-4o-mini"    # or "gpt-4.1-mini"
+DATA_FILE = "evaluations_sampled.csv"      # input from your SQLite export
+META_RATER_MODEL = "gpt-5-nano-2025-08-07"    # or "gpt-4.1-mini"
 TEMPERATURE = 0
 SAVE_FILE = "meta_eval_results.csv"
 
@@ -76,7 +76,7 @@ def call_meta_rater(prompt):
     try:
         response = client.chat.completions.create(
             model=META_RATER_MODEL,
-            temperature=TEMPERATURE,
+            #temperature=TEMPERATURE,
             messages=[
                 {"role": "system", "content": "You are a precise evaluator who outputs only valid JSON responses."},
                 {"role": "user", "content": prompt}

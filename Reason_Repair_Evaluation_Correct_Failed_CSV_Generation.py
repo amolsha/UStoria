@@ -3,7 +3,7 @@ import pandas as pd
 
 # ---------- CONFIGURATION ----------
 DB_PATH = "data\evaluations.db"       # path to your SQLite database file
-OUTPUT_CSV = "evaluations.csv"
+OUTPUT_CSV = "evaluations_correct_failed.csv"
 
 # Map prompt_type to short codes
 CONTEXT_MAP = {
@@ -21,12 +21,18 @@ SELECT
     r.prompt_type AS prompt_type,
     e.criterion AS criterion,
     e.passed AS passed,
+	g.passed AS gold_label,
     e.reason AS reason,
     e.repair AS repair
 FROM evaluations e
 JOIN runs r ON e.run_id = r.id
 JOIN stories s ON e.story_id = s.id
+JOIN gold_labels g on e.story_id = g.story_id
 where 
+e.passed=0
+AND
+e.passed=g.passed
+AND
 r.llm_name in 
 ('gpt-4.1-mini',
 'deepseek-chat',

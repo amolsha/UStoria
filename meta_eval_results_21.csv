@@ -1,0 +1,148 @@
+story_id,model,context,criterion,repair_conforms,reason_rating
+879,qwen-turbo,minimal,Atomic,Yes,1
+951,qwen-turbo,minimal,Atomic,Yes,3
+946,qwen-turbo,minimal,Atomic,No,3
+868,qwen-turbo,minimal,Atomic,Yes,3
+933,qwen-turbo,minimal,Atomic,Yes,3
+855,qwen-turbo,minimal,Atomic,Yes,3
+875,qwen-turbo,minimal,Atomic,No,3
+958,qwen-turbo,minimal,Atomic,Yes,3
+853,qwen-turbo,minimal,Atomic,Yes,3
+912,qwen-turbo,minimal,Atomic,Yes,2
+295,qwen-turbo,minimal,Conceptually sound,No,3
+338,qwen-turbo,minimal,Conceptually sound,Yes,3
+352,qwen-turbo,minimal,Conceptually sound,Yes,2
+278,qwen-turbo,minimal,Conceptually sound,Yes,2
+340,qwen-turbo,minimal,Conceptually sound,Yes,2
+253,qwen-turbo,minimal,Conceptually sound,No,1
+288,qwen-turbo,minimal,Conceptually sound,Yes,3
+358,qwen-turbo,minimal,Conceptually sound,Yes,1
+248,qwen-turbo,minimal,Conceptually sound,No,3
+324,qwen-turbo,minimal,Conceptually sound,Yes,3
+147,qwen-turbo,minimal,Estimable,Yes,3
+234,qwen-turbo,minimal,Estimable,No,3
+237,qwen-turbo,minimal,Estimable,No,3
+232,qwen-turbo,minimal,Estimable,No,3
+153,qwen-turbo,minimal,Estimable,No,3
+176,qwen-turbo,minimal,Estimable,No,3
+174,qwen-turbo,minimal,Estimable,No,3
+172,qwen-turbo,minimal,Estimable,Yes,3
+189,qwen-turbo,minimal,Estimable,No,3
+161,qwen-turbo,minimal,Estimable,Yes,3
+503,qwen-turbo,minimal,Full sentence,Yes,2
+566,qwen-turbo,minimal,Full sentence,Yes,2
+560,qwen-turbo,minimal,Full sentence,Yes,2
+504,qwen-turbo,minimal,Full sentence,Yes,2
+528,qwen-turbo,minimal,Full sentence,Yes,1
+509,qwen-turbo,minimal,Full sentence,Yes,3
+555,qwen-turbo,minimal,Full sentence,Yes,2
+507,qwen-turbo,minimal,Full sentence,Yes,2
+568,qwen-turbo,minimal,Full sentence,Yes,1
+564,qwen-turbo,minimal,Full sentence,Yes,2
+807,qwen-turbo,minimal,Minimal,Yes,3
+823,qwen-turbo,minimal,Minimal,No,3
+753,qwen-turbo,minimal,Minimal,No,3
+827,qwen-turbo,minimal,Minimal,No,3
+796,qwen-turbo,minimal,Minimal,Yes,2
+805,qwen-turbo,minimal,Minimal,Yes,3
+791,qwen-turbo,minimal,Minimal,No,3
+759,qwen-turbo,minimal,Minimal,Yes,1
+829,qwen-turbo,minimal,Minimal,Yes,3
+795,qwen-turbo,minimal,Minimal,Yes,2
+363,qwen-turbo,minimal,Problem-oriented,No,3
+702,qwen-turbo,minimal,Unambiguous,No,3
+661,qwen-turbo,minimal,Unambiguous,No,3
+669,qwen-turbo,minimal,Unambiguous,No,3
+711,qwen-turbo,minimal,Unambiguous,No,3
+689,qwen-turbo,minimal,Unambiguous,No,3
+708,qwen-turbo,minimal,Unambiguous,No,3
+609,qwen-turbo,minimal,Unambiguous,No,3
+626,qwen-turbo,minimal,Unambiguous,No,3
+618,qwen-turbo,minimal,Unambiguous,No,3
+608,qwen-turbo,minimal,Unambiguous,No,3
+1,qwen-turbo,minimal,Well-formed,Yes,3
+9,qwen-turbo,minimal,Well-formed,Yes,3
+72,qwen-turbo,minimal,Well-formed,No,3
+92,qwen-turbo,minimal,Well-formed,Yes,3
+21,qwen-turbo,minimal,Well-formed,Yes,3
+108,qwen-turbo,minimal,Well-formed,Yes,2
+64,qwen-turbo,minimal,Well-formed,Yes,3
+97,qwen-turbo,minimal,Well-formed,Yes,3
+20,qwen-turbo,minimal,Well-formed,Yes,3
+113,qwen-turbo,minimal,Well-formed,Yes,3
+868,qwen-turbo,rich,Atomic,Yes,3
+935,qwen-turbo,rich,Atomic,Yes,3
+946,qwen-turbo,rich,Atomic,Yes,3
+934,qwen-turbo,rich,Atomic,Yes,3
+873,qwen-turbo,rich,Atomic,Yes,3
+893,qwen-turbo,rich,Atomic,Yes,3
+888,qwen-turbo,rich,Atomic,Yes,3
+887,qwen-turbo,rich,Atomic,Yes,3
+907,qwen-turbo,rich,Atomic,No,3
+877,qwen-turbo,rich,Atomic,Yes,3
+326,qwen-turbo,rich,Conceptually sound,Yes,2
+296,qwen-turbo,rich,Conceptually sound,Yes,1
+265,qwen-turbo,rich,Conceptually sound,Yes,3
+327,qwen-turbo,rich,Conceptually sound,Yes,3
+248,qwen-turbo,rich,Conceptually sound,Yes,3
+360,qwen-turbo,rich,Conceptually sound,Yes,2
+319,qwen-turbo,rich,Conceptually sound,Yes,2
+359,qwen-turbo,rich,Conceptually sound,Yes,3
+333,qwen-turbo,rich,Conceptually sound,Yes,3
+261,qwen-turbo,rich,Conceptually sound,Yes,3
+222,qwen-turbo,rich,Estimable,Yes,3
+174,qwen-turbo,rich,Estimable,No,3
+176,qwen-turbo,rich,Estimable,No,3
+220,qwen-turbo,rich,Estimable,No,3
+213,qwen-turbo,rich,Estimable,No,3
+232,qwen-turbo,rich,Estimable,No,3
+132,qwen-turbo,rich,Estimable,No,3
+148,qwen-turbo,rich,Estimable,No,3
+139,qwen-turbo,rich,Estimable,No,3
+129,qwen-turbo,rich,Estimable,Yes,3
+570,qwen-turbo,rich,Full sentence,Yes,2
+525,qwen-turbo,rich,Full sentence,Yes,2
+506,qwen-turbo,rich,Full sentence,Yes,1
+571,qwen-turbo,rich,Full sentence,Yes,3
+498,qwen-turbo,rich,Full sentence,Yes,1
+597,qwen-turbo,rich,Full sentence,Yes,1
+538,qwen-turbo,rich,Full sentence,Yes,1
+581,qwen-turbo,rich,Full sentence,Yes,1
+584,qwen-turbo,rich,Full sentence,Yes,1
+503,qwen-turbo,rich,Full sentence,Yes,1
+779,qwen-turbo,rich,Minimal,No,2
+807,qwen-turbo,rich,Minimal,No,3
+727,qwen-turbo,rich,Minimal,Yes,3
+839,qwen-turbo,rich,Minimal,Yes,3
+786,qwen-turbo,rich,Minimal,No,3
+780,qwen-turbo,rich,Minimal,No,2
+801,qwen-turbo,rich,Minimal,No,3
+730,qwen-turbo,rich,Minimal,Yes,2
+833,qwen-turbo,rich,Minimal,Yes,3
+747,qwen-turbo,rich,Minimal,No,1
+412,qwen-turbo,rich,Problem-oriented,No,3
+413,qwen-turbo,rich,Problem-oriented,No,3
+420,qwen-turbo,rich,Problem-oriented,No,3
+416,qwen-turbo,rich,Problem-oriented,No,3
+419,qwen-turbo,rich,Problem-oriented,No,3
+417,qwen-turbo,rich,Problem-oriented,Yes,3
+707,qwen-turbo,rich,Unambiguous,No,3
+653,qwen-turbo,rich,Unambiguous,No,3
+687,qwen-turbo,rich,Unambiguous,No,3
+661,qwen-turbo,rich,Unambiguous,No,3
+618,qwen-turbo,rich,Unambiguous,No,3
+619,qwen-turbo,rich,Unambiguous,Yes,3
+708,qwen-turbo,rich,Unambiguous,No,3
+689,qwen-turbo,rich,Unambiguous,No,3
+649,qwen-turbo,rich,Unambiguous,No,3
+601,qwen-turbo,rich,Unambiguous,No,3
+88,qwen-turbo,rich,Well-formed,Yes,3
+41,qwen-turbo,rich,Well-formed,Yes,3
+43,qwen-turbo,rich,Well-formed,Yes,3
+116,qwen-turbo,rich,Well-formed,Yes,3
+70,qwen-turbo,rich,Well-formed,Yes,3
+91,qwen-turbo,rich,Well-formed,Yes,3
+8,qwen-turbo,rich,Well-formed,Yes,3
+20,qwen-turbo,rich,Well-formed,Yes,3
+13,qwen-turbo,rich,Well-formed,Yes,3
+7,qwen-turbo,rich,Well-formed,Yes,1

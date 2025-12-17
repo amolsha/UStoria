@@ -1,0 +1,151 @@
+story_id,model,context,criterion,repair_conforms,reason_rating
+942,gpt-4.1-mini,minimal,Atomic,Yes,2
+933,gpt-4.1-mini,minimal,Atomic,No,2
+951,gpt-4.1-mini,minimal,Atomic,Yes,3
+868,gpt-4.1-mini,minimal,Atomic,No,3
+893,gpt-4.1-mini,minimal,Atomic,Yes,2
+919,gpt-4.1-mini,minimal,Atomic,No,3
+875,gpt-4.1-mini,minimal,Atomic,No,2
+920,gpt-4.1-mini,minimal,Atomic,Yes,3
+853,gpt-4.1-mini,minimal,Atomic,Yes,2
+913,gpt-4.1-mini,minimal,Atomic,No,3
+313,gpt-4.1-mini,minimal,Conceptually sound,Yes,1
+249,gpt-4.1-mini,minimal,Conceptually sound,Yes,2
+314,gpt-4.1-mini,minimal,Conceptually sound,Yes,1
+265,gpt-4.1-mini,minimal,Conceptually sound,Yes,3
+288,gpt-4.1-mini,minimal,Conceptually sound,Yes,1
+352,gpt-4.1-mini,minimal,Conceptually sound,Yes,3
+333,gpt-4.1-mini,minimal,Conceptually sound,Yes,2
+306,gpt-4.1-mini,minimal,Conceptually sound,Yes,2
+338,gpt-4.1-mini,minimal,Conceptually sound,Yes,1
+264,gpt-4.1-mini,minimal,Conceptually sound,Yes,1
+155,gpt-4.1-mini,minimal,Estimable,Yes,3
+211,gpt-4.1-mini,minimal,Estimable,Yes,3
+226,gpt-4.1-mini,minimal,Estimable,No,2
+142,gpt-4.1-mini,minimal,Estimable,No,3
+218,gpt-4.1-mini,minimal,Estimable,Yes,2
+130,gpt-4.1-mini,minimal,Estimable,Yes,3
+152,gpt-4.1-mini,minimal,Estimable,Yes,3
+236,gpt-4.1-mini,minimal,Estimable,Yes,3
+128,gpt-4.1-mini,minimal,Estimable,No,3
+185,gpt-4.1-mini,minimal,Estimable,No,3
+823,gpt-4.1-mini,minimal,Minimal,Yes,3
+780,gpt-4.1-mini,minimal,Minimal,Yes,3
+820,gpt-4.1-mini,minimal,Minimal,Yes,2
+804,gpt-4.1-mini,minimal,Minimal,Yes,3
+786,gpt-4.1-mini,minimal,Minimal,Yes,2
+831,gpt-4.1-mini,minimal,Minimal,No,2
+796,gpt-4.1-mini,minimal,Minimal,Yes,2
+779,gpt-4.1-mini,minimal,Minimal,Yes,3
+759,gpt-4.1-mini,minimal,Minimal,Yes,1
+791,gpt-4.1-mini,minimal,Minimal,Yes,3
+473,gpt-4.1-mini,minimal,Problem-oriented,No,2
+420,gpt-4.1-mini,minimal,Problem-oriented,No,2
+448,gpt-4.1-mini,minimal,Problem-oriented,No,2
+426,gpt-4.1-mini,minimal,Problem-oriented,No,1
+397,gpt-4.1-mini,minimal,Problem-oriented,No,2
+399,gpt-4.1-mini,minimal,Problem-oriented,No,2
+475,gpt-4.1-mini,minimal,Problem-oriented,No,2
+449,gpt-4.1-mini,minimal,Problem-oriented,No,2
+405,gpt-4.1-mini,minimal,Problem-oriented,No,1
+363,gpt-4.1-mini,minimal,Problem-oriented,No,2
+702,gpt-4.1-mini,minimal,Unambiguous,Yes,3
+696,gpt-4.1-mini,minimal,Unambiguous,Yes,3
+709,gpt-4.1-mini,minimal,Unambiguous,Yes,3
+626,gpt-4.1-mini,minimal,Unambiguous,No,3
+655,gpt-4.1-mini,minimal,Unambiguous,Yes,3
+673,gpt-4.1-mini,minimal,Unambiguous,No,3
+638,gpt-4.1-mini,minimal,Unambiguous,No,3
+674,gpt-4.1-mini,minimal,Unambiguous,No,3
+608,gpt-4.1-mini,minimal,Unambiguous,No,3
+672,gpt-4.1-mini,minimal,Unambiguous,No,3
+1,gpt-4.1-mini,minimal,Well-formed,Yes,2
+9,gpt-4.1-mini,minimal,Well-formed,Yes,2
+72,gpt-4.1-mini,minimal,Well-formed,Yes,3
+92,gpt-4.1-mini,minimal,Well-formed,Yes,3
+21,gpt-4.1-mini,minimal,Well-formed,Yes,3
+108,gpt-4.1-mini,minimal,Well-formed,Yes,3
+64,gpt-4.1-mini,minimal,Well-formed,Yes,3
+97,gpt-4.1-mini,minimal,Well-formed,Yes,3
+20,gpt-4.1-mini,minimal,Well-formed,Yes,3
+113,gpt-4.1-mini,minimal,Well-formed,Yes,3
+869,gpt-4.1-mini,rich,Atomic,Yes,3
+951,gpt-4.1-mini,rich,Atomic,Yes,3
+958,gpt-4.1-mini,rich,Atomic,No,3
+946,gpt-4.1-mini,rich,Atomic,Yes,3
+875,gpt-4.1-mini,rich,Atomic,Yes,2
+902,gpt-4.1-mini,rich,Atomic,No,3
+897,gpt-4.1-mini,rich,Atomic,Yes,3
+895,gpt-4.1-mini,rich,Atomic,Yes,3
+919,gpt-4.1-mini,rich,Atomic,Yes,3
+879,gpt-4.1-mini,rich,Atomic,No,2
+339,gpt-4.1-mini,rich,Conceptually sound,Yes,3
+333,gpt-4.1-mini,rich,Conceptually sound,Yes,2
+345,gpt-4.1-mini,rich,Conceptually sound,Yes,2
+265,gpt-4.1-mini,rich,Conceptually sound,Yes,3
+303,gpt-4.1-mini,rich,Conceptually sound,Yes,2
+313,gpt-4.1-mini,rich,Conceptually sound,Yes,1
+283,gpt-4.1-mini,rich,Conceptually sound,Yes,3
+314,gpt-4.1-mini,rich,Conceptually sound,Yes,3
+247,gpt-4.1-mini,rich,Conceptually sound,Yes,2
+312,gpt-4.1-mini,rich,Conceptually sound,Yes,3
+125,gpt-4.1-mini,rich,Estimable,Yes,2
+234,gpt-4.1-mini,rich,Estimable,Yes,2
+204,gpt-4.1-mini,rich,Estimable,Yes,3
+126,gpt-4.1-mini,rich,Estimable,Yes,3
+148,gpt-4.1-mini,rich,Estimable,Yes,3
+142,gpt-4.1-mini,rich,Estimable,Yes,3
+192,gpt-4.1-mini,rich,Estimable,Yes,3
+129,gpt-4.1-mini,rich,Estimable,Yes,3
+236,gpt-4.1-mini,rich,Estimable,Yes,3
+232,gpt-4.1-mini,rich,Estimable,Yes,3
+481,gpt-4.1-mini,rich,Full sentence,Yes,3
+489,gpt-4.1-mini,rich,Full sentence,Yes,3
+557,gpt-4.1-mini,rich,Full sentence,Yes,3
+572,gpt-4.1-mini,rich,Full sentence,Yes,2
+504,gpt-4.1-mini,rich,Full sentence,Yes,2
+593,gpt-4.1-mini,rich,Full sentence,Yes,2
+552,gpt-4.1-mini,rich,Full sentence,Yes,3
+584,gpt-4.1-mini,rich,Full sentence,Yes,2
+503,gpt-4.1-mini,rich,Full sentence,Yes,3
+597,gpt-4.1-mini,rich,Full sentence,Yes,3
+786,gpt-4.1-mini,rich,Minimal,Yes,2
+796,gpt-4.1-mini,rich,Minimal,Yes,2
+827,gpt-4.1-mini,rich,Minimal,Yes,3
+823,gpt-4.1-mini,rich,Minimal,Yes,3
+753,gpt-4.1-mini,rich,Minimal,Yes,2
+820,gpt-4.1-mini,rich,Minimal,Yes,2
+804,gpt-4.1-mini,rich,Minimal,Yes,3
+779,gpt-4.1-mini,rich,Minimal,Yes,2
+839,gpt-4.1-mini,rich,Minimal,Yes,3
+764,gpt-4.1-mini,rich,Minimal,Yes,2
+473,gpt-4.1-mini,rich,Problem-oriented,No,2
+423,gpt-4.1-mini,rich,Problem-oriented,No,2
+449,gpt-4.1-mini,rich,Problem-oriented,No,2
+429,gpt-4.1-mini,rich,Problem-oriented,No,2
+396,gpt-4.1-mini,rich,Problem-oriented,No,2
+397,gpt-4.1-mini,rich,Problem-oriented,No,2
+476,gpt-4.1-mini,rich,Problem-oriented,No,2
+455,gpt-4.1-mini,rich,Problem-oriented,No,2
+404,gpt-4.1-mini,rich,Problem-oriented,No,2
+363,gpt-4.1-mini,rich,Problem-oriented,No,2
+629,gpt-4.1-mini,rich,Unambiguous,No,3
+696,gpt-4.1-mini,rich,Unambiguous,Yes,3
+673,gpt-4.1-mini,rich,Unambiguous,No,3
+708,gpt-4.1-mini,rich,Unambiguous,No,3
+638,gpt-4.1-mini,rich,Unambiguous,No,3
+718,gpt-4.1-mini,rich,Unambiguous,Yes,2
+669,gpt-4.1-mini,rich,Unambiguous,No,3
+665,gpt-4.1-mini,rich,Unambiguous,Yes,3
+675,gpt-4.1-mini,rich,Unambiguous,No,3
+649,gpt-4.1-mini,rich,Unambiguous,No,2
+1,gpt-4.1-mini,rich,Well-formed,Yes,3
+9,gpt-4.1-mini,rich,Well-formed,Yes,3
+72,gpt-4.1-mini,rich,Well-formed,Yes,3
+92,gpt-4.1-mini,rich,Well-formed,Yes,3
+21,gpt-4.1-mini,rich,Well-formed,Yes,3
+108,gpt-4.1-mini,rich,Well-formed,Yes,3
+64,gpt-4.1-mini,rich,Well-formed,Yes,3
+97,gpt-4.1-mini,rich,Well-formed,Yes,3
+20,gpt-4.1-mini,rich,Well-formed,Yes,3
+113,gpt-4.1-mini,rich,Well-formed,Yes,3

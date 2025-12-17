@@ -1,0 +1,161 @@
+story_id,model,context,criterion,repair_conforms,reason_rating
+847,gemini-2.5-flash,minimal,Atomic,No,3
+855,gemini-2.5-flash,minimal,Atomic,Yes,3
+913,gemini-2.5-flash,minimal,Atomic,No,3
+869,gemini-2.5-flash,minimal,Atomic,Yes,3
+879,gemini-2.5-flash,minimal,Atomic,Yes,2
+946,gemini-2.5-flash,minimal,Atomic,Yes,3
+920,gemini-2.5-flash,minimal,Atomic,Yes,3
+893,gemini-2.5-flash,minimal,Atomic,Yes,3
+932,gemini-2.5-flash,minimal,Atomic,Yes,2
+868,gemini-2.5-flash,minimal,Atomic,Yes,3
+313,gemini-2.5-flash,minimal,Conceptually sound,Yes,1
+250,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+314,gemini-2.5-flash,minimal,Conceptually sound,Yes,2
+278,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+290,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+352,gemini-2.5-flash,minimal,Conceptually sound,Yes,2
+333,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+306,gemini-2.5-flash,minimal,Conceptually sound,Yes,2
+338,gemini-2.5-flash,minimal,Conceptually sound,Yes,2
+265,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+155,gemini-2.5-flash,minimal,Estimable,Yes,3
+218,gemini-2.5-flash,minimal,Estimable,Yes,3
+232,gemini-2.5-flash,minimal,Estimable,Yes,3
+142,gemini-2.5-flash,minimal,Estimable,Yes,3
+222,gemini-2.5-flash,minimal,Estimable,Yes,3
+132,gemini-2.5-flash,minimal,Estimable,Yes,3
+152,gemini-2.5-flash,minimal,Estimable,Yes,3
+237,gemini-2.5-flash,minimal,Estimable,Yes,3
+129,gemini-2.5-flash,minimal,Estimable,Yes,3
+189,gemini-2.5-flash,minimal,Estimable,Yes,3
+481,gemini-2.5-flash,minimal,Full sentence,Yes,3
+489,gemini-2.5-flash,minimal,Full sentence,Yes,3
+557,gemini-2.5-flash,minimal,Full sentence,Yes,3
+572,gemini-2.5-flash,minimal,Full sentence,Yes,3
+504,gemini-2.5-flash,minimal,Full sentence,Yes,3
+593,gemini-2.5-flash,minimal,Full sentence,Yes,2
+552,gemini-2.5-flash,minimal,Full sentence,Yes,3
+584,gemini-2.5-flash,minimal,Full sentence,Yes,3
+503,gemini-2.5-flash,minimal,Full sentence,Yes,3
+597,gemini-2.5-flash,minimal,Full sentence,Yes,3
+840,gemini-2.5-flash,minimal,Minimal,Yes,1
+784,gemini-2.5-flash,minimal,Minimal,Yes,3
+821,gemini-2.5-flash,minimal,Minimal,Yes,2
+831,gemini-2.5-flash,minimal,Minimal,No,1
+792,gemini-2.5-flash,minimal,Minimal,Yes,3
+832,gemini-2.5-flash,minimal,Minimal,Yes,3
+805,gemini-2.5-flash,minimal,Minimal,Yes,2
+780,gemini-2.5-flash,minimal,Minimal,Yes,3
+764,gemini-2.5-flash,minimal,Minimal,Yes,2
+795,gemini-2.5-flash,minimal,Minimal,No,3
+443,gemini-2.5-flash,minimal,Problem-oriented,No,2
+403,gemini-2.5-flash,minimal,Problem-oriented,No,2
+433,gemini-2.5-flash,minimal,Problem-oriented,No,2
+426,gemini-2.5-flash,minimal,Problem-oriented,No,2
+405,gemini-2.5-flash,minimal,Problem-oriented,No,2
+454,gemini-2.5-flash,minimal,Problem-oriented,No,2
+420,gemini-2.5-flash,minimal,Problem-oriented,No,2
+399,gemini-2.5-flash,minimal,Problem-oriented,No,2
+391,gemini-2.5-flash,minimal,Problem-oriented,No,2
+412,gemini-2.5-flash,minimal,Problem-oriented,No,2
+629,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+696,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+673,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+709,gemini-2.5-flash,minimal,Unambiguous,Yes,2
+638,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+718,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+669,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+661,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+675,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+649,gemini-2.5-flash,minimal,Unambiguous,No,3
+1,gemini-2.5-flash,minimal,Well-formed,Yes,2
+9,gemini-2.5-flash,minimal,Well-formed,Yes,2
+66,gemini-2.5-flash,minimal,Well-formed,Yes,3
+21,gemini-2.5-flash,minimal,Well-formed,Yes,3
+92,gemini-2.5-flash,minimal,Well-formed,Yes,1
+108,gemini-2.5-flash,minimal,Well-formed,Yes,3
+116,gemini-2.5-flash,minimal,Well-formed,Yes,2
+41,gemini-2.5-flash,minimal,Well-formed,Yes,2
+95,gemini-2.5-flash,minimal,Well-formed,Yes,2
+20,gemini-2.5-flash,minimal,Well-formed,Yes,1
+879,gemini-2.5-flash,rich,Atomic,Yes,3
+932,gemini-2.5-flash,rich,Atomic,Yes,2
+946,gemini-2.5-flash,rich,Atomic,Yes,3
+868,gemini-2.5-flash,rich,Atomic,No,3
+934,gemini-2.5-flash,rich,Atomic,No,3
+855,gemini-2.5-flash,rich,Atomic,Yes,3
+875,gemini-2.5-flash,rich,Atomic,No,3
+958,gemini-2.5-flash,rich,Atomic,No,3
+853,gemini-2.5-flash,rich,Atomic,Yes,3
+914,gemini-2.5-flash,rich,Atomic,No,3
+242,gemini-2.5-flash,rich,Conceptually sound,Yes,2
+250,gemini-2.5-flash,rich,Conceptually sound,Yes,3
+319,gemini-2.5-flash,rich,Conceptually sound,Yes,2
+270,gemini-2.5-flash,rich,Conceptually sound,Yes,2
+334,gemini-2.5-flash,rich,Conceptually sound,Yes,2
+353,gemini-2.5-flash,rich,Conceptually sound,Yes,2
+359,gemini-2.5-flash,rich,Conceptually sound,Yes,2
+303,gemini-2.5-flash,rich,Conceptually sound,Yes,2
+339,gemini-2.5-flash,rich,Conceptually sound,Yes,3
+265,gemini-2.5-flash,rich,Conceptually sound,Yes,3
+155,gemini-2.5-flash,rich,Estimable,Yes,3
+232,gemini-2.5-flash,rich,Estimable,Yes,3
+230,gemini-2.5-flash,rich,Estimable,Yes,2
+142,gemini-2.5-flash,rich,Estimable,Yes,3
+220,gemini-2.5-flash,rich,Estimable,Yes,3
+132,gemini-2.5-flash,rich,Estimable,Yes,3
+152,gemini-2.5-flash,rich,Estimable,Yes,3
+237,gemini-2.5-flash,rich,Estimable,Yes,3
+129,gemini-2.5-flash,rich,Estimable,Yes,3
+188,gemini-2.5-flash,rich,Estimable,Yes,2
+481,gemini-2.5-flash,rich,Full sentence,Yes,3
+489,gemini-2.5-flash,rich,Full sentence,Yes,3
+557,gemini-2.5-flash,rich,Full sentence,Yes,3
+572,gemini-2.5-flash,rich,Full sentence,Yes,3
+504,gemini-2.5-flash,rich,Full sentence,Yes,2
+593,gemini-2.5-flash,rich,Full sentence,Yes,2
+552,gemini-2.5-flash,rich,Full sentence,Yes,3
+584,gemini-2.5-flash,rich,Full sentence,Yes,3
+503,gemini-2.5-flash,rich,Full sentence,Yes,3
+597,gemini-2.5-flash,rich,Full sentence,Yes,3
+772,gemini-2.5-flash,rich,Minimal,Yes,2
+780,gemini-2.5-flash,rich,Minimal,Yes,2
+727,gemini-2.5-flash,rich,Minimal,Yes,2
+806,gemini-2.5-flash,rich,Minimal,Yes,3
+748,gemini-2.5-flash,rich,Minimal,Yes,3
+768,gemini-2.5-flash,rich,Minimal,No,2
+742,gemini-2.5-flash,rich,Minimal,Yes,3
+730,gemini-2.5-flash,rich,Minimal,No,3
+808,gemini-2.5-flash,rich,Minimal,Yes,2
+747,gemini-2.5-flash,rich,Minimal,Yes,3
+459,gemini-2.5-flash,rich,Problem-oriented,No,2
+475,gemini-2.5-flash,rich,Problem-oriented,No,2
+372,gemini-2.5-flash,rich,Problem-oriented,No,2
+399,gemini-2.5-flash,rich,Problem-oriented,No,2
+454,gemini-2.5-flash,rich,Problem-oriented,No,2
+443,gemini-2.5-flash,rich,Problem-oriented,No,2
+376,gemini-2.5-flash,rich,Problem-oriented,No,2
+444,gemini-2.5-flash,rich,Problem-oriented,No,2
+438,gemini-2.5-flash,rich,Problem-oriented,No,2
+404,gemini-2.5-flash,rich,Problem-oriented,No,2
+629,gemini-2.5-flash,rich,Unambiguous,No,3
+696,gemini-2.5-flash,rich,Unambiguous,Yes,3
+673,gemini-2.5-flash,rich,Unambiguous,Yes,3
+709,gemini-2.5-flash,rich,Unambiguous,Yes,2
+638,gemini-2.5-flash,rich,Unambiguous,No,3
+718,gemini-2.5-flash,rich,Unambiguous,Yes,3
+669,gemini-2.5-flash,rich,Unambiguous,No,3
+661,gemini-2.5-flash,rich,Unambiguous,No,3
+675,gemini-2.5-flash,rich,Unambiguous,Yes,3
+649,gemini-2.5-flash,rich,Unambiguous,No,3
+1,gemini-2.5-flash,rich,Well-formed,Yes,2
+9,gemini-2.5-flash,rich,Well-formed,Yes,3
+72,gemini-2.5-flash,rich,Well-formed,Yes,3
+92,gemini-2.5-flash,rich,Well-formed,Yes,2
+21,gemini-2.5-flash,rich,Well-formed,Yes,3
+108,gemini-2.5-flash,rich,Well-formed,Yes,3
+64,gemini-2.5-flash,rich,Well-formed,Yes,3
+97,gemini-2.5-flash,rich,Well-formed,Yes,3
+20,gemini-2.5-flash,rich,Well-formed,Yes,3
+113,gemini-2.5-flash,rich,Well-formed,Yes,3

@@ -1,0 +1,3 @@
+model,context,RSR,RAS,N_failed
+gpt-4.1-mini,minimal,0.629,0.81,70
+gpt-4.1-mini,rich,0.75,0.867,80
