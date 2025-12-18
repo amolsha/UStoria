@@ -1,0 +1,151 @@
+story_id,model,context,criterion,repair_conforms,reason_rating
+847,deepseek-chat,minimal,Atomic,Yes,3
+855,deepseek-chat,minimal,Atomic,Yes,3
+909,deepseek-chat,minimal,Atomic,Yes,3
+865,deepseek-chat,minimal,Atomic,Yes,3
+931,deepseek-chat,minimal,Atomic,Yes,3
+951,deepseek-chat,minimal,Atomic,Yes,3
+959,deepseek-chat,minimal,Atomic,Yes,3
+884,deepseek-chat,minimal,Atomic,Yes,3
+933,deepseek-chat,minimal,Atomic,Yes,3
+864,deepseek-chat,minimal,Atomic,Yes,3
+242,deepseek-chat,minimal,Conceptually sound,Yes,2
+250,deepseek-chat,minimal,Conceptually sound,Yes,1
+319,deepseek-chat,minimal,Conceptually sound,No,3
+270,deepseek-chat,minimal,Conceptually sound,Yes,1
+333,deepseek-chat,minimal,Conceptually sound,Yes,3
+352,deepseek-chat,minimal,Conceptually sound,Yes,2
+324,deepseek-chat,minimal,Conceptually sound,Yes,2
+303,deepseek-chat,minimal,Conceptually sound,Yes,3
+338,deepseek-chat,minimal,Conceptually sound,Yes,2
+265,deepseek-chat,minimal,Conceptually sound,Yes,3
+153,deepseek-chat,minimal,Estimable,Yes,3
+213,deepseek-chat,minimal,Estimable,Yes,3
+230,deepseek-chat,minimal,Estimable,Yes,3
+141,deepseek-chat,minimal,Estimable,Yes,3
+220,deepseek-chat,minimal,Estimable,Yes,3
+132,deepseek-chat,minimal,Estimable,No,3
+150,deepseek-chat,minimal,Estimable,No,3
+236,deepseek-chat,minimal,Estimable,Yes,3
+129,deepseek-chat,minimal,Estimable,Yes,3
+185,deepseek-chat,minimal,Estimable,Yes,3
+481,deepseek-chat,minimal,Full sentence,Yes,2
+489,deepseek-chat,minimal,Full sentence,Yes,1
+557,deepseek-chat,minimal,Full sentence,Yes,1
+572,deepseek-chat,minimal,Full sentence,Yes,1
+504,deepseek-chat,minimal,Full sentence,Yes,1
+593,deepseek-chat,minimal,Full sentence,Yes,1
+552,deepseek-chat,minimal,Full sentence,Yes,1
+584,deepseek-chat,minimal,Full sentence,Yes,1
+503,deepseek-chat,minimal,Full sentence,Yes,1
+597,deepseek-chat,minimal,Full sentence,Yes,1
+840,deepseek-chat,minimal,Minimal,Yes,2
+771,deepseek-chat,minimal,Minimal,Yes,1
+807,deepseek-chat,minimal,Minimal,Yes,3
+829,deepseek-chat,minimal,Minimal,Yes,3
+780,deepseek-chat,minimal,Minimal,No,3
+832,deepseek-chat,minimal,Minimal,Yes,3
+795,deepseek-chat,minimal,Minimal,Yes,3
+768,deepseek-chat,minimal,Minimal,No,3
+753,deepseek-chat,minimal,Minimal,Yes,3
+784,deepseek-chat,minimal,Minimal,No,3
+471,deepseek-chat,minimal,Problem-oriented,No,3
+429,deepseek-chat,minimal,Problem-oriented,No,2
+454,deepseek-chat,minimal,Problem-oriented,No,3
+433,deepseek-chat,minimal,Problem-oriented,No,3
+404,deepseek-chat,minimal,Problem-oriented,No,3
+405,deepseek-chat,minimal,Problem-oriented,Yes,3
+475,deepseek-chat,minimal,Problem-oriented,No,3
+455,deepseek-chat,minimal,Problem-oriented,No,3
+420,deepseek-chat,minimal,Problem-oriented,No,3
+363,deepseek-chat,minimal,Problem-oriented,Yes,3
+649,deepseek-chat,minimal,Unambiguous,No,3
+696,deepseek-chat,minimal,Unambiguous,No,3
+708,deepseek-chat,minimal,Unambiguous,Yes,3
+626,deepseek-chat,minimal,Unambiguous,No,3
+699,deepseek-chat,minimal,Unambiguous,No,1
+611,deepseek-chat,minimal,Unambiguous,No,3
+638,deepseek-chat,minimal,Unambiguous,No,3
+711,deepseek-chat,minimal,Unambiguous,No,3
+608,deepseek-chat,minimal,Unambiguous,No,3
+674,deepseek-chat,minimal,Unambiguous,No,3
+879,deepseek-chat,rich,Atomic,Yes,2
+932,deepseek-chat,rich,Atomic,Yes,2
+946,deepseek-chat,rich,Atomic,Yes,3
+868,deepseek-chat,rich,Atomic,Yes,3
+934,deepseek-chat,rich,Atomic,Yes,3
+855,deepseek-chat,rich,Atomic,Yes,3
+875,deepseek-chat,rich,Atomic,Yes,3
+958,deepseek-chat,rich,Atomic,Yes,3
+853,deepseek-chat,rich,Atomic,Yes,3
+913,deepseek-chat,rich,Atomic,Yes,3
+242,deepseek-chat,rich,Conceptually sound,Yes,3
+249,deepseek-chat,rich,Conceptually sound,Yes,2
+322,deepseek-chat,rich,Conceptually sound,Yes,2
+333,deepseek-chat,rich,Conceptually sound,Yes,3
+265,deepseek-chat,rich,Conceptually sound,Yes,2
+353,deepseek-chat,rich,Conceptually sound,Yes,1
+313,deepseek-chat,rich,Conceptually sound,Yes,1
+339,deepseek-chat,rich,Conceptually sound,Yes,3
+264,deepseek-chat,rich,Conceptually sound,No,3
+358,deepseek-chat,rich,Conceptually sound,Yes,3
+153,deepseek-chat,rich,Estimable,Yes,3
+218,deepseek-chat,rich,Estimable,No,3
+232,deepseek-chat,rich,Estimable,No,3
+141,deepseek-chat,rich,Estimable,No,3
+222,deepseek-chat,rich,Estimable,No,3
+132,deepseek-chat,rich,Estimable,No,3
+150,deepseek-chat,rich,Estimable,No,3
+237,deepseek-chat,rich,Estimable,No,3
+129,deepseek-chat,rich,Estimable,Yes,3
+189,deepseek-chat,rich,Estimable,No,3
+591,deepseek-chat,rich,Full sentence,Yes,3
+588,deepseek-chat,rich,Full sentence,Yes,1
+594,deepseek-chat,rich,Full sentence,Yes,1
+511,deepseek-chat,rich,Full sentence,Yes,1
+538,deepseek-chat,rich,Full sentence,Yes,1
+558,deepseek-chat,rich,Full sentence,Yes,1
+518,deepseek-chat,rich,Full sentence,Yes,1
+560,deepseek-chat,rich,Full sentence,Yes,1
+484,deepseek-chat,rich,Full sentence,Yes,1
+557,deepseek-chat,rich,Full sentence,Yes,1
+831,deepseek-chat,rich,Minimal,No,3
+823,deepseek-chat,rich,Minimal,Yes,3
+835,deepseek-chat,rich,Minimal,Yes,1
+764,deepseek-chat,rich,Minimal,No,3
+786,deepseek-chat,rich,Minimal,Yes,2
+801,deepseek-chat,rich,Minimal,Yes,3
+774,deepseek-chat,rich,Minimal,Yes,2
+804,deepseek-chat,rich,Minimal,Yes,3
+734,deepseek-chat,rich,Minimal,No,3
+797,deepseek-chat,rich,Minimal,No,2
+455,deepseek-chat,rich,Problem-oriented,No,3
+448,deepseek-chat,rich,Problem-oriented,No,3
+471,deepseek-chat,rich,Problem-oriented,No,3
+383,deepseek-chat,rich,Problem-oriented,No,3
+405,deepseek-chat,rich,Problem-oriented,No,3
+426,deepseek-chat,rich,Problem-oriented,No,3
+396,deepseek-chat,rich,Problem-oriented,No,3
+428,deepseek-chat,rich,Problem-oriented,No,3
+368,deepseek-chat,rich,Problem-oriented,No,3
+423,deepseek-chat,rich,Problem-oriented,No,3
+649,deepseek-chat,rich,Unambiguous,No,3
+709,deepseek-chat,rich,Unambiguous,No,3
+708,deepseek-chat,rich,Unambiguous,No,3
+626,deepseek-chat,rich,Unambiguous,No,3
+699,deepseek-chat,rich,Unambiguous,No,3
+611,deepseek-chat,rich,Unambiguous,No,3
+638,deepseek-chat,rich,Unambiguous,No,3
+718,deepseek-chat,rich,Unambiguous,Yes,3
+608,deepseek-chat,rich,Unambiguous,No,3
+672,deepseek-chat,rich,Unambiguous,No,3
+1,deepseek-chat,rich,Well-formed,Yes,3
+9,deepseek-chat,rich,Well-formed,Yes,3
+72,deepseek-chat,rich,Well-formed,Yes,3
+92,deepseek-chat,rich,Well-formed,Yes,3
+21,deepseek-chat,rich,Well-formed,Yes,2
+108,deepseek-chat,rich,Well-formed,Yes,3
+64,deepseek-chat,rich,Well-formed,Yes,2
+97,deepseek-chat,rich,Well-formed,Yes,2
+20,deepseek-chat,rich,Well-formed,Yes,2
+113,deepseek-chat,rich,Well-formed,Yes,3

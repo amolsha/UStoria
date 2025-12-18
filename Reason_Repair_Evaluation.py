@@ -28,7 +28,7 @@ QUS_DEFS = {
     "Estimatable": "A story does not denote a coarse-grained requirement that is difficult to plan and prioritize."
 }
 
-client = OpenAI()
+
 
 # ---------- PROMPTS ----------
 
