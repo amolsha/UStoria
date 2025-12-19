@@ -1,0 +1,3 @@
+model,context,RSR,RAS,N_failed
+gpt-5-mini,minimal,0.688,0.888,80
+gpt-5-mini,rich,0.775,0.912,80

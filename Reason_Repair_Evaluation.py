@@ -6,6 +6,7 @@ from tqdm import tqdm
 # ---------- CONFIGURATION ----------
 DATA_FILE = "evaluations_sampled.csv"      # input from your SQLite export
 META_RATER_MODEL = "gpt-5-nano-2025-08-07"    # or "gpt-4.1-mini"
+# META_RATER_MODEL = "gpt-4o-mini"    # or "gpt-4.1-mini"
 TEMPERATURE = 0
 SAVE_FILE = "meta_eval_results.csv"
 
@@ -28,7 +29,7 @@ QUS_DEFS = {
     "Estimatable": "A story does not denote a coarse-grained requirement that is difficult to plan and prioritize."
 }
 
-
+client = OpenAI()
 
 # ---------- PROMPTS ----------
 
@@ -166,3 +167,13 @@ def evaluate_rsr_ras():
 # ---------- RUN ----------
 if __name__ == "__main__":
     evaluate_rsr_ras()
+    # bad_lines = []
+    #
+    # with open(DATA_FILE, 'rb') as f:
+    #     for i, line in enumerate(f, start=1):
+    #         try:
+    #             line.decode('utf-8')
+    #         except UnicodeDecodeError:
+    #             bad_lines.append(i)
+    #
+    # print("Rows with encoding issues:", bad_lines)

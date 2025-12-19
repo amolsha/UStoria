@@ -1,0 +1,3 @@
+model,context,RSR,RAS,N_failed
+gemini-2.5-flash,minimal,0.625,0.842,80
+gemini-2.5-flash,rich,0.662,0.871,80
