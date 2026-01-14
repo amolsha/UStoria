@@ -262,7 +262,7 @@ def performance_run():
 
 @evaluation_bp.route("/performance_llm", methods=["GET", "POST"])
 def performance_llm():
-    # ✅ Use the helper instead of manual query
+    # Use the helper instead of manual query
     llms = get_evaluated_llms()  # returns list of (id, name)
 
     # Convert to a simple iterable structure for HTML rendering
