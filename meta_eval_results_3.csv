@@ -1,0 +1,945 @@
+story_id,model,context,criterion,repair_conforms,reason_rating
+847,deepseek-chat,minimal,Atomic,Yes,3
+855,deepseek-chat,minimal,Atomic,Yes,3
+893,deepseek-chat,minimal,Atomic,Yes,3
+865,deepseek-chat,minimal,Atomic,Yes,3
+913,deepseek-chat,minimal,Atomic,Yes,3
+959,deepseek-chat,minimal,Atomic,Yes,3
+907,deepseek-chat,minimal,Atomic,Yes,3
+902,deepseek-chat,minimal,Atomic,Yes,3
+933,deepseek-chat,minimal,Atomic,Yes,1
+312,deepseek-chat,minimal,Conceptually sound,Yes,1
+278,deepseek-chat,minimal,Conceptually sound,Yes,3
+307,deepseek-chat,minimal,Conceptually sound,Yes,1
+864,deepseek-chat,minimal,Atomic,Yes,3
+250,deepseek-chat,minimal,Conceptually sound,Yes,2
+313,deepseek-chat,minimal,Conceptually sound,Yes,1
+322,deepseek-chat,minimal,Conceptually sound,Yes,3
+242,deepseek-chat,minimal,Conceptually sound,Yes,3
+338,deepseek-chat,minimal,Conceptually sound,Yes,1
+153,deepseek-chat,minimal,Estimable,Yes,3
+232,deepseek-chat,minimal,Estimable,Yes,3
+218,deepseek-chat,minimal,Estimable,Yes,3
+265,deepseek-chat,minimal,Conceptually sound,Yes,3
+132,deepseek-chat,minimal,Estimable,Yes,1
+222,deepseek-chat,minimal,Estimable,Yes,1
+141,deepseek-chat,minimal,Estimable,Yes,3
+150,deepseek-chat,minimal,Estimable,Yes,1
+129,deepseek-chat,minimal,Estimable,Yes,3
+359,deepseek-chat,minimal,Conceptually sound,Yes,2
+489,deepseek-chat,minimal,Full sentence,Yes,3
+481,deepseek-chat,minimal,Full sentence,Yes,3
+237,deepseek-chat,minimal,Estimable,Yes,3
+557,deepseek-chat,minimal,Full sentence,Yes,3
+189,deepseek-chat,minimal,Estimable,Yes,3
+504,deepseek-chat,minimal,Full sentence,Yes,3
+572,deepseek-chat,minimal,Full sentence,Yes,3
+593,deepseek-chat,minimal,Full sentence,Yes,1
+552,deepseek-chat,minimal,Full sentence,Yes,1
+584,deepseek-chat,minimal,Full sentence,Yes,3
+597,deepseek-chat,minimal,Full sentence,Yes,3
+792,deepseek-chat,minimal,Minimal,Yes,3
+772,deepseek-chat,minimal,Minimal,Yes,3
+796,deepseek-chat,minimal,Minimal,Yes,3
+839,deepseek-chat,minimal,Minimal,Yes,1
+768,deepseek-chat,minimal,Minimal,Yes,3
+833,deepseek-chat,minimal,Minimal,Yes,3
+503,deepseek-chat,minimal,Full sentence,Yes,2
+827,deepseek-chat,minimal,Minimal,Yes,3
+823,deepseek-chat,minimal,Minimal,Yes,1
+727,deepseek-chat,minimal,Minimal,Yes,3
+412,deepseek-chat,minimal,Problem-oriented,Yes,3
+420,deepseek-chat,minimal,Problem-oriented,Yes,3
+454,deepseek-chat,minimal,Problem-oriented,Yes,3
+426,deepseek-chat,minimal,Problem-oriented,No,3
+363,deepseek-chat,minimal,Problem-oriented,Yes,3
+471,deepseek-chat,minimal,Problem-oriented,Yes,3
+442,deepseek-chat,minimal,Problem-oriented,Yes,3
+433,deepseek-chat,minimal,Problem-oriented,Yes,3
+405,deepseek-chat,minimal,Problem-oriented,Yes,2
+649,deepseek-chat,minimal,Unambiguous,Yes,3
+423,deepseek-chat,minimal,Problem-oriented,Yes,3
+626,deepseek-chat,minimal,Unambiguous,Yes,3
+709,deepseek-chat,minimal,Unambiguous,Yes,3
+697,deepseek-chat,minimal,Unambiguous,Yes,2
+784,deepseek-chat,minimal,Minimal,No,3
+718,deepseek-chat,minimal,Unambiguous,Yes,3
+638,deepseek-chat,minimal,Unambiguous,Yes,3
+611,deepseek-chat,minimal,Unambiguous,Yes,3
+675,deepseek-chat,minimal,Unambiguous,Yes,3
+702,deepseek-chat,minimal,Unambiguous,No,3
+1,deepseek-chat,minimal,Well-formed,Yes,1
+608,deepseek-chat,minimal,Unambiguous,Yes,3
+9,deepseek-chat,minimal,Well-formed,Yes,1
+21,deepseek-chat,minimal,Well-formed,Yes,3
+72,deepseek-chat,minimal,Well-formed,Yes,3
+20,deepseek-chat,minimal,Well-formed,Yes,1
+108,deepseek-chat,minimal,Well-formed,Yes,1
+92,deepseek-chat,minimal,Well-formed,Yes,1
+64,deepseek-chat,minimal,Well-formed,Yes,3
+946,deepseek-chat,rich,Atomic,Yes,3
+97,deepseek-chat,minimal,Well-formed,Yes,3
+868,deepseek-chat,rich,Atomic,Yes,3
+113,deepseek-chat,minimal,Well-formed,Yes,1
+935,deepseek-chat,rich,Atomic,Yes,3
+888,deepseek-chat,rich,Atomic,Yes,3
+932,deepseek-chat,rich,Atomic,Yes,3
+919,deepseek-chat,rich,Atomic,Yes,3
+913,deepseek-chat,rich,Atomic,Yes,3
+875,deepseek-chat,rich,Atomic,Yes,3
+242,deepseek-chat,rich,Conceptually sound,Yes,3
+853,deepseek-chat,rich,Atomic,Yes,3
+322,deepseek-chat,rich,Conceptually sound,Yes,1
+909,deepseek-chat,rich,Atomic,Yes,3
+250,deepseek-chat,rich,Conceptually sound,Yes,1
+325,deepseek-chat,rich,Conceptually sound,Yes,1
+278,deepseek-chat,rich,Conceptually sound,Yes,1
+334,deepseek-chat,rich,Conceptually sound,Yes,3
+304,deepseek-chat,rich,Conceptually sound,Yes,1
+339,deepseek-chat,rich,Conceptually sound,Yes,3
+153,deepseek-chat,rich,Estimable,Yes,3
+353,deepseek-chat,rich,Conceptually sound,Yes,1
+141,deepseek-chat,rich,Estimable,Yes,1
+265,deepseek-chat,rich,Conceptually sound,Yes,3
+222,deepseek-chat,rich,Estimable,Yes,3
+218,deepseek-chat,rich,Estimable,Yes,3
+129,deepseek-chat,rich,Estimable,Yes,1
+132,deepseek-chat,rich,Estimable,No,3
+591,deepseek-chat,rich,Full sentence,Yes,1
+232,deepseek-chat,rich,Estimable,Yes,1
+588,deepseek-chat,rich,Full sentence,Yes,1
+150,deepseek-chat,rich,Estimable,Yes,1
+594,deepseek-chat,rich,Full sentence,Yes,1
+538,deepseek-chat,rich,Full sentence,Yes,1
+558,deepseek-chat,rich,Full sentence,Yes,3
+237,deepseek-chat,rich,Estimable,Yes,1
+511,deepseek-chat,rich,Full sentence,Yes,1
+560,deepseek-chat,rich,Full sentence,Yes,1
+189,deepseek-chat,rich,Estimable,Yes,3
+484,deepseek-chat,rich,Full sentence,Yes,1
+518,deepseek-chat,rich,Full sentence,Yes,3
+557,deepseek-chat,rich,Full sentence,Yes,3
+823,deepseek-chat,rich,Minimal,Yes,3
+833,deepseek-chat,rich,Minimal,Yes,3
+772,deepseek-chat,rich,Minimal,Yes,3
+768,deepseek-chat,rich,Minimal,Yes,3
+839,deepseek-chat,rich,Minimal,Yes,3
+796,deepseek-chat,rich,Minimal,Yes,1
+827,deepseek-chat,rich,Minimal,No,1
+412,deepseek-chat,rich,Problem-oriented,Yes,3
+376,deepseek-chat,rich,Problem-oriented,Yes,3
+792,deepseek-chat,rich,Minimal,Yes,1
+433,deepseek-chat,rich,Problem-oriented,Yes,3
+784,deepseek-chat,rich,Minimal,Yes,3
+475,deepseek-chat,rich,Problem-oriented,Yes,3
+449,deepseek-chat,rich,Problem-oriented,No,1
+727,deepseek-chat,rich,Minimal,Yes,3
+706,deepseek-chat,rich,Unambiguous,Yes,3
+402,deepseek-chat,rich,Problem-oriented,No,3
+380,deepseek-chat,rich,Problem-oriented,Yes,3
+697,deepseek-chat,rich,Unambiguous,Yes,3
+405,deepseek-chat,rich,Problem-oriented,Yes,3
+626,deepseek-chat,rich,Unambiguous,Yes,3
+709,deepseek-chat,rich,Unambiguous,Yes,3
+431,deepseek-chat,rich,Problem-oriented,Yes,3
+655,deepseek-chat,rich,Unambiguous,Yes,3
+674,deepseek-chat,rich,Unambiguous,Yes,3
+442,deepseek-chat,rich,Problem-oriented,No,1
+608,deepseek-chat,rich,Unambiguous,Yes,3
+673,deepseek-chat,rich,Unambiguous,Yes,3
+1,deepseek-chat,rich,Well-formed,Yes,1
+675,deepseek-chat,rich,Unambiguous,Yes,3
+72,deepseek-chat,rich,Well-formed,Yes,3
+9,deepseek-chat,rich,Well-formed,Yes,3
+21,deepseek-chat,rich,Well-formed,Yes,1
+92,deepseek-chat,rich,Well-formed,Yes,3
+108,deepseek-chat,rich,Well-formed,Yes,1
+97,deepseek-chat,rich,Well-formed,Yes,1
+64,deepseek-chat,rich,Well-formed,Yes,3
+855,gemini-2.5-flash,minimal,Atomic,Yes,3
+113,deepseek-chat,rich,Well-formed,Yes,1
+20,deepseek-chat,rich,Well-formed,Yes,3
+913,gemini-2.5-flash,minimal,Atomic,Yes,3
+912,gemini-2.5-flash,minimal,Atomic,Yes,3
+930,gemini-2.5-flash,minimal,Atomic,Yes,3
+868,gemini-2.5-flash,minimal,Atomic,Yes,1
+946,gemini-2.5-flash,minimal,Atomic,Yes,3
+869,gemini-2.5-flash,minimal,Atomic,Yes,3
+879,gemini-2.5-flash,minimal,Atomic,Yes,3
+895,gemini-2.5-flash,minimal,Atomic,Yes,3
+638,deepseek-chat,rich,Unambiguous,No,3
+932,gemini-2.5-flash,minimal,Atomic,Yes,3
+313,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+290,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+250,gemini-2.5-flash,minimal,Conceptually sound,Yes,2
+314,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+333,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+338,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+352,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+265,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+278,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+306,gemini-2.5-flash,minimal,Conceptually sound,Yes,3
+225,gemini-2.5-flash,minimal,Estimable,Yes,3
+218,gemini-2.5-flash,minimal,Estimable,Yes,3
+232,gemini-2.5-flash,minimal,Estimable,Yes,3
+168,gemini-2.5-flash,minimal,Estimable,Yes,3
+190,gemini-2.5-flash,minimal,Estimable,Yes,3
+152,gemini-2.5-flash,minimal,Estimable,Yes,3
+129,gemini-2.5-flash,minimal,Estimable,Yes,3
+189,gemini-2.5-flash,minimal,Estimable,Yes,1
+188,gemini-2.5-flash,minimal,Estimable,Yes,3
+481,gemini-2.5-flash,minimal,Full sentence,Yes,1
+572,gemini-2.5-flash,minimal,Full sentence,Yes,1
+489,gemini-2.5-flash,minimal,Full sentence,Yes,3
+504,gemini-2.5-flash,minimal,Full sentence,Yes,3
+142,gemini-2.5-flash,minimal,Estimable,Yes,3
+557,gemini-2.5-flash,minimal,Full sentence,Yes,3
+593,gemini-2.5-flash,minimal,Full sentence,Yes,3
+552,gemini-2.5-flash,minimal,Full sentence,Yes,3
+597,gemini-2.5-flash,minimal,Full sentence,Yes,3
+584,gemini-2.5-flash,minimal,Full sentence,Yes,1
+503,gemini-2.5-flash,minimal,Full sentence,Yes,2
+792,gemini-2.5-flash,minimal,Minimal,No,3
+768,gemini-2.5-flash,minimal,Minimal,Yes,3
+827,gemini-2.5-flash,minimal,Minimal,Yes,3
+839,gemini-2.5-flash,minimal,Minimal,Yes,1
+823,gemini-2.5-flash,minimal,Minimal,Yes,1
+772,gemini-2.5-flash,minimal,Minimal,Yes,3
+796,gemini-2.5-flash,minimal,Minimal,Yes,3
+727,gemini-2.5-flash,minimal,Minimal,Yes,3
+833,gemini-2.5-flash,minimal,Minimal,Yes,3
+473,gemini-2.5-flash,minimal,Problem-oriented,No,2
+412,gemini-2.5-flash,minimal,Problem-oriented,No,3
+426,gemini-2.5-flash,minimal,Problem-oriented,No,1
+448,gemini-2.5-flash,minimal,Problem-oriented,No,3
+403,gemini-2.5-flash,minimal,Problem-oriented,No,1
+784,gemini-2.5-flash,minimal,Minimal,No,3
+443,gemini-2.5-flash,minimal,Problem-oriented,No,2
+673,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+399,gemini-2.5-flash,minimal,Problem-oriented,No,3
+696,gemini-2.5-flash,minimal,Unambiguous,No,3
+363,gemini-2.5-flash,minimal,Problem-oriented,No,3
+416,gemini-2.5-flash,minimal,Problem-oriented,No,2
+471,gemini-2.5-flash,minimal,Problem-oriented,No,2
+718,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+661,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+709,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+669,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+638,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+629,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+675,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+649,gemini-2.5-flash,minimal,Unambiguous,Yes,3
+21,gemini-2.5-flash,minimal,Well-formed,Yes,1
+1,gemini-2.5-flash,minimal,Well-formed,Yes,3
+66,gemini-2.5-flash,minimal,Well-formed,Yes,1
+108,gemini-2.5-flash,minimal,Well-formed,Yes,1
+92,gemini-2.5-flash,minimal,Well-formed,Yes,3
+9,gemini-2.5-flash,minimal,Well-formed,Yes,1
+41,gemini-2.5-flash,minimal,Well-formed,Yes,3
+20,gemini-2.5-flash,minimal,Well-formed,Yes,1
+946,gemini-2.5-flash,rich,Atomic,Yes,3
+879,gemini-2.5-flash,rich,Atomic,Yes,3
+934,gemini-2.5-flash,rich,Atomic,Yes,3
+95,gemini-2.5-flash,minimal,Well-formed,Yes,3
+855,gemini-2.5-flash,rich,Atomic,Yes,3
+116,gemini-2.5-flash,minimal,Well-formed,Yes,2
+868,gemini-2.5-flash,rich,Atomic,Yes,3
+932,gemini-2.5-flash,rich,Atomic,Yes,3
+914,gemini-2.5-flash,rich,Atomic,Yes,3
+958,gemini-2.5-flash,rich,Atomic,Yes,3
+875,gemini-2.5-flash,rich,Atomic,Yes,3
+242,gemini-2.5-flash,rich,Conceptually sound,Yes,3
+853,gemini-2.5-flash,rich,Atomic,Yes,3
+278,gemini-2.5-flash,rich,Conceptually sound,Yes,3
+322,gemini-2.5-flash,rich,Conceptually sound,Yes,3
+250,gemini-2.5-flash,rich,Conceptually sound,Yes,3
+304,gemini-2.5-flash,rich,Conceptually sound,Yes,3
+325,gemini-2.5-flash,rich,Conceptually sound,Yes,3
+339,gemini-2.5-flash,rich,Conceptually sound,Yes,1
+334,gemini-2.5-flash,rich,Conceptually sound,Yes,2
+155,gemini-2.5-flash,rich,Estimable,Yes,3
+353,gemini-2.5-flash,rich,Conceptually sound,Yes,3
+230,gemini-2.5-flash,rich,Estimable,Yes,3
+213,gemini-2.5-flash,rich,Estimable,Yes,3
+142,gemini-2.5-flash,rich,Estimable,Yes,1
+265,gemini-2.5-flash,rich,Conceptually sound,Yes,3
+220,gemini-2.5-flash,rich,Estimable,Yes,3
+236,gemini-2.5-flash,rich,Estimable,Yes,3
+132,gemini-2.5-flash,rich,Estimable,Yes,3
+152,gemini-2.5-flash,rich,Estimable,Yes,3
+489,gemini-2.5-flash,rich,Full sentence,Yes,1
+481,gemini-2.5-flash,rich,Full sentence,Yes,3
+557,gemini-2.5-flash,rich,Full sentence,Yes,1
+129,gemini-2.5-flash,rich,Estimable,Yes,3
+572,gemini-2.5-flash,rich,Full sentence,Yes,3
+189,gemini-2.5-flash,rich,Estimable,Yes,3
+504,gemini-2.5-flash,rich,Full sentence,Yes,1
+584,gemini-2.5-flash,rich,Full sentence,Yes,1
+552,gemini-2.5-flash,rich,Full sentence,Yes,3
+503,gemini-2.5-flash,rich,Full sentence,Yes,3
+597,gemini-2.5-flash,rich,Full sentence,Yes,3
+727,gemini-2.5-flash,rich,Minimal,Yes,3
+593,gemini-2.5-flash,rich,Full sentence,Yes,2
+779,gemini-2.5-flash,rich,Minimal,Yes,1
+746,gemini-2.5-flash,rich,Minimal,Yes,3
+742,gemini-2.5-flash,rich,Minimal,No,3
+471,gemini-2.5-flash,rich,Problem-oriented,Yes,3
+768,gemini-2.5-flash,rich,Minimal,Yes,3
+747,gemini-2.5-flash,rich,Minimal,No,1
+780,gemini-2.5-flash,rich,Minimal,Yes,3
+772,gemini-2.5-flash,rich,Minimal,Yes,3
+420,gemini-2.5-flash,rich,Problem-oriented,Yes,3
+449,gemini-2.5-flash,rich,Problem-oriented,Yes,3
+473,gemini-2.5-flash,rich,Problem-oriented,Yes,3
+454,gemini-2.5-flash,rich,Problem-oriented,Yes,3
+397,gemini-2.5-flash,rich,Problem-oriented,Yes,1
+399,gemini-2.5-flash,rich,Problem-oriented,Yes,3
+426,gemini-2.5-flash,rich,Problem-oriented,Yes,3
+748,gemini-2.5-flash,rich,Minimal,No,1
+405,gemini-2.5-flash,rich,Problem-oriented,No,3
+363,gemini-2.5-flash,rich,Problem-oriented,Yes,3
+629,gemini-2.5-flash,rich,Unambiguous,Yes,3
+718,gemini-2.5-flash,rich,Unambiguous,Yes,3
+673,gemini-2.5-flash,rich,Unambiguous,Yes,3
+709,gemini-2.5-flash,rich,Unambiguous,Yes,3
+696,gemini-2.5-flash,rich,Unambiguous,Yes,3
+675,gemini-2.5-flash,rich,Unambiguous,Yes,3
+638,gemini-2.5-flash,rich,Unambiguous,No,3
+669,gemini-2.5-flash,rich,Unambiguous,No,2
+9,gemini-2.5-flash,rich,Well-formed,Yes,3
+661,gemini-2.5-flash,rich,Unambiguous,No,2
+1,gemini-2.5-flash,rich,Well-formed,Yes,3
+21,gemini-2.5-flash,rich,Well-formed,Yes,3
+72,gemini-2.5-flash,rich,Well-formed,Yes,1
+64,gemini-2.5-flash,rich,Well-formed,Yes,3
+108,gemini-2.5-flash,rich,Well-formed,Yes,3
+92,gemini-2.5-flash,rich,Well-formed,Yes,1
+113,gemini-2.5-flash,rich,Well-formed,Yes,3
+97,gemini-2.5-flash,rich,Well-formed,Yes,3
+942,gpt-4.1-mini,minimal,Atomic,Yes,3
+20,gemini-2.5-flash,rich,Well-formed,Yes,3
+933,gpt-4.1-mini,minimal,Atomic,Yes,3
+649,gemini-2.5-flash,rich,Unambiguous,No,3
+919,gpt-4.1-mini,minimal,Atomic,Yes,3
+893,gpt-4.1-mini,minimal,Atomic,Yes,3
+853,gpt-4.1-mini,minimal,Atomic,Yes,3
+951,gpt-4.1-mini,minimal,Atomic,Yes,3
+920,gpt-4.1-mini,minimal,Atomic,Yes,1
+913,gpt-4.1-mini,minimal,Atomic,Yes,3
+875,gpt-4.1-mini,minimal,Atomic,Yes,3
+868,gpt-4.1-mini,minimal,Atomic,Yes,3
+290,gpt-4.1-mini,minimal,Conceptually sound,Yes,1
+352,gpt-4.1-mini,minimal,Conceptually sound,Yes,3
+340,gpt-4.1-mini,minimal,Conceptually sound,Yes,3
+265,gpt-4.1-mini,minimal,Conceptually sound,Yes,3
+250,gpt-4.1-mini,minimal,Conceptually sound,Yes,3
+147,gpt-4.1-mini,minimal,Estimable,Yes,3
+359,gpt-4.1-mini,minimal,Conceptually sound,Yes,3
+247,gpt-4.1-mini,minimal,Conceptually sound,Yes,1
+287,gpt-4.1-mini,minimal,Conceptually sound,Yes,3
+322,gpt-4.1-mini,minimal,Conceptually sound,Yes,3
+188,gpt-4.1-mini,minimal,Estimable,Yes,3
+353,gpt-4.1-mini,minimal,Conceptually sound,No,3
+213,gpt-4.1-mini,minimal,Estimable,Yes,3
+174,gpt-4.1-mini,minimal,Estimable,Yes,3
+481,gpt-4.1-mini,minimal,Full sentence,Yes,1
+153,gpt-4.1-mini,minimal,Estimable,Yes,3
+237,gpt-4.1-mini,minimal,Estimable,Yes,1
+232,gpt-4.1-mini,minimal,Estimable,Yes,3
+176,gpt-4.1-mini,minimal,Estimable,Yes,3
+190,gpt-4.1-mini,minimal,Estimable,Yes,1
+504,gpt-4.1-mini,minimal,Full sentence,Yes,1
+161,gpt-4.1-mini,minimal,Estimable,Yes,3
+572,gpt-4.1-mini,minimal,Full sentence,Yes,1
+593,gpt-4.1-mini,minimal,Full sentence,Yes,3
+552,gpt-4.1-mini,minimal,Full sentence,Yes,3
+503,gpt-4.1-mini,minimal,Full sentence,Yes,1
+584,gpt-4.1-mini,minimal,Full sentence,Yes,1
+489,gpt-4.1-mini,minimal,Full sentence,Yes,3
+557,gpt-4.1-mini,minimal,Full sentence,Yes,1
+833,gpt-4.1-mini,minimal,Minimal,Yes,3
+792,gpt-4.1-mini,minimal,Minimal,Yes,3
+796,gpt-4.1-mini,minimal,Minimal,Yes,3
+772,gpt-4.1-mini,minimal,Minimal,Yes,3
+597,gpt-4.1-mini,minimal,Full sentence,Yes,1
+839,gpt-4.1-mini,minimal,Minimal,Yes,3
+823,gpt-4.1-mini,minimal,Minimal,Yes,3
+768,gpt-4.1-mini,minimal,Minimal,Yes,1
+827,gpt-4.1-mini,minimal,Minimal,Yes,3
+471,gpt-4.1-mini,minimal,Problem-oriented,Yes,3
+727,gpt-4.1-mini,minimal,Minimal,Yes,1
+784,gpt-4.1-mini,minimal,Minimal,No,3
+404,gpt-4.1-mini,minimal,Problem-oriented,No,3
+448,gpt-4.1-mini,minimal,Problem-oriented,Yes,1
+403,gpt-4.1-mini,minimal,Problem-oriented,No,1
+363,gpt-4.1-mini,minimal,Problem-oriented,No,1
+449,gpt-4.1-mini,minimal,Problem-oriented,No,3
+431,gpt-4.1-mini,minimal,Problem-oriented,Yes,3
+416,gpt-4.1-mini,minimal,Problem-oriented,No,3
+420,gpt-4.1-mini,minimal,Problem-oriented,No,2
+412,gpt-4.1-mini,minimal,Problem-oriented,No,1
+661,gpt-4.1-mini,minimal,Unambiguous,Yes,3
+709,gpt-4.1-mini,minimal,Unambiguous,Yes,3
+629,gpt-4.1-mini,minimal,Unambiguous,No,1
+696,gpt-4.1-mini,minimal,Unambiguous,Yes,3
+718,gpt-4.1-mini,minimal,Unambiguous,Yes,1
+673,gpt-4.1-mini,minimal,Unambiguous,No,3
+669,gpt-4.1-mini,minimal,Unambiguous,No,3
+9,gpt-4.1-mini,minimal,Well-formed,Yes,3
+21,gpt-4.1-mini,minimal,Well-formed,Yes,1
+649,gpt-4.1-mini,minimal,Unambiguous,Yes,3
+1,gpt-4.1-mini,minimal,Well-formed,Yes,3
+638,gpt-4.1-mini,minimal,Unambiguous,No,3
+92,gpt-4.1-mini,minimal,Well-formed,Yes,3
+108,gpt-4.1-mini,minimal,Well-formed,Yes,1
+97,gpt-4.1-mini,minimal,Well-formed,Yes,1
+675,gpt-4.1-mini,minimal,Unambiguous,Yes,2
+72,gpt-4.1-mini,minimal,Well-formed,Yes,3
+64,gpt-4.1-mini,minimal,Well-formed,Yes,3
+20,gpt-4.1-mini,minimal,Well-formed,Yes,1
+951,gpt-4.1-mini,rich,Atomic,Yes,3
+875,gpt-4.1-mini,rich,Atomic,Yes,1
+946,gpt-4.1-mini,rich,Atomic,Yes,3
+113,gpt-4.1-mini,minimal,Well-formed,Yes,2
+869,gpt-4.1-mini,rich,Atomic,Yes,3
+902,gpt-4.1-mini,rich,Atomic,Yes,3
+897,gpt-4.1-mini,rich,Atomic,Yes,3
+919,gpt-4.1-mini,rich,Atomic,Yes,3
+958,gpt-4.1-mini,rich,Atomic,Yes,3
+279,gpt-4.1-mini,rich,Conceptually sound,Yes,1
+895,gpt-4.1-mini,rich,Atomic,Yes,3
+347,gpt-4.1-mini,rich,Conceptually sound,Yes,1
+879,gpt-4.1-mini,rich,Atomic,Yes,3
+322,gpt-4.1-mini,rich,Conceptually sound,Yes,3
+345,gpt-4.1-mini,rich,Conceptually sound,Yes,3
+288,gpt-4.1-mini,rich,Conceptually sound,Yes,3
+295,gpt-4.1-mini,rich,Conceptually sound,Yes,1
+310,gpt-4.1-mini,rich,Conceptually sound,Yes,1
+308,gpt-4.1-mini,rich,Conceptually sound,Yes,3
+357,gpt-4.1-mini,rich,Conceptually sound,Yes,3
+307,gpt-4.1-mini,rich,Conceptually sound,Yes,3
+125,gpt-4.1-mini,rich,Estimable,Yes,3
+148,gpt-4.1-mini,rich,Estimable,Yes,3
+126,gpt-4.1-mini,rich,Estimable,Yes,3
+142,gpt-4.1-mini,rich,Estimable,Yes,3
+204,gpt-4.1-mini,rich,Estimable,Yes,1
+234,gpt-4.1-mini,rich,Estimable,Yes,3
+129,gpt-4.1-mini,rich,Estimable,Yes,3
+236,gpt-4.1-mini,rich,Estimable,Yes,3
+481,gpt-4.1-mini,rich,Full sentence,Yes,1
+192,gpt-4.1-mini,rich,Estimable,Yes,1
+232,gpt-4.1-mini,rich,Estimable,Yes,3
+557,gpt-4.1-mini,rich,Full sentence,Yes,3
+504,gpt-4.1-mini,rich,Full sentence,Yes,1
+593,gpt-4.1-mini,rich,Full sentence,Yes,3
+572,gpt-4.1-mini,rich,Full sentence,Yes,3
+503,gpt-4.1-mini,rich,Full sentence,Yes,3
+489,gpt-4.1-mini,rich,Full sentence,Yes,2
+597,gpt-4.1-mini,rich,Full sentence,Yes,3
+584,gpt-4.1-mini,rich,Full sentence,Yes,3
+833,gpt-4.1-mini,rich,Minimal,Yes,3
+552,gpt-4.1-mini,rich,Full sentence,Yes,3
+823,gpt-4.1-mini,rich,Minimal,Yes,3
+792,gpt-4.1-mini,rich,Minimal,Yes,3
+772,gpt-4.1-mini,rich,Minimal,Yes,3
+796,gpt-4.1-mini,rich,Minimal,No,3
+399,gpt-4.1-mini,rich,Problem-oriented,Yes,3
+768,gpt-4.1-mini,rich,Minimal,Yes,3
+839,gpt-4.1-mini,rich,Minimal,No,3
+727,gpt-4.1-mini,rich,Minimal,Yes,3
+784,gpt-4.1-mini,rich,Minimal,Yes,3
+433,gpt-4.1-mini,rich,Problem-oriented,Yes,3
+827,gpt-4.1-mini,rich,Minimal,No,1
+473,gpt-4.1-mini,rich,Problem-oriented,Yes,3
+363,gpt-4.1-mini,rich,Problem-oriented,No,3
+405,gpt-4.1-mini,rich,Problem-oriented,Yes,3
+475,gpt-4.1-mini,rich,Problem-oriented,Yes,3
+366,gpt-4.1-mini,rich,Problem-oriented,No,3
+718,gpt-4.1-mini,rich,Unambiguous,Yes,3
+403,gpt-4.1-mini,rich,Problem-oriented,No,3
+423,gpt-4.1-mini,rich,Problem-oriented,No,1
+389,gpt-4.1-mini,rich,Problem-oriented,No,1
+708,gpt-4.1-mini,rich,Unambiguous,Yes,3
+670,gpt-4.1-mini,rich,Unambiguous,Yes,3
+629,gpt-4.1-mini,rich,Unambiguous,No,2
+671,gpt-4.1-mini,rich,Unambiguous,No,2
+669,gpt-4.1-mini,rich,Unambiguous,Yes,3
+9,gpt-4.1-mini,rich,Well-formed,Yes,1
+638,gpt-4.1-mini,rich,Unambiguous,No,3
+1,gpt-4.1-mini,rich,Well-formed,Yes,3
+72,gpt-4.1-mini,rich,Well-formed,Yes,1
+710,gpt-4.1-mini,rich,Unambiguous,Yes,3
+675,gpt-4.1-mini,rich,Unambiguous,No,3
+649,gpt-4.1-mini,rich,Unambiguous,Yes,3
+20,gpt-4.1-mini,rich,Well-formed,Yes,1
+113,gpt-4.1-mini,rich,Well-formed,Yes,3
+92,gpt-4.1-mini,rich,Well-formed,Yes,3
+21,gpt-4.1-mini,rich,Well-formed,Yes,3
+97,gpt-4.1-mini,rich,Well-formed,Yes,1
+64,gpt-4.1-mini,rich,Well-formed,Yes,1
+108,gpt-4.1-mini,rich,Well-formed,Yes,3
+888,gpt-5-mini,minimal,Atomic,Yes,3
+919,gpt-5-mini,minimal,Atomic,Yes,3
+913,gpt-5-mini,minimal,Atomic,Yes,3
+868,gpt-5-mini,minimal,Atomic,Yes,3
+935,gpt-5-mini,minimal,Atomic,Yes,1
+946,gpt-5-mini,minimal,Atomic,Yes,3
+875,gpt-5-mini,minimal,Atomic,Yes,3
+853,gpt-5-mini,minimal,Atomic,Yes,3
+909,gpt-5-mini,minimal,Atomic,Yes,3
+932,gpt-5-mini,minimal,Atomic,Yes,3
+250,gpt-5-mini,minimal,Conceptually sound,Yes,3
+278,gpt-5-mini,minimal,Conceptually sound,Yes,1
+314,gpt-5-mini,minimal,Conceptually sound,Yes,3
+352,gpt-5-mini,minimal,Conceptually sound,Yes,3
+290,gpt-5-mini,minimal,Conceptually sound,Yes,3
+333,gpt-5-mini,minimal,Conceptually sound,Yes,3
+313,gpt-5-mini,minimal,Conceptually sound,Yes,3
+338,gpt-5-mini,minimal,Conceptually sound,Yes,3
+306,gpt-5-mini,minimal,Conceptually sound,Yes,3
+153,gpt-5-mini,minimal,Estimable,Yes,1
+218,gpt-5-mini,minimal,Estimable,Yes,1
+265,gpt-5-mini,minimal,Conceptually sound,Yes,3
+222,gpt-5-mini,minimal,Estimable,Yes,1
+132,gpt-5-mini,minimal,Estimable,Yes,3
+232,gpt-5-mini,minimal,Estimable,Yes,3
+237,gpt-5-mini,minimal,Estimable,Yes,1
+129,gpt-5-mini,minimal,Estimable,Yes,3
+531,gpt-5-mini,minimal,Full sentence,Yes,3
+150,gpt-5-mini,minimal,Estimable,Yes,3
+189,gpt-5-mini,minimal,Estimable,Yes,3
+571,gpt-5-mini,minimal,Full sentence,Yes,3
+569,gpt-5-mini,minimal,Full sentence,Yes,1
+540,gpt-5-mini,minimal,Full sentence,Yes,3
+525,gpt-5-mini,minimal,Full sentence,Yes,1
+572,gpt-5-mini,minimal,Full sentence,Yes,3
+564,gpt-5-mini,minimal,Full sentence,Yes,3
+589,gpt-5-mini,minimal,Full sentence,Yes,3
+141,gpt-5-mini,minimal,Estimable,Yes,3
+833,gpt-5-mini,minimal,Minimal,Yes,3
+495,gpt-5-mini,minimal,Full sentence,Yes,3
+497,gpt-5-mini,minimal,Full sentence,Yes,3
+792,gpt-5-mini,minimal,Minimal,Yes,3
+772,gpt-5-mini,minimal,Minimal,Yes,3
+823,gpt-5-mini,minimal,Minimal,Yes,3
+796,gpt-5-mini,minimal,Minimal,Yes,3
+839,gpt-5-mini,minimal,Minimal,Yes,3
+768,gpt-5-mini,minimal,Minimal,Yes,3
+727,gpt-5-mini,minimal,Minimal,Yes,3
+827,gpt-5-mini,minimal,Minimal,Yes,3
+784,gpt-5-mini,minimal,Minimal,Yes,1
+404,gpt-5-mini,minimal,Problem-oriented,Yes,3
+443,gpt-5-mini,minimal,Problem-oriented,Yes,3
+416,gpt-5-mini,minimal,Problem-oriented,Yes,3
+475,gpt-5-mini,minimal,Problem-oriented,Yes,3
+451,gpt-5-mini,minimal,Problem-oriented,No,3
+413,gpt-5-mini,minimal,Problem-oriented,Yes,1
+445,gpt-5-mini,minimal,Problem-oriented,Yes,3
+649,gpt-5-mini,minimal,Unambiguous,No,3
+696,gpt-5-mini,minimal,Unambiguous,Yes,3
+383,gpt-5-mini,minimal,Problem-oriented,Yes,1
+380,gpt-5-mini,minimal,Problem-oriented,No,3
+442,gpt-5-mini,minimal,Problem-oriented,Yes,3
+708,gpt-5-mini,minimal,Unambiguous,Yes,3
+611,gpt-5-mini,minimal,Unambiguous,Yes,3
+626,gpt-5-mini,minimal,Unambiguous,Yes,3
+1,gpt-5-mini,minimal,Well-formed,Yes,1
+699,gpt-5-mini,minimal,Unambiguous,Yes,3
+608,gpt-5-mini,minimal,Unambiguous,Yes,1
+92,gpt-5-mini,minimal,Well-formed,Yes,1
+711,gpt-5-mini,minimal,Unambiguous,Yes,1
+21,gpt-5-mini,minimal,Well-formed,Yes,3
+675,gpt-5-mini,minimal,Unambiguous,Yes,3
+72,gpt-5-mini,minimal,Well-formed,Yes,1
+638,gpt-5-mini,minimal,Unambiguous,No,2
+64,gpt-5-mini,minimal,Well-formed,Yes,1
+9,gpt-5-mini,minimal,Well-formed,Yes,3
+97,gpt-5-mini,minimal,Well-formed,Yes,1
+113,gpt-5-mini,minimal,Well-formed,Yes,3
+108,gpt-5-mini,minimal,Well-formed,Yes,3
+20,gpt-5-mini,minimal,Well-formed,Yes,1
+865,gpt-5-mini,rich,Atomic,Yes,3
+934,gpt-5-mini,rich,Atomic,Yes,3
+946,gpt-5-mini,rich,Atomic,Yes,3
+877,gpt-5-mini,rich,Atomic,Yes,3
+855,gpt-5-mini,rich,Atomic,Yes,3
+853,gpt-5-mini,rich,Atomic,Yes,3
+873,gpt-5-mini,rich,Atomic,Yes,3
+932,gpt-5-mini,rich,Atomic,Yes,1
+914,gpt-5-mini,rich,Atomic,Yes,3
+954,gpt-5-mini,rich,Atomic,Yes,3
+313,gpt-5-mini,rich,Conceptually sound,Yes,3
+345,gpt-5-mini,rich,Conceptually sound,Yes,3
+314,gpt-5-mini,rich,Conceptually sound,Yes,3
+250,gpt-5-mini,rich,Conceptually sound,Yes,3
+278,gpt-5-mini,rich,Conceptually sound,Yes,1
+290,gpt-5-mini,rich,Conceptually sound,Yes,3
+306,gpt-5-mini,rich,Conceptually sound,Yes,3
+331,gpt-5-mini,rich,Conceptually sound,Yes,1
+333,gpt-5-mini,rich,Conceptually sound,Yes,3
+176,gpt-5-mini,rich,Estimable,Yes,3
+220,gpt-5-mini,rich,Estimable,Yes,3
+204,gpt-5-mini,rich,Estimable,Yes,1
+265,gpt-5-mini,rich,Conceptually sound,Yes,3
+174,gpt-5-mini,rich,Estimable,Yes,1
+168,gpt-5-mini,rich,Estimable,Yes,3
+195,gpt-5-mini,rich,Estimable,Yes,3
+142,gpt-5-mini,rich,Estimable,Yes,3
+489,gpt-5-mini,rich,Full sentence,Yes,3
+130,gpt-5-mini,rich,Estimable,Yes,3
+557,gpt-5-mini,rich,Full sentence,Yes,3
+481,gpt-5-mini,rich,Full sentence,Yes,3
+172,gpt-5-mini,rich,Estimable,Yes,3
+593,gpt-5-mini,rich,Full sentence,Yes,3
+504,gpt-5-mini,rich,Full sentence,Yes,3
+552,gpt-5-mini,rich,Full sentence,Yes,1
+155,gpt-5-mini,rich,Estimable,Yes,3
+584,gpt-5-mini,rich,Full sentence,Yes,3
+503,gpt-5-mini,rich,Full sentence,Yes,3
+597,gpt-5-mini,rich,Full sentence,Yes,1
+827,gpt-5-mini,rich,Minimal,Yes,3
+734,gpt-5-mini,rich,Minimal,Yes,3
+764,gpt-5-mini,rich,Minimal,Yes,1
+832,gpt-5-mini,rich,Minimal,Yes,3
+572,gpt-5-mini,rich,Full sentence,Yes,3
+420,gpt-5-mini,rich,Problem-oriented,Yes,3
+833,gpt-5-mini,rich,Minimal,Yes,3
+796,gpt-5-mini,rich,Minimal,Yes,3
+829,gpt-5-mini,rich,Minimal,Yes,3
+454,gpt-5-mini,rich,Problem-oriented,Yes,3
+805,gpt-5-mini,rich,Minimal,No,3
+429,gpt-5-mini,rich,Problem-oriented,Yes,1
+784,gpt-5-mini,rich,Minimal,No,3
+433,gpt-5-mini,rich,Problem-oriented,Yes,3
+396,gpt-5-mini,rich,Problem-oriented,Yes,3
+791,gpt-5-mini,rich,Minimal,Yes,3
+475,gpt-5-mini,rich,Problem-oriented,Yes,3
+404,gpt-5-mini,rich,Problem-oriented,Yes,3
+397,gpt-5-mini,rich,Problem-oriented,Yes,3
+451,gpt-5-mini,rich,Problem-oriented,No,2
+708,gpt-5-mini,rich,Unambiguous,Yes,3
+448,gpt-5-mini,rich,Problem-oriented,No,1
+696,gpt-5-mini,rich,Unambiguous,Yes,3
+641,gpt-5-mini,rich,Unambiguous,Yes,3
+626,gpt-5-mini,rich,Unambiguous,Yes,3
+638,gpt-5-mini,rich,Unambiguous,Yes,3
+674,gpt-5-mini,rich,Unambiguous,Yes,3
+1,gpt-5-mini,rich,Well-formed,Yes,1
+608,gpt-5-mini,rich,Unambiguous,Yes,3
+699,gpt-5-mini,rich,Unambiguous,Yes,2
+66,gpt-5-mini,rich,Well-formed,Yes,1
+9,gpt-5-mini,rich,Well-formed,Yes,3
+21,gpt-5-mini,rich,Well-formed,Yes,3
+611,gpt-5-mini,rich,Unambiguous,Yes,3
+108,gpt-5-mini,rich,Well-formed,Yes,3
+711,gpt-5-mini,rich,Unambiguous,No,3
+41,gpt-5-mini,rich,Well-formed,Yes,1
+855,grok-4-fast,minimal,Atomic,Yes,3
+75,gpt-5-mini,rich,Well-formed,Yes,3
+20,gpt-5-mini,rich,Well-formed,Yes,1
+93,gpt-5-mini,rich,Well-formed,Yes,3
+912,grok-4-fast,minimal,Atomic,Yes,1
+929,grok-4-fast,minimal,Atomic,Yes,3
+909,grok-4-fast,minimal,Atomic,Yes,3
+877,grok-4-fast,minimal,Atomic,Yes,1
+868,grok-4-fast,minimal,Atomic,Yes,3
+97,gpt-5-mini,rich,Well-formed,Yes,1
+931,grok-4-fast,minimal,Atomic,Yes,3
+944,grok-4-fast,minimal,Atomic,Yes,3
+893,grok-4-fast,minimal,Atomic,Yes,3
+865,grok-4-fast,minimal,Atomic,Yes,3
+339,grok-4-fast,minimal,Conceptually sound,Yes,3
+353,grok-4-fast,minimal,Conceptually sound,Yes,3
+265,grok-4-fast,minimal,Conceptually sound,Yes,1
+342,grok-4-fast,minimal,Conceptually sound,Yes,3
+290,grok-4-fast,minimal,Conceptually sound,Yes,3
+325,grok-4-fast,minimal,Conceptually sound,Yes,3
+250,grok-4-fast,minimal,Conceptually sound,Yes,3
+359,grok-4-fast,minimal,Conceptually sound,Yes,3
+178,grok-4-fast,minimal,Estimable,Yes,3
+247,grok-4-fast,minimal,Conceptually sound,Yes,3
+176,grok-4-fast,minimal,Estimable,Yes,3
+232,grok-4-fast,minimal,Estimable,Yes,3
+172,grok-4-fast,minimal,Estimable,Yes,3
+287,grok-4-fast,minimal,Conceptually sound,Yes,2
+222,grok-4-fast,minimal,Estimable,Yes,3
+146,grok-4-fast,minimal,Estimable,Yes,3
+213,grok-4-fast,minimal,Estimable,Yes,3
+481,grok-4-fast,minimal,Full sentence,Yes,1
+161,grok-4-fast,minimal,Estimable,Yes,1
+489,grok-4-fast,minimal,Full sentence,Yes,1
+174,grok-4-fast,minimal,Estimable,Yes,1
+130,grok-4-fast,minimal,Estimable,Yes,3
+557,grok-4-fast,minimal,Full sentence,Yes,3
+552,grok-4-fast,minimal,Full sentence,Yes,1
+504,grok-4-fast,minimal,Full sentence,Yes,3
+584,grok-4-fast,minimal,Full sentence,Yes,3
+503,grok-4-fast,minimal,Full sentence,Yes,3
+593,grok-4-fast,minimal,Full sentence,Yes,3
+597,grok-4-fast,minimal,Full sentence,Yes,1
+572,grok-4-fast,minimal,Full sentence,Yes,2
+768,grok-4-fast,minimal,Minimal,Yes,3
+792,grok-4-fast,minimal,Minimal,Yes,3
+796,grok-4-fast,minimal,Minimal,Yes,3
+833,grok-4-fast,minimal,Minimal,Yes,3
+784,grok-4-fast,minimal,Minimal,No,2
+823,grok-4-fast,minimal,Minimal,Yes,3
+727,grok-4-fast,minimal,Minimal,Yes,1
+772,grok-4-fast,minimal,Minimal,Yes,3
+473,grok-4-fast,minimal,Problem-oriented,No,1
+827,grok-4-fast,minimal,Minimal,Yes,3
+839,grok-4-fast,minimal,Minimal,Yes,3
+416,grok-4-fast,minimal,Problem-oriented,No,3
+449,grok-4-fast,minimal,Problem-oriented,No,1
+363,grok-4-fast,minimal,Problem-oriented,No,1
+404,grok-4-fast,minimal,Problem-oriented,No,2
+403,grok-4-fast,minimal,Problem-oriented,No,1
+429,grok-4-fast,minimal,Problem-oriented,No,2
+420,grok-4-fast,minimal,Problem-oriented,No,1
+448,grok-4-fast,minimal,Problem-oriented,No,2
+471,grok-4-fast,minimal,Problem-oriented,No,1
+629,grok-4-fast,minimal,Unambiguous,No,2
+718,grok-4-fast,minimal,Unambiguous,Yes,3
+696,grok-4-fast,minimal,Unambiguous,Yes,3
+673,grok-4-fast,minimal,Unambiguous,Yes,3
+709,grok-4-fast,minimal,Unambiguous,Yes,3
+669,grok-4-fast,minimal,Unambiguous,Yes,3
+9,grok-4-fast,minimal,Well-formed,Yes,1
+661,grok-4-fast,minimal,Unambiguous,No,3
+675,grok-4-fast,minimal,Unambiguous,Yes,3
+638,grok-4-fast,minimal,Unambiguous,No,3
+92,grok-4-fast,minimal,Well-formed,Yes,1
+108,grok-4-fast,minimal,Well-formed,Yes,1
+649,grok-4-fast,minimal,Unambiguous,Yes,3
+97,grok-4-fast,minimal,Well-formed,Yes,1
+64,grok-4-fast,minimal,Well-formed,Yes,3
+21,grok-4-fast,minimal,Well-formed,Yes,3
+1,grok-4-fast,minimal,Well-formed,Yes,3
+20,grok-4-fast,minimal,Well-formed,Yes,1
+902,grok-4-fast,rich,Atomic,Yes,1
+113,grok-4-fast,minimal,Well-formed,Yes,3
+930,grok-4-fast,rich,Atomic,Yes,3
+907,grok-4-fast,rich,Atomic,Yes,3
+934,grok-4-fast,rich,Atomic,Yes,3
+72,grok-4-fast,minimal,Well-formed,Yes,2
+870,grok-4-fast,rich,Atomic,Yes,1
+856,grok-4-fast,rich,Atomic,Yes,3
+951,grok-4-fast,rich,Atomic,Yes,3
+958,grok-4-fast,rich,Atomic,Yes,3
+855,grok-4-fast,rich,Atomic,Yes,3
+864,grok-4-fast,rich,Atomic,Yes,3
+250,grok-4-fast,rich,Conceptually sound,Yes,1
+278,grok-4-fast,rich,Conceptually sound,Yes,1
+353,grok-4-fast,rich,Conceptually sound,Yes,3
+334,grok-4-fast,rich,Conceptually sound,Yes,2
+242,grok-4-fast,rich,Conceptually sound,Yes,1
+322,grok-4-fast,rich,Conceptually sound,Yes,3
+325,grok-4-fast,rich,Conceptually sound,Yes,3
+265,grok-4-fast,rich,Conceptually sound,Yes,1
+304,grok-4-fast,rich,Conceptually sound,Yes,3
+339,grok-4-fast,rich,Conceptually sound,Yes,3
+213,grok-4-fast,rich,Estimable,Yes,3
+153,grok-4-fast,rich,Estimable,Yes,3
+147,grok-4-fast,rich,Estimable,Yes,1
+237,grok-4-fast,rich,Estimable,Yes,3
+174,grok-4-fast,rich,Estimable,Yes,3
+481,grok-4-fast,rich,Full sentence,Yes,3
+152,grok-4-fast,rich,Estimable,Yes,3
+172,grok-4-fast,rich,Estimable,Yes,1
+489,grok-4-fast,rich,Full sentence,Yes,1
+176,grok-4-fast,rich,Estimable,Yes,2
+557,grok-4-fast,rich,Full sentence,Yes,3
+130,grok-4-fast,rich,Estimable,Yes,1
+134,grok-4-fast,rich,Estimable,Yes,2
+504,grok-4-fast,rich,Full sentence,Yes,3
+572,grok-4-fast,rich,Full sentence,Yes,1
+593,grok-4-fast,rich,Full sentence,Yes,3
+552,grok-4-fast,rich,Full sentence,Yes,3
+584,grok-4-fast,rich,Full sentence,Yes,3
+786,grok-4-fast,rich,Minimal,Yes,3
+597,grok-4-fast,rich,Full sentence,Yes,3
+805,grok-4-fast,rich,Minimal,Yes,1
+503,grok-4-fast,rich,Full sentence,Yes,2
+807,grok-4-fast,rich,Minimal,Yes,3
+796,grok-4-fast,rich,Minimal,No,1
+795,grok-4-fast,rich,Minimal,Yes,1
+475,grok-4-fast,rich,Problem-oriented,Yes,1
+804,grok-4-fast,rich,Minimal,No,3
+791,grok-4-fast,rich,Minimal,Yes,1
+784,grok-4-fast,rich,Minimal,Yes,3
+454,grok-4-fast,rich,Problem-oriented,Yes,3
+420,grok-4-fast,rich,Problem-oriented,Yes,3
+801,grok-4-fast,rich,Minimal,Yes,1
+792,grok-4-fast,rich,Minimal,Yes,3
+397,grok-4-fast,rich,Problem-oriented,Yes,3
+399,grok-4-fast,rich,Problem-oriented,Yes,3
+426,grok-4-fast,rich,Problem-oriented,Yes,1
+412,grok-4-fast,rich,Problem-oriented,Yes,3
+429,grok-4-fast,rich,Problem-oriented,Yes,3
+433,grok-4-fast,rich,Problem-oriented,Yes,3
+373,grok-4-fast,rich,Problem-oriented,No,3
+675,grok-4-fast,rich,Unambiguous,Yes,3
+626,grok-4-fast,rich,Unambiguous,Yes,3
+709,grok-4-fast,rich,Unambiguous,Yes,3
+661,grok-4-fast,rich,Unambiguous,No,3
+676,grok-4-fast,rich,Unambiguous,Yes,3
+697,grok-4-fast,rich,Unambiguous,Yes,1
+674,grok-4-fast,rich,Unambiguous,No,3
+9,grok-4-fast,rich,Well-formed,Yes,1
+638,grok-4-fast,rich,Unambiguous,Yes,3
+706,grok-4-fast,rich,Unambiguous,No,3
+608,grok-4-fast,rich,Unambiguous,No,3
+72,grok-4-fast,rich,Well-formed,Yes,3
+64,grok-4-fast,rich,Well-formed,Yes,1
+1,grok-4-fast,rich,Well-formed,Yes,1
+21,grok-4-fast,rich,Well-formed,Yes,1
+92,grok-4-fast,rich,Well-formed,Yes,3
+97,grok-4-fast,rich,Well-formed,Yes,3
+20,grok-4-fast,rich,Well-formed,Yes,1
+113,grok-4-fast,rich,Well-formed,Yes,1
+933,qwen-turbo,minimal,Atomic,Yes,3
+108,grok-4-fast,rich,Well-formed,Yes,3
+855,qwen-turbo,minimal,Atomic,Yes,3
+879,qwen-turbo,minimal,Atomic,Yes,3
+931,qwen-turbo,minimal,Atomic,Yes,1
+875,qwen-turbo,minimal,Atomic,No,3
+868,qwen-turbo,minimal,Atomic,Yes,3
+853,qwen-turbo,minimal,Atomic,Yes,3
+946,qwen-turbo,minimal,Atomic,Yes,1
+913,qwen-turbo,minimal,Atomic,Yes,2
+352,qwen-turbo,minimal,Conceptually sound,Yes,1
+954,qwen-turbo,minimal,Atomic,Yes,3
+278,qwen-turbo,minimal,Conceptually sound,Yes,1
+338,qwen-turbo,minimal,Conceptually sound,Yes,2
+295,qwen-turbo,minimal,Conceptually sound,Yes,3
+340,qwen-turbo,minimal,Conceptually sound,Yes,1
+288,qwen-turbo,minimal,Conceptually sound,Yes,3
+178,qwen-turbo,minimal,Estimable,Yes,3
+253,qwen-turbo,minimal,Conceptually sound,No,3
+358,qwen-turbo,minimal,Conceptually sound,Yes,1
+222,qwen-turbo,minimal,Estimable,Yes,3
+232,qwen-turbo,minimal,Estimable,Yes,2
+324,qwen-turbo,minimal,Conceptually sound,Yes,1
+176,qwen-turbo,minimal,Estimable,Yes,3
+248,qwen-turbo,minimal,Conceptually sound,Yes,3
+172,qwen-turbo,minimal,Estimable,Yes,2
+213,qwen-turbo,minimal,Estimable,Yes,3
+161,qwen-turbo,minimal,Estimable,Yes,3
+146,qwen-turbo,minimal,Estimable,Yes,3
+130,qwen-turbo,minimal,Estimable,Yes,3
+503,qwen-turbo,minimal,Full sentence,Yes,3
+174,qwen-turbo,minimal,Estimable,Yes,3
+504,qwen-turbo,minimal,Full sentence,Yes,1
+560,qwen-turbo,minimal,Full sentence,Yes,3
+566,qwen-turbo,minimal,Full sentence,Yes,3
+507,qwen-turbo,minimal,Full sentence,Yes,1
+528,qwen-turbo,minimal,Full sentence,Yes,3
+568,qwen-turbo,minimal,Full sentence,Yes,3
+509,qwen-turbo,minimal,Full sentence,Yes,3
+564,qwen-turbo,minimal,Full sentence,Yes,1
+555,qwen-turbo,minimal,Full sentence,Yes,3
+821,qwen-turbo,minimal,Minimal,Yes,3
+753,qwen-turbo,minimal,Minimal,No,3
+792,qwen-turbo,minimal,Minimal,Yes,3
+827,qwen-turbo,minimal,Minimal,Yes,1
+829,qwen-turbo,minimal,Minimal,Yes,3
+791,qwen-turbo,minimal,Minimal,Yes,3
+807,qwen-turbo,minimal,Minimal,Yes,3
+805,qwen-turbo,minimal,Minimal,No,1
+801,qwen-turbo,minimal,Minimal,Yes,1
+669,qwen-turbo,minimal,Unambiguous,No,3
+702,qwen-turbo,minimal,Unambiguous,Yes,3
+363,qwen-turbo,minimal,Problem-oriented,No,3
+796,qwen-turbo,minimal,Minimal,No,3
+661,qwen-turbo,minimal,Unambiguous,No,2
+711,qwen-turbo,minimal,Unambiguous,Yes,3
+1,qwen-turbo,minimal,Well-formed,Yes,3
+9,qwen-turbo,minimal,Well-formed,Yes,1
+689,qwen-turbo,minimal,Unambiguous,Yes,2
+626,qwen-turbo,minimal,Unambiguous,No,3
+608,qwen-turbo,minimal,Unambiguous,Yes,3
+708,qwen-turbo,minimal,Unambiguous,No,3
+21,qwen-turbo,minimal,Well-formed,Yes,3
+618,qwen-turbo,minimal,Unambiguous,No,3
+92,qwen-turbo,minimal,Well-formed,Yes,1
+64,qwen-turbo,minimal,Well-formed,Yes,1
+20,qwen-turbo,minimal,Well-formed,Yes,3
+108,qwen-turbo,minimal,Well-formed,Yes,3
+609,qwen-turbo,minimal,Unambiguous,Yes,3
+113,qwen-turbo,minimal,Well-formed,Yes,3
+72,qwen-turbo,minimal,Well-formed,Yes,3
+895,qwen-turbo,rich,Atomic,Yes,3
+97,qwen-turbo,minimal,Well-formed,Yes,2
+931,qwen-turbo,rich,Atomic,Yes,1
+934,qwen-turbo,rich,Atomic,Yes,3
+887,qwen-turbo,rich,Atomic,Yes,3
+893,qwen-turbo,rich,Atomic,Yes,3
+865,qwen-turbo,rich,Atomic,Yes,3
+877,qwen-turbo,rich,Atomic,Yes,3
+296,qwen-turbo,rich,Conceptually sound,Yes,1
+326,qwen-turbo,rich,Conceptually sound,Yes,3
+854,qwen-turbo,rich,Atomic,Yes,3
+888,qwen-turbo,rich,Atomic,Yes,3
+926,qwen-turbo,rich,Atomic,Yes,3
+265,qwen-turbo,rich,Conceptually sound,Yes,1
+359,qwen-turbo,rich,Conceptually sound,Yes,3
+319,qwen-turbo,rich,Conceptually sound,Yes,3
+333,qwen-turbo,rich,Conceptually sound,Yes,3
+360,qwen-turbo,rich,Conceptually sound,Yes,1
+261,qwen-turbo,rich,Conceptually sound,Yes,1
+248,qwen-turbo,rich,Conceptually sound,Yes,3
+222,qwen-turbo,rich,Estimable,Yes,3
+176,qwen-turbo,rich,Estimable,Yes,3
+232,qwen-turbo,rich,Estimable,Yes,3
+179,qwen-turbo,rich,Estimable,Yes,1
+225,qwen-turbo,rich,Estimable,Yes,1
+327,qwen-turbo,rich,Conceptually sound,Yes,3
+132,qwen-turbo,rich,Estimable,Yes,3
+218,qwen-turbo,rich,Estimable,No,2
+148,qwen-turbo,rich,Estimable,No,3
+570,qwen-turbo,rich,Full sentence,Yes,3
+506,qwen-turbo,rich,Full sentence,Yes,3
+525,qwen-turbo,rich,Full sentence,Yes,3
+129,qwen-turbo,rich,Estimable,Yes,1
+571,qwen-turbo,rich,Full sentence,Yes,3
+498,qwen-turbo,rich,Full sentence,Yes,1
+139,qwen-turbo,rich,Estimable,Yes,3
+581,qwen-turbo,rich,Full sentence,Yes,1
+538,qwen-turbo,rich,Full sentence,Yes,3
+503,qwen-turbo,rich,Full sentence,Yes,1
+584,qwen-turbo,rich,Full sentence,Yes,3
+821,qwen-turbo,rich,Minimal,Yes,3
+827,qwen-turbo,rich,Minimal,Yes,3
+597,qwen-turbo,rich,Full sentence,Yes,3
+727,qwen-turbo,rich,Minimal,Yes,3
+780,qwen-turbo,rich,Minimal,Yes,3
+784,qwen-turbo,rich,Minimal,Yes,1
+804,qwen-turbo,rich,Minimal,Yes,3
+833,qwen-turbo,rich,Minimal,Yes,3
+416,qwen-turbo,rich,Problem-oriented,Yes,3
+791,qwen-turbo,rich,Minimal,Yes,3
+748,qwen-turbo,rich,Minimal,Yes,1
+413,qwen-turbo,rich,Problem-oriented,No,3
+734,qwen-turbo,rich,Minimal,Yes,3
+707,qwen-turbo,rich,Unambiguous,Yes,3
+687,qwen-turbo,rich,Unambiguous,Yes,3
+412,qwen-turbo,rich,Problem-oriented,No,1
+420,qwen-turbo,rich,Problem-oriented,No,3
+619,qwen-turbo,rich,Unambiguous,Yes,3
+708,qwen-turbo,rich,Unambiguous,Yes,3
+661,qwen-turbo,rich,Unambiguous,Yes,2
+649,qwen-turbo,rich,Unambiguous,Yes,3
+653,qwen-turbo,rich,Unambiguous,Yes,3
+41,qwen-turbo,rich,Well-formed,Yes,1
+601,qwen-turbo,rich,Unambiguous,Yes,3
+618,qwen-turbo,rich,Unambiguous,No,1
+116,qwen-turbo,rich,Well-formed,Yes,1
+88,qwen-turbo,rich,Well-formed,Yes,1
+689,qwen-turbo,rich,Unambiguous,No,3
+43,qwen-turbo,rich,Well-formed,Yes,3
+70,qwen-turbo,rich,Well-formed,Yes,3
+20,qwen-turbo,rich,Well-formed,Yes,1
+8,qwen-turbo,rich,Well-formed,Yes,3
+91,qwen-turbo,rich,Well-formed,Yes,2
+13,qwen-turbo,rich,Well-formed,Yes,3
+7,qwen-turbo,rich,Well-formed,Yes,3

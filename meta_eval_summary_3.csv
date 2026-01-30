@@ -1,0 +1,13 @@
+model,context,RSR,RAS,N_failed
+deepseek-chat,minimal,0.962,0.829,80
+deepseek-chat,rich,0.925,0.767,80
+gemini-2.5-flash,minimal,0.838,0.854,80
+gemini-2.5-flash,rich,0.899,0.882,79
+gpt-4.1-mini,minimal,0.838,0.788,80
+gpt-4.1-mini,rich,0.85,0.846,80
+gpt-5-mini,minimal,0.95,0.838,80
+gpt-5-mini,rich,0.938,0.867,80
+grok-4-fast,minimal,0.825,0.792,80
+grok-4-fast,rich,0.912,0.775,80
+qwen-turbo,minimal,0.845,0.817,71
+qwen-turbo,rich,0.905,0.815,74
