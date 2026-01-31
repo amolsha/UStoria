@@ -5,8 +5,9 @@ import numpy as np
 # ==================================================
 # Configuration
 # ==================================================
+MODEL_NAME = "qwen-turbo"
 BASE_DIR = os.path.join(os.getcwd(), "RESULTS")
-OUTPUT_FILE = os.path.join(BASE_DIR, "deepseek-chat_full_qualitative_analysis.xlsx")
+OUTPUT_FILE = os.path.join(BASE_DIR, MODEL_NAME+"_full_qualitative_analysis.xlsx")
 
 # Thresholds for interpretations (tunable)
 HIGH_F1 = 0.90
@@ -17,9 +18,9 @@ CONTEXT_SENSITIVE = 0.05
 # ==================================================
 # Step 1: Load Data
 # ==================================================
-df_min = pd.read_excel(os.path.join(BASE_DIR, "deepseek-chat_MINIMAL.xlsx"))
-df_rich = pd.read_excel(os.path.join(BASE_DIR, "deepseek-chat_rich.xlsx"))
-df_overall = pd.read_excel(os.path.join(BASE_DIR, "deepseek-chat_OVERALL.xlsx"))
+df_min = pd.read_excel(os.path.join(BASE_DIR, MODEL_NAME+"_MINIMAL.xlsx"))
+df_rich = pd.read_excel(os.path.join(BASE_DIR, MODEL_NAME+"_rich.xlsx"))
+df_overall = pd.read_excel(os.path.join(BASE_DIR, MODEL_NAME+"_OVERALL.xlsx"))
 
 df_min["Context"] = "Minimal"
 df_rich["Context"] = "Rich"
