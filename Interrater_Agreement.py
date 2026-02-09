@@ -94,8 +94,14 @@ def krippendorff_alpha_from_df(df):
     if pivot.empty:
         return np.nan
 
+    print("Data shape:", pivot.shape)
+
     try:
-        return krippendorff.alpha(reliability_data=pivot.values, level_of_measurement="ordinal")
+        return krippendorff.alpha(
+            reliability_data=pivot.values.T,
+            level_of_measurement="ordinal"
+        )
+
     except Exception:
         return np.nan
 
