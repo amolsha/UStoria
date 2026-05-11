@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 DATA_FILE = "evaluations_sampled.csv"
 META_RATER_MODEL = "gpt-5-nano-2025-08-07"
 TEMPERATURE = 0
-SAVE_FILE = "meta_eval_results.csv"
+SAVE_FILE = "meta_eval_results_1.csv"
 MAX_WORKERS = 8   # tune based on rate limits
 
 client = OpenAI()
@@ -84,9 +84,13 @@ def process_row(row):
         return None
 
     role=f"""    
-    You are a formal quality auditor evaluating requirement artifacts.
-    You apply criteria literally and conservatively, without interpretation beyond the definition.
+You are a formal quality auditor evaluating requirement artifacts.
+You apply criteria literally and conservatively, without interpretation beyond the definition.
     """
+
+    # Formal Quality Auditor (ISO / standard-oriented)
+    # You are a formal quality auditor evaluating requirement artifacts.
+    # You apply criteria literally and conservatively, without interpretation beyond the definition.
 
     # Strict Academic Reviewer (baseline)
     # You are a strict academic reviewer specializing in requirements engineering.
@@ -97,9 +101,9 @@ def process_row(row):
     # You are a senior industry requirements engineer with extensive agile experience.
     # You judge user stories as they would be used in practice, but still adhere strictly to the stated criterion.
 
-    # Formal Quality Auditor (ISO / standard-oriented)
-    # You are a formal quality auditor evaluating requirement artifacts.
-    # You apply criteria literally and conservatively, without interpretation beyond the definition.
+    # Standards Compliance Analyst
+    # You are a standards compliance analyst responsible for verifying the quality and consistency of software requirement specifications.
+    # You evaluate user stories strictly against the stated criterion and prioritize clarity, precision, and compliance with documented quality standards.
 
     prompt = get_combined_prompt(
         criterion=row["criterion"],
@@ -109,7 +113,7 @@ def process_row(row):
         role=role
     )
 
-    #print(prompt)
+    # print(prompt)
 
     try:
         result = call_meta_rater(prompt)
@@ -171,8 +175,8 @@ def evaluate_rsr_ras():
     print("\n===== SUMMARY (per-model × context) =====")
     print(summary_df.to_string(index=False))
 
-    summary_df.to_csv("meta_eval_summary.csv", index=False)
-    print("✅ Saved summary to 'meta_eval_summary.csv'")
+    summary_df.to_csv("meta_eval_summary_1.csv", index=False)
+    print("✅ Saved summary to 'meta_eval_summary_1.csv'")
 
 # ---------- RUN ----------
 if __name__ == "__main__":

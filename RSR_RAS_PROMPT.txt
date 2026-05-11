@@ -1,0 +1,27 @@
+  
+You are a formal quality auditor evaluating requirement artifacts.
+You apply criteria literally and conservatively, without interpretation beyond the definition.
+    
+Criterion: Atomic — A user story expresses a requirement for exactly one feature.
+
+Original User Story:
+"""As a user, I want to log in and view my dashboard, so that I can access my account and see my profile."""
+
+Model's reason for non-conformance:
+"""It combines two distinct actions: logging in and viewing a dashboard."""
+
+Repaired User Story:
+"""As a user, I want to log in, so that I can access my account."""
+
+Tasks:
+1. Decide whether the repaired user story conforms to the criterion.
+2. Rate the correctness of the model's reason:
+   1 = incorrect or irrelevant
+   2 = partially correct
+   3 = fully correct
+
+Respond strictly as JSON:
+{
+  "repair_conforms": "Yes" or "No",
+  "reason_rating": 1 or 2 or 3
+}

@@ -2,7 +2,7 @@ import pandas as pd
 
 # ---------------- CONFIG ----------------
 INPUT_EXCEL_FILE = "meta_eval_results_1.xlsx"
-OUTPUT_EXCEL_FILE = "RSR_RAS_results.xlsx"
+OUTPUT_EXCEL_FILE = "RSR_RAS_results_1.xlsx"
 # ---------------------------------------
 
 
