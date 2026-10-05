@@ -4,12 +4,172 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="Context Rich Prompting. Place : Institute.">
-      <change afterPath="$PROJECT_DIR$/Individual_Criteria.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reason_Repair_Evaluation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reason_Repair_Evaluation_CSV_Generation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reason_Repair_Evaluation_Sampling.py" afterDir="false" />
+    <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="RAS and RSR results recomputed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Atomic_Batch_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Atomic_Batch_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Conceptually-Sound_Batch_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Conceptually-Sound_Batch_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Duplicate_User_Stories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Estimable_Batch_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Estimable_Batch_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Evaluations/grok-4-fast-free_Batch-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Full-Sentence_Batch_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Full-Sentence_Batch_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Minimal_Batch_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Minimal_Batch_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Problem-Oriented_Batch_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Problem-Oriented_Batch_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Unambiguous_Batch_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Unambiguous_Batch_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Well-formed_Batch_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/Well-formed_Batch_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Interrater_Agreement_1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Interrater_Agreement_BinaryReason.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Interrater_Agreement_BinaryReason_134.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Interrater_Agreement_BinaryReason_214.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Interrater_Agreement_BinaryReason_231.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Interrater_Agreement_BinaryReason_234.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Majority_Vote_Repair_and_Reason.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Model_Evaluation_Tracking.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Pairwise_Interrater_Agreement.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/RSR_RAS_results_1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/RSR_RAS_results_2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/RSR_RAS_results_3.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/RSR_RAS_results_4.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Results_Atomic_Criterion.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Results_ConceptuallySound_Criterion.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Results_Estimable_Criterion.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Results_FullSentence_Criterion.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Results_Minimal_Criterion.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Results_ProblemOriented_Criterion.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Results_Unambiguous_Criterion.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/Results_WellFormed_Criterion.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/deepseek-chat_minimal.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/evaluations_correct_failed.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/evaluations_sampled.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/evaluations_sampled.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/evaluations_sampled_updated.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/gemini-2.5-flash_minimal.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/gpt-4.1-mini_minimal.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/gpt-5-mini_minimal.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/grok-4-fast_minimal.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/llm_performance_11102025.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/llm_performance_11102025_0157.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_3.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_4.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_summary.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_summary1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_summary_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_summary_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_summary_3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_summary_4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/qwen-turbo_minimal.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXCELS/ratings.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evaluation_RICH_Prompting.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Individual_Criteria.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interrater_Agreement.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interrater_Agreement_Pairwise.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JSON_Print.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Open_Router_Credits_Checker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queries.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/LLM_EVALUATION/llm_performance_ALL_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/LLM_EVALUATION/llm_performance_MINIMAL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/LLM_EVALUATION/llm_performance_OVERALL_RICH+MINIMAL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/LLM_EVALUATION/llm_performance_RICH.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/META_EVALUATION/meta_eval_results_RATER_1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/META_EVALUATION/meta_eval_results_RATER_2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/META_EVALUATION/meta_eval_summary_RATER_1_RATER_2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/deepseek-chat_MINIMAL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/deepseek-chat_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/deepseek-chat_rich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/gemini-2.5-flash_MINIMAL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/gemini-2.5-flash_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/gemini-2.5-flash_rich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/gpt-4.1-mini_MINIMAL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/gpt-4.1-mini_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/gpt-4.1-mini_rich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/gpt-5-mini_MINIMAL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/gpt-5-mini_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/gpt-5-mini_rich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/grok-4-fast_MINIMAL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/grok-4-fast_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/grok-4-fast_rich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/deepseek-chat_rich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/gemini-2.5-flash_rich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/gpt-4.1-mini_rich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/gpt-5-mini_rich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/grok-4-fast_rich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/llm_performance_DEEPSEEK-CHAT_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/llm_performance_GEMINI-2.5-Flash_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/llm_performance_GPT-4.1-MINI_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/llm_performance_GPT-5-MINI_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/llm_performance_GROK-4-FAST_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/llm_performance_QWEN_TURBO_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/qwen-turbo_rich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_21.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_22.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_23.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_24.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_25.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_26.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_6.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_7.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_21.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_22.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_23.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_24.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_25.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_26.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_5.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_6.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_7.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/qwen-turbo_MINIMAL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/qwen-turbo_OVERALL.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RESULTS/qwen-turbo_rich.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RSR_RAS_PROMPT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reason_Repair_Evaluation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reason_Repair_Evaluation_CSV_Generation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reason_Repair_Evaluation_Correct_Failed_CSV_Generation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reason_Repair_Evaluation_Optimized.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reason_Repair_Evaluation_Sampling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Requesty_Test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Top_Models.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts_gen_res_paper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compute_rar_ras.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compute_rar_ras_majority.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/copy_stories_to_text_files.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deepseek-chat_output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_supported_models_openai.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/git_github_synching.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gold_labels_updation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/import_gold_labels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/k-alpha_calculator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_analyses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_evaluator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_llm_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_routes.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +195,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/amolsharma-mit/UStoria.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/amolsha/UStoria.git&quot;,
     &quot;accountId&quot;: &quot;eb86d945-71fc-4d09-96c7-23a4a92287ff&quot;
   }
 }</component>
@@ -48,31 +208,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.JSON_Print.executor": "Run",
-    "Python.Open_Router_Credits_Checker.executor": "Run",
-    "Python.Reason_Repair_Evaluation.executor": "Run",
-    "Python.Reason_Repair_Evaluation_CSV_Generation.executor": "Run",
-    "Python.Reason_Repair_Evaluation_Sampling.executor": "Run",
-    "Python.Requesty_Test.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.charts_gen_1.executor": "Run",
-    "Python.charts_gen_2.executor": "Run",
-    "Python.copy_stories_to_text_files.executor": "Run",
-    "Python.evaluator_async.executor": "Run",
-    "Python.get_supported_models_openai.executor": "Run",
-    "Python.gold_labels_updation.executor": "Run",
-    "Python.import_gold_labels.executor": "Run",
-    "Python.llm_client.executor": "Run",
-    "Python.performance_analysis.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.Interrater_Agreement.executor&quot;: &quot;Run&quot;,
+    &quot;Python.JSON_Print.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Open_Router_Credits_Checker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Reason_Repair_Evaluation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Reason_Repair_Evaluation_CSV_Generation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Reason_Repair_Evaluation_Correct_Failed_CSV_Generation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Reason_Repair_Evaluation_Optimized.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Reason_Repair_Evaluation_Sampling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Requesty_Test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.charts_gen_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.charts_gen_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.charts_gen_res_paper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.compute_rar_ras.executor&quot;: &quot;Run&quot;,
+    &quot;Python.copy_stories_to_text_files.executor&quot;: &quot;Run&quot;,
+    &quot;Python.evaluator_async.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_supported_models_openai.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gold_labels_updation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.import_gold_labels.executor&quot;: &quot;Run&quot;,
+    &quot;Python.llm_client.executor&quot;: &quot;Run&quot;,
+    &quot;Python.performance_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/docs/MIT/ODD_2025_26/Projects/Project_3/Ishika/Software_Requirement_Classification-main&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\docs\Projects\UStoria\data" />
@@ -198,7 +364,71 @@
       <option name="project" value="LOCAL" />
       <updated>1761563930913</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Context Rich Prompting. Place : Institute.">
+      <option name="closed" value="true" />
+      <created>1762428102195</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1762428102198</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Context Rich Prompting. Place : Institute.">
+      <option name="closed" value="true" />
+      <created>1766056873810</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1766056873810</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Context Rich Prompting. Place : Institute.">
+      <option name="closed" value="true" />
+      <created>1766142319119</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1766142319120</updated>
+    </task>
+    <task id="LOCAL-00017" summary="UStoria shifted to amolsha. Place : Institute.">
+      <option name="closed" value="true" />
+      <created>1768386764098</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1768386764099</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Evaluation done again. Place : Institute.">
+      <option name="closed" value="true" />
+      <created>1768908409308</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1768908409308</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Evaluation done again. Place : Institute.">
+      <option name="closed" value="true" />
+      <created>1770463194660</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1770463194661</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Sampling files for RAS and RSR moved to paper folder.">
+      <option name="closed" value="true" />
+      <created>1778324864950</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1778324864951</updated>
+    </task>
+    <task id="LOCAL-00021" summary="RAS and RSR results recomputed.">
+      <option name="closed" value="true" />
+      <created>1778497697837</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1778497697838</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +453,10 @@
     <MESSAGE value="Evaluations done with gpt-4.1-mini,qwen,grok-fast.Implemented LLM wise performance analysis. Place : Institute." />
     <MESSAGE value="Charts Generation. Place : Institute." />
     <MESSAGE value="Context Rich Prompting. Place : Institute." />
-    <option name="LAST_COMMIT_MESSAGE" value="Context Rich Prompting. Place : Institute." />
+    <MESSAGE value="UStoria shifted to amolsha. Place : Institute." />
+    <MESSAGE value="Evaluation done again. Place : Institute." />
+    <MESSAGE value="Sampling files for RAS and RSR moved to paper folder." />
+    <MESSAGE value="RAS and RSR results recomputed." />
+    <option name="LAST_COMMIT_MESSAGE" value="RAS and RSR results recomputed." />
   </component>
 </project>

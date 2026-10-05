@@ -1,3 +1,0 @@
-model,context,RSR,RAS,N_failed
-qwen-turbo,minimal,0.732,0.85,71
-qwen-turbo,rich,0.75,0.868,76
