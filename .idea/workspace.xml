@@ -6,170 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="979b44ec-1ce5-4558-9ec3-aeab3b724e74" name="Changes" comment="RAS and RSR results recomputed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Atomic_Batch_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Atomic_Batch_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Conceptually-Sound_Batch_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Conceptually-Sound_Batch_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Duplicate_User_Stories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Estimable_Batch_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Estimable_Batch_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Evaluations/grok-4-fast-free_Batch-1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Full-Sentence_Batch_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Full-Sentence_Batch_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Minimal_Batch_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Minimal_Batch_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Problem-Oriented_Batch_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Problem-Oriented_Batch_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Unambiguous_Batch_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Unambiguous_Batch_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Well-formed_Batch_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Well-formed_Batch_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Interrater_Agreement_1.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Interrater_Agreement_BinaryReason.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Interrater_Agreement_BinaryReason_134.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Interrater_Agreement_BinaryReason_214.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Interrater_Agreement_BinaryReason_231.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Interrater_Agreement_BinaryReason_234.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Majority_Vote_Repair_and_Reason.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Model_Evaluation_Tracking.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Pairwise_Interrater_Agreement.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/RSR_RAS_results_1.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/RSR_RAS_results_2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/RSR_RAS_results_3.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/RSR_RAS_results_4.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Results_Atomic_Criterion.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Results_ConceptuallySound_Criterion.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Results_Estimable_Criterion.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Results_FullSentence_Criterion.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Results_Minimal_Criterion.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Results_ProblemOriented_Criterion.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Results_Unambiguous_Criterion.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/Results_WellFormed_Criterion.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/deepseek-chat_minimal.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/evaluations_correct_failed.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/evaluations_sampled.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/evaluations_sampled.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/evaluations_sampled_updated.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/gemini-2.5-flash_minimal.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/gpt-4.1-mini_minimal.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/gpt-5-mini_minimal.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/grok-4-fast_minimal.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/llm_performance_11102025.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/llm_performance_11102025_0157.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_1.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_3.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_results_4.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_summary.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_summary1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_summary_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_summary_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_summary_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/meta_eval_summary_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/qwen-turbo_minimal.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXCELS/ratings.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Evaluation_RICH_Prompting.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Individual_Criteria.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interrater_Agreement.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interrater_Agreement_Pairwise.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSON_Print.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Open_Router_Credits_Checker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Queries.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/LLM_EVALUATION/llm_performance_ALL_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/LLM_EVALUATION/llm_performance_MINIMAL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/LLM_EVALUATION/llm_performance_OVERALL_RICH+MINIMAL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/LLM_EVALUATION/llm_performance_RICH.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/META_EVALUATION/meta_eval_results_RATER_1.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/META_EVALUATION/meta_eval_results_RATER_2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/META_EVALUATION/meta_eval_summary_RATER_1_RATER_2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/deepseek-chat_MINIMAL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/deepseek-chat_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/deepseek-chat_rich.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/gemini-2.5-flash_MINIMAL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/gemini-2.5-flash_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/gemini-2.5-flash_rich.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/gpt-4.1-mini_MINIMAL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/gpt-4.1-mini_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/gpt-4.1-mini_rich.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/gpt-5-mini_MINIMAL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/gpt-5-mini_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/gpt-5-mini_rich.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/grok-4-fast_MINIMAL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/grok-4-fast_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/grok-4-fast_rich.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/deepseek-chat_rich.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/gemini-2.5-flash_rich.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/gpt-4.1-mini_rich.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/gpt-5-mini_rich.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/grok-4-fast_rich.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/llm_performance_DEEPSEEK-CHAT_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/llm_performance_GEMINI-2.5-Flash_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/llm_performance_GPT-4.1-MINI_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/llm_performance_GPT-5-MINI_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/llm_performance_GROK-4-FAST_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/llm_performance_QWEN_TURBO_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/llm-eval/qwen-turbo_rich.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_21.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_22.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_23.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_24.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_25.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_26.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_results_7.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_21.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_22.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_23.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_24.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_25.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_26.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/meta-eval/meta_eval_summary_7.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/qwen-turbo_MINIMAL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/qwen-turbo_OVERALL.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RESULTS/qwen-turbo_rich.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSR_RAS_PROMPT.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reason_Repair_Evaluation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reason_Repair_Evaluation_CSV_Generation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reason_Repair_Evaluation_Correct_Failed_CSV_Generation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reason_Repair_Evaluation_Optimized.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reason_Repair_Evaluation_Sampling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Requesty_Test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Top_Models.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts_gen_res_paper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compute_rar_ras.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compute_rar_ras_majority.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/copy_stories_to_text_files.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deepseek-chat_output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_supported_models_openai.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/git_github_synching.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gold_labels_updation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/import_gold_labels.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/k-alpha_calculator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_analyses.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_evaluator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_llm_client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_routes.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -428,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778497697838</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="RAS and RSR results recomputed.">
+      <option name="closed" value="true" />
+      <created>1791178079351</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1791178079352</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
